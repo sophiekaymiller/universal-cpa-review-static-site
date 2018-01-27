@@ -2,26 +2,25 @@
 machine:
   timezone:
     America/Los_Angeles # Set the timezone
-
-  # Version of ruby to use
   ruby:
     version:
       2.3.2
+  python:
+    version:
+      2.7.1
 
-## Customize test commands
+dependencies:
+  pre:
+    - sudo apt-get update
+    - sudo pip install ansible
+
 test:
   override:
     - echo 'NO TESTS'
 
-## Customize deployment commands
 deployment:
   production:
     tag: /[0-9]+.[0-9]+.[0-9]+/
     commands:
-      - echo 'deploy here'
-
-## Custom notifications
-notify:
-  webhooks:
-    # A list of hashes representing hooks. Only the url field is supported.
-    - url: https://someurl.com/hooks/circle
+      - mv _site _ansible/
+      - ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$CIRCLE_TAG"
