@@ -1,0 +1,19 @@
+{
+  "name": "universal-cpa-review",
+  "version": "0.0.0",
+  "description": "UniversalCPAReview static site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeanPug/universal-cpa-review-static-site.git"
+  },
+  "author": "MeanPug, LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeanPug/universal-cpa-review-static-site/issues"
+  },
+  "homepage": "https://github.com/MeanPug/universal-cpa-review-static-site#readme"
+}
