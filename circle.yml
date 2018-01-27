@@ -16,10 +16,9 @@ test:
 ## Customize deployment commands
 deployment:
   production:
-    tag: /release-.*/
-    owner: circleci #owner is optional
+    tag: /[0-9]+.[0-9]+.[0-9]+/
     commands:
-      - ./deploy_master.sh
+      - echo 'deploy here'
 
 ## Custom notifications
 notify:
