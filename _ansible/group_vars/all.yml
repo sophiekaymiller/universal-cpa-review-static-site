@@ -2,6 +2,3 @@
 
 site_name: universalcpareview.com
 server_name: www.universalcpareview.com
-
-s3_builds_bucket: ucr-builds
-s3_builds_path: /static_site
