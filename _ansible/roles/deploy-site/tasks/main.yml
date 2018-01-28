@@ -10,5 +10,5 @@
   command: cp -r /tmp/build/_site /var/www/html/builds/{{ build }}
 
 - name: Hot load new build
-  file: src=/var/www/html/builds/{{ build }}/_site dest=/var/www/html/{{ site_name }} state=link force=yes
+  file: src=/var/www/html/builds/{{ build }} dest=/var/www/html/{{ site_name }} state=link force=yes
 
