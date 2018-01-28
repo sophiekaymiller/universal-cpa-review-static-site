@@ -12,8 +12,9 @@ machine:
 dependencies:
   pre:
     - sudo apt-get update
-    - sudo apt-get install python-dev python-pip
-    - sudo pip install ansible
+    - pip install --upgrade setuptools
+    - pip install cffi
+    - pip install ansible
     - gem install jekyll --no-rdoc --no-ri
 
 compile:
