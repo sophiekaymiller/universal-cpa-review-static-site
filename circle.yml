@@ -12,7 +12,7 @@ machine:
 dependencies:
   pre:
     - sudo apt-get update
-    - sudo pip install --upgarde setuptools
+    - sudo pip install --upgrade setuptools
     - sudo pip install cffi
     - sudo pip install ansible
 
