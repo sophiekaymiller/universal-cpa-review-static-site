@@ -13,6 +13,7 @@ dependencies:
   pre:
     - sudo apt-get update
     - sudo apt-get install ansible
+    - gem install jekyll --no-rdoc --no-ri
 
 compile:
   override:
