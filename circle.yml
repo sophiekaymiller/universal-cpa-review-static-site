@@ -13,9 +13,10 @@ dependencies:
   pre:
     - sudo apt-get update
     - sudo apt-get install ansible
-#    - sudo pip install --upgrade setuptools
-#    - sudo pip install cffi
-#    - sudo pip install ansible
+
+compile:
+  override:
+    - jekyll build
 
 test:
   override:
@@ -23,7 +24,7 @@ test:
 
 deployment:
   production:
-    tag: /[0-9]+(\.[0-9]+)*/
+    tag: /.*?/
     commands:
       - mv _site _ansible/
       - ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$CIRCLE_TAG"
