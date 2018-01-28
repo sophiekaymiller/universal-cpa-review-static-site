@@ -5,16 +5,17 @@ machine:
   ruby:
     version:
       2.3.2
-  python:
-    version:
-      2.7.1
+#  python:
+#    version:
+#      2.7.1
 
 dependencies:
   pre:
     - sudo apt-get update
-    - sudo pip install --upgrade setuptools
-    - sudo pip install cffi
-    - sudo pip install ansible
+    - sudo apt-get install ansible
+#    - sudo pip install --upgrade setuptools
+#    - sudo pip install cffi
+#    - sudo pip install ansible
 
 test:
   override:
