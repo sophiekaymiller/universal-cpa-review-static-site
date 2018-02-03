@@ -8,6 +8,9 @@ machine:
   python:
     version:
       2.7
+  node:
+    version:
+      8.3
 
 dependencies:
   pre:
