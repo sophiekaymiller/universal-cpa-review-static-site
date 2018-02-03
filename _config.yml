@@ -30,3 +30,4 @@ exclude:
   - venv
   - circle.yml
   - vendor
+  - node_modules

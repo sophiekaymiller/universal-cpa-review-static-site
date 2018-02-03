@@ -7,7 +7,7 @@
   copy: src=_site dest=/tmp/build
 
 - name: Copy remote build to builds directory
-  command: cp -r /tmp/build/_site /var/www/html/builds/{{ build }}
+  command: rsync -rv --exclude=.git /tmp/build/_site/ /var/www/html/builds/{{ build }}
 
 - name: Hot load new build
   file: src=/var/www/html/builds/{{ build }} dest=/var/www/html/{{ site_name }} state=link force=yes
