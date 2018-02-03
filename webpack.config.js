@@ -11,7 +11,7 @@ const productionPlugins = [
 module.exports = {
     context: __dirname,
 
-    devtool: debug ? "inline-sourcemap" : null,
+    devtool: "inline-sourcemap",
 
     entry: {
         core: path.resolve(__dirname, "assets/js/core.js")
