@@ -20,6 +20,7 @@ dependencies:
 compile:
   override:
     - jekyll build
+    - npm run build
 
 test:
   override:
