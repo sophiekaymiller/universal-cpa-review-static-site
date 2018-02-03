@@ -3,3 +3,6 @@ venv/
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# node
+node_modules/
