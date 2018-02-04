@@ -4,7 +4,6 @@ const path = require('path');
 
 
 const productionPlugins = [
-    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin()
 ];
 
