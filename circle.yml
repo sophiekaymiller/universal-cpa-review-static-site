@@ -22,8 +22,8 @@ dependencies:
 
 compile:
   override:
-    - jekyll build
     - npm run build
+    - jekyll build
 
 test:
   override:
