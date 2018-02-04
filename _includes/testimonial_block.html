@@ -1,0 +1,15 @@
+{% assign review = include.review %}
+<section class="ucr-testimonial">
+    <div class="container">
+        <span class="oi oi-double-quote-serif-left d-none d-md-block ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
+
+        <div class="offset-md-3 col-md-6 inner-content">
+            <h3>{{ review.content | remove: '<p>' }}</h3>
+
+            <strong>- {{ review.name }}, {{ review.occupation }}</strong>
+            <span class="d-block">Completed exam in {{ review.completion_year }}</span>
+        </div>
+
+        <span class="oi oi-double-quote-serif-rightd-none d-md-block ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+.ucr-section {
+  min-height: 530px;
+  padding: 120px 0 60px 0;
+  box-sizing: content-box;
+
+  @include media-breakpoint-down(md) {
+    padding: 60px 0 40px 0;
+  }
+
+  p {
+    padding: 30px 0;
+  }
+
+  .ucr-section-header {
+    padding: 0 10px;
+  }
+}
