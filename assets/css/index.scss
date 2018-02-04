@@ -1,0 +1,93 @@
+---
+---
+@import 'site';
+
+.ucr-section {
+  height: 530px;
+  padding: 120px 0;
+  box-sizing: content-box;
+
+  p {
+    padding: 30px 0;
+  }
+
+  .ucr-section-header {
+    padding: 0 10px;
+  }
+
+  &.ucr-section-hero {
+    background-color: $light;
+    padding-top: 160px;
+    background-image: url('/assets/images/placeholders/person.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 300px;
+  }
+
+  &.ucr-section-benefits {
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      padding: 30px 0 10px 0;
+
+      li {
+        padding: 0 90px;
+      }
+
+      img {
+        width: 100px;
+      }
+
+      h4 {
+        padding-top: 40px;
+        font-weight: $font-weight-extra-bold;
+      }
+    }
+  }
+}
+
+.ucr-testimonial {
+  background: $primary;
+  text-align: center;
+  padding: 120px 0 100px 0;
+
+  > div {
+    position: relative;
+
+    .ucr-quotes {
+      position: absolute;
+      font-size: 70px;
+      color: $white;
+
+      &.ucr-quotes-left {
+        left: 100px;
+        top: -40px;
+      }
+
+      &.ucr-quotes-right {
+        right: 100px;
+        top: auto;
+        bottom: -20px;
+      }
+    }
+
+    .inner-content {
+      h3 {
+        color: $white;
+      }
+
+      strong {
+        font-weight: $font-weight-extra-bold;
+        text-transform: uppercase;
+        color: $gray-700;
+      }
+
+      span {
+        font-weight: $font-weight-extra-light;
+        text-transform: uppercase;
+        color: $gray-600;
+      }
+    }
+  }
+}

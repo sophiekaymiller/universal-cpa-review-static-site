@@ -1,15 +1,9 @@
-// Structure below as suggested by UIKit
+// Theme Overrides
+@import 'themes/purple/custom';
 
-// 1. Your custom variables and variable overwrites.
-@import "themes/purple/variables.scss";
-@import "themes/purple/button.scss";
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-// 2. Import default variables and available mixins.
-@import "../node_modules/uikit/src/scss/variables.scss";
-@import "../node_modules/uikit/src/scss/mixins.scss";
-
-// 3. Your custom mixin overwrites.
-@import "themes/purple/button-mixins.scss";
-
-// 4. Import UIkit
-@import "../node_modules/uikit/src/scss/uikit.scss";
+// Site Modules
+@import 'includes/nav.scss';
+@import 'includes/footer.scss';

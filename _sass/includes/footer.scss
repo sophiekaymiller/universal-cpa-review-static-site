@@ -1,0 +1,38 @@
+.ucr-footer {
+  padding: 40px 0;
+  background: $dark;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      float: left;
+      padding: 0 0 0 10px;
+
+      img {
+        width: 30px;
+      }
+
+      a {
+        font-weight: $font-weight-extra-light;
+        padding-right: 10px;
+        border-right: solid 1px;
+      }
+
+      &:last-child a {
+        border-right: none;
+      }
+    }
+  }
+
+  .ucr-social {
+    ul li {
+      float: right;
+
+      a {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+  }
+}

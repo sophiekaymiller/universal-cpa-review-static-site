@@ -1,0 +1,17 @@
+.ucr-nav {
+  background: $primary;
+  padding: 35px 20px;
+
+  .btn {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    margin-left: 60px;
+  }
+
+  .nav-item a {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: $font-weight-extra-light;
+  }
+}
