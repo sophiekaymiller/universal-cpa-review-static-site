@@ -19,11 +19,26 @@ description: >
   Pass the CPA on the first try. More effective than simple books. Try it now.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: pretty
+
+collections:
+  products:
+    output: true
+  reviews:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock

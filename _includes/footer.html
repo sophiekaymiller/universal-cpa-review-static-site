@@ -1,3 +1,27 @@
-<footer>
-    <script type="text/javascript" src="/assets/dist/core.min.js"></script>
+<footer class="ucr-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <ul>
+                    <li><a href="{% link about.md %}">About Us</a></li>
+                    <li><a href="{% link careers.md %}">Careers</a></li>
+                    <li><a href="{% link contact.md %}">Contact</a></li>
+                    <li><a href="{% link about.md %}">Terms of Use</a></li>
+                    <li><a href="{% link about.md %}">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-5 ucr-social">
+                <ul>
+                    {% for s in site.data.social %}
+                        <li>
+                            <a href="{{ s.url }}" target="_blank">
+                                <img class="rounded-circle" src="{{ s.icon }}" alt="{{ s.name }}"/>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>

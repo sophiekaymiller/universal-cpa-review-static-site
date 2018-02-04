@@ -1,8 +1,65 @@
+{% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body>
 
+<body>
+    {% include nav.html %}
+
+    <section class="ucr-section ucr-section-hero">
+        <div class="container">
+            <div class="row">
+                <div class="offset-sm-7 col-sm-5 text-right">
+                    <h1>
+                        {{ page.section_1.header }}
+                    </h1>
+
+                    <p>{{ page.section_1.subheader }}</p>
+
+                    <a class="btn btn-cta-dark">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ucr-section ucr-section-benefits">
+        <div class="container">
+            <div class="ucr-section-header">
+                <h2>{{ page.section_2.header }}</h2>
+                <p>{{ page.section_2.subheader }}</p>
+            </div>
+
+            <ul class="row">
+                {% for benefit in site.data.benefits %}
+                <li class="col">
+                    <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
+
+                    <h4>{{ benefit.name }}</h4>
+
+                    <p>{{ benefit.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <a href="#" class="btn btn-cta-dark">Learn More</a>
+        </div>
+    </section>
+
+    {% assign review = featured_reviews[0] %}
+    <section class="ucr-testimonial">
+        <div class="container">
+            <span class="oi oi-double-quote-serif-left ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
+
+            <div class="offset-md-3 col-md-6 inner-content">
+                <h3>{{ review.content | remove: '<p>' }}</h3>
+
+                <strong>- {{ review.name }}, {{ review.occupation }}</strong>
+                <span class="d-block">Completed exam in {{ review.completion_year }}</span>
+            </div>
+
+            <span class="oi oi-double-quote-serif-right ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
+        </div>
+    </section>
 
     {% include footer.html %}
 </body>

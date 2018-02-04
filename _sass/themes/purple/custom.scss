@@ -1,0 +1,56 @@
+// Colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$primary: rgb(165, 165, 165);
+$secondary: #eee;
+$light: $gray-100;
+$dark: $gray-800;
+
+// Grid
+$container-max-widths: (
+  'xl': 1400px
+);
+
+// Fonts
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-weight-extra-light: 300;
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 700;
+
+$headings-color: $gray-700;
+$body-color: $gray-600;
+
+// Links
+$link-color: $gray-200;
+
+// Buttons
+$btn-border-radius: 50px;
+$btn-padding-x: 120px;
+$btn-padding-y: 10px;
+
+$btn-font-weight: $font-weight-light;
+
+$btn-cta-light: $secondary;
+$btn-cta-dark: $primary;
+
+$theme-colors: (
+  "cta-light": $btn-cta-light,
+  "cta-dark": $btn-cta-dark
+);
+
+// Nav
+$navbar-dark-color: $secondary;
+$navbar-nav-link-padding-x: 30px;
