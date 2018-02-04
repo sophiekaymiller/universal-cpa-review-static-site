@@ -46,7 +46,8 @@
     {% include content_block.html content=section_content section_name='ucr-section-benefits' %}
 
     <!-- Testimonial #1 -->
-    {% include testimonial_block.html review=featured_reviews[0] %}
+    {% assign review = featured_reviews[0] %}
+    {% include testimonial_block.html review=review %}
 
     <!-- Products -->
     {% capture section_content %}
@@ -77,7 +78,8 @@
     {% include content_block.html content=section_content section_name='ucr-section-products' %}
 
     <!-- Testimonial #2 -->
-    {% include testimonial_block.html review=featured_reviews[1] %}
+    {% assign review = featured_reviews[1] %}
+    {% include testimonial_block.html review=review %}
 
     <!-- Featured Slides -->
     {% assign slides = page.section_featured.slides %}
@@ -112,7 +114,8 @@
     {% include content_block.html content=section_content section_name='ucr-section-featured' %}
 
     <!-- Testimonial #3 -->
-    {% include testimonial_block.html review=featured_reviews[2] %}
+    {% assign review = featured_reviews[2] %}
+    {% include testimonial_block.html review=review %}
 
     {% include footer.html %}
 </body>
