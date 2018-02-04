@@ -25,3 +25,8 @@
         </div>
     </div>
 </footer>
+{% if page.js %}
+    {% for js in page.js %}
+    <script type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}
+{% endif %}

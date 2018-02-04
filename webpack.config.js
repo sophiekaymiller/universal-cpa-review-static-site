@@ -13,7 +13,8 @@ module.exports = {
     devtool: "inline-sourcemap",
 
     entry: {
-        core: path.resolve(__dirname, "assets/js/core.js")
+        core: path.resolve(__dirname, "assets/js/core.js"),
+        home: path.resolve(__dirname, "assets/js/home.js")
     },
 
     output: {
