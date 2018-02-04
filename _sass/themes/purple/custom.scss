@@ -55,11 +55,13 @@ $theme-colors: (
 // Nav
 $navbar-dark-color: $secondary;
 $navbar-nav-link-padding-x: 30px;
+$navbar-dark-active-color: $gray-800;
 
 // Spacing
 $spacer: 1rem;
 $spacers: (
-  6: ($spacer * 6)
+  6: ($spacer * 6),
+  7: ($spacer * 12)
 );
 
 // Carousel

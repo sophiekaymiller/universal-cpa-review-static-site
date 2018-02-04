@@ -6,13 +6,13 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item{% if page.name == 'home' %} active{% endif %}">
+            <li class="nav-item{% if page.url == '/' %} active{% endif %}">
                 <a class="nav-link" href="{% link index.md %}">Home</a>
             </li>
-            <li class="nav-item{% if page.name == 'about' %} active{% endif %}">
+            <li class="nav-item{% if page.url == '/about/' %} active{% endif %}">
                 <a class="nav-link" href="{% link about.md %}">About Universal CPA</a>
             </li>
-            <li class="nav-item dropdown{% if page.name == 'product' %} active{% endif %}">
+            <li class="nav-item dropdown{% if page.url == '/products/' %} active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="{% link _products/all.md %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Products
                 </a>

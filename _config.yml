@@ -26,6 +26,8 @@ collections:
     output: true
   reviews:
     output: false
+  team:
+    output: false
 
 defaults:
   - scope:

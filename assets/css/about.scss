@@ -1,0 +1,71 @@
+---
+---
+@import 'site';
+
+.ucr-section {
+  text-align: center;
+
+  /**-- Hero Section --**/
+  &.ucr-section-hero {
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      padding: 30px 0 10px 0;
+
+      li {
+        padding: 0 90px;
+      }
+
+      img {
+        width: 100px;
+      }
+
+      h4 {
+        padding-top: 40px;
+        font-weight: $font-weight-extra-bold;
+      }
+    }
+  }
+
+  /**-- About Section --**/
+  &.ucr-section-about {
+    img {
+      width: 100%;
+    }
+
+    .ucr-section-about-content {
+      text-align: left;
+
+      h4 {
+        font-weight: $font-weight-extra-bold;
+      }
+
+      p {
+        padding: 15px 0 30px 0;
+      }
+    }
+  }
+
+  /**-- Team Section --**/
+  &.ucr-section-team {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+
+        h4 {
+          padding-top: 10px;
+          margin-bottom: 0;
+          font-weight: $font-weight-extra-bold;
+        }
+
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

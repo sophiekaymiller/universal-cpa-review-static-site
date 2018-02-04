@@ -1,8 +1,65 @@
+{% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
 <html>
 {% include head.html %}
 <body>
     {% include nav.html %}
+
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h1>{{ page.section_hero.header }}</h1>
+        <p>{{ page.section_hero.subheader }}</p>
+    </div>
+
+    <ul class="row">
+        {% for benefit in site.data.benefits %}
+        <li class="col-12 col-md">
+            <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
+
+            <h4>{{ benefit.name }}</h4>
+
+            <p>{{ benefit.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% capture section_content %}
+    <h2>{{ page.section_about.header }}</h2>
+    <p>{{ page.section_about.subheader }}</p>
+
+    <div class="row pt-3 pt-sm-5">
+        <div class="col-5 d-none d-md-block">
+            <img class="rounded-circle" src="/assets/images/placeholders/person.jpg" alt="Universal CPA &amp; Me" />
+        </div>
+
+        <div class="col-12 col-md-7 ucr-section-about-content">
+            {{ page.content | markdownify }}
+        </div>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-about' %}
+
+    {% assign review=featured_reviews[1] %}
+    {% include testimonial_block.html review=review %}
+
+    {% capture section_content %}
+    <h2>{{ page.section_team.header }}</h2>
+    <p>{{ page.section_team.subheader }}</p>
+
+    <ul class="row justify-content-center pt-3 pt-sm-4 pt-md-5">
+        {% assign team = site.team | sort:"index" %}
+        {% for member in team %}
+        <li class="col-sm-6 col-md-3 pt-5 pt-sm-0">
+            <img class="rounded-circle" src="{{ member.picture }}" alt="{{ member.first_name }}" />
+            <h4>{{ member.first_name }} {{ member.last_name }}</h4>
+            <span>{{ member.position }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-team' %}
 
     {% include footer.html %}
 </body>
