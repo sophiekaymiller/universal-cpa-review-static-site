@@ -1,20 +1,21 @@
 {% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 {% include head.html %}
 
 <body>
     {% include nav.html %}
 
+    <!-- Hero -->
     <section class="ucr-section ucr-section-hero">
         <div class="container">
             <div class="row">
                 <div class="offset-sm-7 col-sm-5 text-right">
                     <h1>
-                        {{ page.section_1.header }}
+                        {{ page.section_hero.header }}
                     </h1>
 
-                    <p>{{ page.section_1.subheader }}</p>
+                    <p>{{ page.section_hero.subheader }}</p>
 
                     <a class="btn btn-cta-dark">Learn More</a>
                 </div>
@@ -22,11 +23,12 @@
         </div>
     </section>
 
+    <!-- Benefits -->
     <section class="ucr-section ucr-section-benefits">
         <div class="container">
             <div class="ucr-section-header">
-                <h2>{{ page.section_2.header }}</h2>
-                <p>{{ page.section_2.subheader }}</p>
+                <h2>{{ page.section_benefits.header }}</h2>
+                <p>{{ page.section_benefits.subheader }}</p>
             </div>
 
             <ul class="row">
@@ -45,10 +47,11 @@
         </div>
     </section>
 
+    <!-- Testimonial #1 -->
     {% assign review = featured_reviews[0] %}
     <section class="ucr-testimonial">
         <div class="container">
-            <span class="oi oi-double-quote-serif-left ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
+            <span class="oi oi-double-quote-serif-left d-none d-md-block ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
 
             <div class="offset-md-3 col-md-6 inner-content">
                 <h3>{{ review.content | remove: '<p>' }}</h3>
@@ -57,7 +60,103 @@
                 <span class="d-block">Completed exam in {{ review.completion_year }}</span>
             </div>
 
-            <span class="oi oi-double-quote-serif-right ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
+            <span class="oi oi-double-quote-serif-right d-none d-md-block ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="ucr-section ucr-section-products">
+        <div class="container">
+            <div class="ucr-section-header">
+                <h2>{{ page.section_products.header }}</h2>
+                <p>{{ page.section_products.subheader }}</p>
+            </div>
+
+            <a href="#" class="btn btn-cta-dark">Try for Free</a>
+
+            <div class="row pt-5 py-0 py-sm-6">
+                <div class="d-none d-sm-block col-sm-7">
+                    <img src="/assets/images/placeholders/laptop.png" alt="responsive design" />
+                </div>
+
+                <div class="col-12 col-sm-5">
+                    <ul>
+                        {% for prod in site.data.product_briefs %}
+                        <li class="text-center text-sm-left">
+                            <h4>{{ prod.name }}</h4>
+                            <span>{{ prod.summary }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial #2 -->
+    {% assign review = featured_reviews[1] %}
+    <section class="ucr-testimonial">
+        <div class="container">
+            <span class="oi oi-double-quote-serif-left d-none d-md-block ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
+
+            <div class="offset-md-3 col-md-6 inner-content">
+                <h3>{{ review.content | remove: '<p>' }}</h3>
+
+                <strong>- {{ review.name }}, {{ review.occupation }}</strong>
+                <span class="d-block">Completed exam in {{ review.completion_year }}</span>
+            </div>
+
+            <span class="oi oi-double-quote-serif-rightd-none d-md-block ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
+        </div>
+    </section>
+
+    <!-- Featured Slides -->
+    {% assign slides = page.section_featured.slides %}
+    <section class="ucr-section ucr-section-featured">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    {% for slide in slides %}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+                    {% endfor %}
+                </ol>
+                <div class="carousel-inner">
+                    {% for slide in slides %}
+                    <div class="carousel-item px-1 px-md-6{% if forloop.index0 == 0 %} active{% endif %}">
+                        <img class="d-block rounded-circle" src="{{ slide.icon }}" alt="Featured {{ forloop.index0 }}" />
+
+                        <h2>{{ slide.headline }}</h2>
+
+                        <a href="{{ slide.cta.url }}" class="btn btn-cta-dark">{{ slide.cta.text }}</a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev d-none d-md-block" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next d-none d-md-block" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial #3 -->
+    {% assign review = featured_reviews[2] %}
+    <section class="ucr-testimonial">
+        <div class="container">
+            <span class="oi oi-double-quote-serif-left d-none d-md-block ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
+
+            <div class="offset-md-3 col-md-6 inner-content">
+                <h3>{{ review.content | remove: '<p>' }}</h3>
+
+                <strong>- {{ review.name }}, {{ review.occupation }}</strong>
+                <span class="d-block">Completed exam in {{ review.completion_year }}</span>
+            </div>
+
+            <span class="oi oi-double-quote-serif-right d-none d-md-block ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
         </div>
     </section>
 

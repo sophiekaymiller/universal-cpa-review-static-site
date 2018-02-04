@@ -1,0 +1,8 @@
+.btn {
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: $btn-padding-sm-x;
+    padding-right: $btn-padding-sm-x;
+  }
+}

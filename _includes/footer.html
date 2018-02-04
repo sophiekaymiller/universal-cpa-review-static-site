@@ -1,8 +1,8 @@
 <footer class="ucr-footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-7">
-                <ul>
+            <div class="col-12 col-md-8">
+                <ul class="text-center text-md-left">
                     <li><a href="{% link about.md %}">About Us</a></li>
                     <li><a href="{% link careers.md %}">Careers</a></li>
                     <li><a href="{% link contact.md %}">Contact</a></li>
@@ -11,8 +11,8 @@
                 </ul>
             </div>
 
-            <div class="col-sm-5 ucr-social">
-                <ul>
+            <div class="col-12 col-md-4 ucr-social py-3 py-md-0">
+                <ul class="text-center text-md-right">
                     {% for s in site.data.social %}
                         <li>
                             <a href="{{ s.url }}" target="_blank">

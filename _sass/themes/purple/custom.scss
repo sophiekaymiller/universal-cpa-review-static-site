@@ -39,6 +39,7 @@ $link-color: $gray-200;
 // Buttons
 $btn-border-radius: 50px;
 $btn-padding-x: 120px;
+$btn-padding-sm-x: 60px;
 $btn-padding-y: 10px;
 
 $btn-font-weight: $font-weight-light;
@@ -54,3 +55,12 @@ $theme-colors: (
 // Nav
 $navbar-dark-color: $secondary;
 $navbar-nav-link-padding-x: 30px;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 6)
+);
+
+// Carousel
+$carousel-control-color: $gray-800;

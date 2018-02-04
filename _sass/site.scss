@@ -4,6 +4,9 @@
 // Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Global Overrides
+@import 'global';
+
 // Site Modules
 @import 'includes/nav.scss';
 @import 'includes/footer.scss';

@@ -2,10 +2,15 @@
 ---
 @import 'site';
 
+/**-- Section Blocks --**/
 .ucr-section {
-  height: 530px;
-  padding: 120px 0;
+  min-height: 530px;
+  padding: 120px 0 60px 0;
   box-sizing: content-box;
+
+  @include media-breakpoint-down(md) {
+    padding: 60px 0 40px 0;
+  }
 
   p {
     padding: 30px 0;
@@ -15,6 +20,7 @@
     padding: 0 10px;
   }
 
+  /**-- Hero Section --**/
   &.ucr-section-hero {
     background-color: $light;
     padding-top: 160px;
@@ -24,6 +30,7 @@
     background-position-x: 300px;
   }
 
+  /**-- Benefits Section --**/
   &.ucr-section-benefits {
     text-align: center;
 
@@ -45,12 +52,71 @@
       }
     }
   }
+
+  /**-- Products Section --**/
+  &.ucr-section-products {
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        text-align: left;
+        padding-bottom: 50px;
+
+        span {
+          display: block;
+          padding-top: 10px;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      font-weight: $font-weight-extra-bold;
+    }
+  }
+
+  /**-- Featured Section --**/
+  &.ucr-section-featured {
+    text-align: center;
+
+    ol {
+      bottom: -100px;
+
+      li {
+        background-color: $gray-500;
+
+        &.active {
+          background-color: $gray-800;
+        }
+      }
+    }
+
+    h2 {
+      padding: 40px 0;
+    }
+
+    img {
+      width: 100px;
+      margin: auto;
+    }
+  }
 }
 
+/**-- Testimonial Blocks --**/
 .ucr-testimonial {
   background: $primary;
   text-align: center;
   padding: 120px 0 100px 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 60px 0;
+  }
 
   > div {
     position: relative;
