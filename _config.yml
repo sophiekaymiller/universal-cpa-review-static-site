@@ -28,6 +28,8 @@ collections:
     output: false
   team:
     output: false
+  faqs:
+    output: false
 
 defaults:
   - scope:

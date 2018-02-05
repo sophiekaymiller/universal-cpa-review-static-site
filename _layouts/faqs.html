@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+{% include head.html %}
 <body>
+    {% include nav.html %}
 
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h1>{{ page.section_hero.header }}</h1>
+        <p>{{ page.section_hero.subheader }}</p>
+    </div>
+
+    <ul class="row">
+        {% for faq in site.faqs %}
+        <li class="col-12 col-md-6 col-lg-4 card">
+            <div class="card-body">
+                <h5 class="card-title">{{ faq.question }}</h5>
+                <p class="card-text">{{ faq.content | remove: '<p>' }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% include banner_block.html headline=page.banner.headline cta_url=page.banner.cta_url cta_text=page.banner.cta_text %}
+
+    {% include footer.html %}
 </body>
 </html>

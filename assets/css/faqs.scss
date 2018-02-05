@@ -1,0 +1,22 @@
+---
+---
+@import 'site';
+
+.ucr-section-hero {
+  ul {
+    padding-left: 0;
+  }
+  
+  .card {
+    padding: 15px;
+
+    .card-body {
+      background-color: $white;
+      padding: 40px 30px;
+    }
+
+    .card-title {
+      font-weight: $font-weight-extra-bold;
+    }
+  }
+}
