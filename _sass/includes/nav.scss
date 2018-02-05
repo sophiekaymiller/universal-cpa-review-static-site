@@ -1,17 +1,63 @@
 .ucr-nav {
   background: $primary;
-  padding: 35px 20px;
+  padding: 0 20px;
 
   .btn {
     padding-left: 25px;
     padding-right: 25px;
     text-transform: uppercase;
-    margin-left: 60px;
+  }
+
+  ul li {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  @include media-breakpoint-down(md) {
+    ul li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   .nav-item a {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: $font-weight-extra-light;
+  }
+
+  .dropdown {
+    &.show {
+      background: $dropdown-bg;
+
+      > .dropdown-toggle {
+        color: $white;
+      }
+
+      .dropdown-menu {
+        margin-top: 0;
+        border-top: none;
+        padding: 0 20px;
+      }
+    }
+
+    .dropdown-item {
+      border-bottom: solid 1px $white;
+      text-align: center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      &.show {
+        background: $primary;
+      }
+
+      .dropdown-item {
+        text-align: left;
+      }
+    }
   }
 }

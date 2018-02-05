@@ -13,14 +13,13 @@
                 <a class="nav-link" href="{% link about.md %}">About Universal CPA</a>
             </li>
             <li class="nav-item dropdown{% if page.url == '/products/' %} active{% endif %}">
-                <a class="nav-link dropdown-toggle" href="{% link _products/all.md %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Products
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
 
                 <div class="dropdown-menu">
                     {% for product in site.products %}
-                    <a class="dropdown-item" href="{{ product.url }}">{{ product.name }}</a>
+                    <a class="dropdown-item" href="{{ product.url }}">{{ product.name }} Exam</a>
                     {% endfor %}
+                    <a class="dropdown-item" href="{% link products.md %}">Bundle</a>
                 </div>
             </li>
             <li class="nav-item{% if page.name == 'reviews' %} active{% endif %}">
@@ -29,7 +28,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://blog.universalcpareview.com">Resources</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center text-md-right ml-0 ml-md-5">
                 <button class="btn btn-cta-light">Login/Sign Up</button>
             </li>
         </ul>
