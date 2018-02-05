@@ -61,6 +61,8 @@
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-team' %}
 
+    {% include banner_block.html headline=page.banner.headline cta_url=page.banner.cta_url cta_text=page.banner.cta_text %}
+
     {% include footer.html %}
 </body>
 </html>
