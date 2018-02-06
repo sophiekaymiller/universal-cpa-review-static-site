@@ -3,6 +3,13 @@ const webpack = require('webpack');
 const path = require('path');
 
 
+const plugins = [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
+];
+
 const productionPlugins = [
     new webpack.optimize.UglifyJsPlugin()
 ];
@@ -14,7 +21,8 @@ module.exports = {
 
     entry: {
         core: path.resolve(__dirname, "assets/js/core.js"),
-        home: path.resolve(__dirname, "assets/js/home.js")
+        home: path.resolve(__dirname, "assets/js/home.js"),
+        careers: path.resolve(__dirname, "assets/js/careers.js")
     },
 
     output: {
@@ -34,5 +42,5 @@ module.exports = {
         ]
     },
 
-    plugins: debug ? [] : productionPlugins
+    plugins: plugins.concat(debug ? [] : productionPlugins)
 };

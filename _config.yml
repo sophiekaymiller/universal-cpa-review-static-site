@@ -30,6 +30,8 @@ collections:
     output: false
   faqs:
     output: false
+  positions:
+    output: false
 
 defaults:
   - scope:

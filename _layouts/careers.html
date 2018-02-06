@@ -4,6 +4,60 @@
 <body>
     {% include nav.html %}
 
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h1>{{ page.section_hero.header }}</h1>
+        <p>{{ page.section_hero.subheader }}</p>
+    </div>
+
+    <ul class="row">
+        {% for job in site.positions %}
+        <li class="col-12 col-md-6 col-lg-4 card">
+            <div class="card-body">
+                <h5 class="card-title">{{ job.name }}</h5>
+                <p class="card-text">{{ job.content | remove: '<p>' }}</p>
+            </div>
+
+            <div class="card-footer">
+                <div class="collapse ucr-job-form" id="applicationForm{{ forloop.index0 }}">
+                    <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#applicationForm{{ forloop.index0 }}">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone Number" />
+                        </div>
+                        <div class="form-group">
+                            <label for="resume">Resume</label>
+                            <input type="file" class="form-control-file" id="resume" />
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-cta-dark btn-block" type="submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+
+                <button class="btn btn-block btn-cta-dark btn-apply collapsed" type="button" data-toggle="collapse" data-target="#applicationForm{{ forloop.index0 }}" aria-expanded="false" aria-controls="applicationForm">Apply</button>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% include banner_block.html headline=page.banner.headline cta_url=page.banner.cta_url cta_text=page.banner.cta_text %}
+
     {% include footer.html %}
 </body>
 </html>
