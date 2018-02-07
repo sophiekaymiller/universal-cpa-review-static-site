@@ -6,3 +6,12 @@
     padding-right: $btn-padding-sm-x;
   }
 }
+
+.form-control {
+  border-bottom: solid 1px $input-border-color;
+
+  &:focus {
+    border-bottom: solid 2px $input-focus-border-color;
+    font-weight: $font-weight-bold;
+  }
+}
