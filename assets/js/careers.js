@@ -1,6 +1,8 @@
 import Backbone from 'backbone';
 
-const jobsWebhook = 'https://hooks.zapier.com/hooks/catch/2938588/zd3m0g/';
+import postToZapierWebhook from './lib/zaps';
+import { serializeFormToObject } from './lib/forms';
+
 
 const JobApplicationView = Backbone.View.extend({
     events: {
@@ -10,18 +12,12 @@ const JobApplicationView = Backbone.View.extend({
     submitForm(evt) {
         evt.preventDefault();
 
-        const $form = this.$el.find('form');
-
-        let formData = {};
-        $form.serializeArray().map(x => { formData[x.name] = x.value; });
-
         const _this = this;
-        $.ajax({
-            type: 'POST',
-            url: jobsWebhook,
-            dataType: 'json',
-            data: formData
-        }).then(() => {
+        postToZapierWebhook(
+            'https://hooks.zapier.com/hooks/catch/2938588/zd3m0g/',
+            serializeFormToObject(this.$el.find('form'))
+        )
+        .then(() => {
             _this.$el.find('.alert').addClass('show');
         });
     }

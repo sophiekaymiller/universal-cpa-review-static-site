@@ -22,7 +22,8 @@ module.exports = {
     entry: {
         core: path.resolve(__dirname, "assets/js/core.js"),
         home: path.resolve(__dirname, "assets/js/home.js"),
-        careers: path.resolve(__dirname, "assets/js/careers.js")
+        careers: path.resolve(__dirname, "assets/js/careers.js"),
+        contact: path.resolve(__dirname, "assets/js/contact.js")
     },
 
     output: {
