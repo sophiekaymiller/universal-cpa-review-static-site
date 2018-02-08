@@ -1,0 +1,95 @@
+---
+---
+@import 'site';
+
+.ucr-section-hero {
+  .ucr-review {
+    margin: 40px 0;
+    background: transparent;
+
+    // Specific to the pic rows
+
+    &.ucr-review-picrow {
+      .ucr-review-inner {
+        background: $white;
+        padding: 60px 80px 60px 90px;
+      }
+
+      @include media-breakpoint-down(md) {
+        .ucr-review-inner {
+          padding: 0;
+
+          .ucr-review-content {
+            padding: 20px;
+
+            p {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    // Specific to the non-pic rows
+
+    &:not(.ucr-review-picrow) {
+      .ucr-review-inner {
+        background: transparent;
+        padding: 0;
+
+        > .row {
+          background: $white;
+          padding: 60px 40px 60px 30px;
+          width: 97%;
+          height: 100%;
+          margin: 0;
+        }
+
+        &:nth-child(2) {
+          > .row {
+            float: right;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        .ucr-review-inner {
+          padding: 0;
+          margin: 20px 0;
+
+          > .row {
+            width: 100%;
+            padding: 20px;
+            height: auto;
+            float: none;
+          }
+        }
+      }
+    }
+
+    .ucr-review-inner {
+      .ucr-review-quote {
+        text-align: right;
+        font-size: $font-size-huge;
+        position: relative;
+        top: -35px;
+      }
+
+      .ucr-review-picture {
+        overflow: hidden;
+        max-height: 270px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        .ucr-review-quote {
+          font-size: ($font-size-huge - 3);
+          top: -15px;
+        }
+      }
+    }
+  }
+}
