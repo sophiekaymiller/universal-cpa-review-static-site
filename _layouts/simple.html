@@ -1,0 +1,20 @@
+{% assign featured_reviews = site.reviews | where:"featured","true" %}
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    {% include nav.html %}
+
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h1>{{ page.section_hero.header }}</h1>
+        <p>{{ page.section_hero.subheader }}</p>
+    </div>
+
+    {{ page.content | markdownify }}
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% include footer.html %}
+</body>
+</html>
