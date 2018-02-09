@@ -14,11 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Universal CPA Review
-email: bobby@universalcpareview.com
+email: info@universalcpareview.com
+author: Universal CPA Review
 description: >
   Pass the CPA on the first try. More effective than simple books. Try it now.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.universalcpareview.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: /assets/images/logo.png
 permalink: pretty
 
 collections:
@@ -44,6 +46,7 @@ defaults:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
