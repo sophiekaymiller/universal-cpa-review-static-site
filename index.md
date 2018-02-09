@@ -26,5 +26,7 @@ section_featured:
           cta:
             text: Learn More
             url: /contact
+js:
+    - /assets/dist/home.min.js
 ---
 test some content
