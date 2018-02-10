@@ -1,0 +1,16 @@
+#scores-timer {
+  margin-top: 95px;
+  padding: 20px 0;
+  background: $secondary;
+
+  h4 {
+    color: $gray-600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size-sm;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 40px;
+  }
+}

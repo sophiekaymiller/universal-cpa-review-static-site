@@ -4,7 +4,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="/assets/vendor/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+    {% if include.style_override %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/{{ include.style_override }}.css" />
+    {% else %}
     <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.name | replace:'.md','' }}.css" />
+    {% endif %}
 
     <script type="text/javascript" src="/assets/dist/core.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>

@@ -5,9 +5,7 @@
 <body>
     {% include nav.html %}
 
-    <div class="ucr-thin-banner" id="scores-timer">
-        <h4>Scores Released {{ site.data.scores_release.next_date | timeago }}</h4>
-    </div>
+    {% include scores_release_block.html %}
 
     {% capture section_content %}
     <div class="ucr-section-header px-3 px-md-7">

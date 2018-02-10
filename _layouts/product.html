@@ -1,10 +1,68 @@
+{% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+{% include head.html style_override='product' %}
 <body>
+    {% include nav.html %}
 
+    {% include scores_release_block.html %}
+
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h1>{{ page.name }}</h1>
+        <p>{{ page.short_description }}</p>
+    </div>
+
+    <div class="ucr-button-row py-2 py-sm-5">
+        <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
+            <a href="#" class="btn btn-cta-dark">Try for Free</a>
+        </div>
+
+        <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
+            <a href="#" class="btn btn-cta-light">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6" id="mocks">
+            <img src="/assets/images/placeholders/laptop.png" alt="Beautiful Desktop Experience" id="laptop" />
+            <img src="/assets/images/placeholders/iphone.png" alt="Responsive Mobile Design" id="iphone" />
+        </div>
+
+        <div class="col-sm-6 ucr-section-content pl-2 pt-3 pl-sm-3 pt-sm-0">
+            {{ page.content | markdownify }}
+        </div>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% assign review = featured_reviews[3] %}
+    {% include testimonial_block.html review=review %}
+
+    {% capture section_content %}
+    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-7">
+        <h2>Check out our other exams</h2>
+        <span>this is some placeholder text</span>
+    </div>
+
+    <ul class="row pt-6">
+        {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
+        {% for product in other_products %}
+        <li class="ucr-product col-12 col-md-4 mb-6 mb-sm-0">
+            <div class="ucr-product-inner">
+                <img src="{{ product.thumbnail }}" class="rounded-circle" alt="{{ product.name }}" />
+                <h3>{{ product.name }} Exam</h3>
+            </div>
+
+            <div class="ucr-product-footer">
+                <a href="{{ product.url }}">Learn More</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-products ucr-section-hero pt-0 pt-sm-2' %}
+
+    {% include footer.html %}
 </body>
 </html>
