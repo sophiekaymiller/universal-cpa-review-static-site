@@ -1,10 +1,59 @@
+{% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+{% include head.html %}
 <body>
+    {% include nav.html %}
 
+    <div class="ucr-thin-banner" id="scores-timer">
+        <h4>Scores Released {{ site.data.scores_release.next_date | timeago }}</h4>
+    </div>
+
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h1>{{ page.section_hero.header }}</h1>
+        <p>{{ page.section_hero.subheader }}</p>
+    </div>
+
+    <div class="ucr-section-body" id="mocks">
+        <div class="ucr-section-body-inner">
+            <img src="/assets/images/placeholders/laptop.png" alt="Beautiful Desktop Experience" id="laptop" />
+            <img src="/assets/images/placeholders/iphone.png" alt="Responsive Mobile Design" id="iphone" />
+        </div>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-md-7">
+        <h2>{{ page.section_products.header }}</h2>
+        <span>{{ page.section_products.subheader }}</span>
+    </div>
+
+    <ul class="row pt-6">
+        {% for product in site.products %}
+        <li class="ucr-product col-sm-6 col-md-3 mb-6 mb-sm-0">
+            <div class="ucr-product-inner">
+                <img src="{{ product.thumbnail }}" class="rounded-circle" alt="{{ product.name }}" />
+                <h3>{{ product.name }} Exam</h3>
+            </div>
+
+            <div class="ucr-product-footer">
+                <a href="{{ product.url }}">Learn More</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div class="ucr-section-footer pt-0 pt-sm-5 pt-md-6">
+        <a href="#" class="btn btn-cta-dark">Get All Exams</a>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-products ucr-section-hero pt-0 pt-sm-2' %}
+
+    {% assign review = featured_reviews[3] %}
+    {% include testimonial_block.html review=review %}
+
+    {% include footer.html %}
 </body>
 </html>

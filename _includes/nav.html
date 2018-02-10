@@ -23,7 +23,7 @@
                     {% for product in site.products %}
                     <a class="dropdown-item" href="{{ product.url }}">{{ product.name }} Exam</a>
                     {% endfor %}
-                    <a class="dropdown-item" href="{% link products.md %}">Bundle</a>
+                    <a class="dropdown-item" href="{% link product_index.md %}">Bundle</a>
                 </div>
             </li>
             <li class="nav-item{% if page.name == 'reviews' %} active{% endif %}">

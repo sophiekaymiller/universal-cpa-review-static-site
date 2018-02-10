@@ -42,11 +42,15 @@ defaults:
     values:
       layout: product
 
+jekyll_timeago:
+  depth: 2
+
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-timeago
 
 exclude:
   - Gemfile
