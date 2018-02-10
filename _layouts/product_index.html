@@ -32,7 +32,7 @@
         {% for product in site.products %}
         <li class="ucr-product col-sm-6 col-md-3 mb-6 mb-sm-0">
             <div class="ucr-product-inner">
-                <img src="{{ product.thumbnail }}" class="rounded-circle" alt="{{ product.name }}" />
+                <img src="{{ product.thumbnail | default:"/assets/images/placeholders/pug1.jpg" }}" class="rounded-circle" alt="{{ product.name }}" />
                 <h3>{{ product.name }} Exam</h3>
             </div>
 
