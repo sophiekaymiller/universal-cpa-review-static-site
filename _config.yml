@@ -45,6 +45,12 @@ defaults:
 jekyll_timeago:
   depth: 2
 
+portal:
+  url: "https://app.universalcpareview.com"
+  paths:
+    login: /accounts/login/
+    cart: /checkout/cart/
+
 # Build settings
 markdown: kramdown
 gems:

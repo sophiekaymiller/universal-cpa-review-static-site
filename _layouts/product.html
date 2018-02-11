@@ -15,11 +15,11 @@
 
     <div class="ucr-button-row py-2 py-sm-5">
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
-            <a href="#" class="btn btn-cta-dark">Try for Free</a>
+            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=1" class="btn btn-cta-dark">Try for Free</a>
         </div>
 
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
-            <a href="#" class="btn btn-cta-light">Buy Now</a>
+            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=0" class="btn btn-cta-light">Buy Now</a>
         </div>
     </div>
 
