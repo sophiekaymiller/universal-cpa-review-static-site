@@ -1,5 +1,13 @@
 // Colors
 
+// -- PURPLE COLORS
+$purple: #391572;
+$teal: #86e4ce;
+$light-teal: #e7faf5;
+$grey: #f6f6f6;
+$dark-grey: #4a4a4a;
+$footer: #54566f;
+
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -13,28 +21,38 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 
-$primary: rgb(165, 165, 165);
-$secondary: #eee;
+$primary: $purple;
+$secondary: $teal;
 $light: $gray-100;
 $dark: $gray-800;
 
 // Grid
 
 $container-max-widths: (
-  'xl': 1400px
+  'xl': 1170px
 );
 
 // Fonts
 
 $font-family-sans-serif: 'Montserrat', sans-serif;
-$font-weight-extra-light: 300;
-$font-weight-light: 400;
-$font-weight-normal: 500;
-$font-weight-bold: 600;
-$font-weight-extra-bold: 700;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-extra-bold: 600;
 $font-size-huge: 5rem;
 
-$headings-color: $gray-700;
+$h1-font-size: 40px;
+$h2-font-size: 28px;
+$h3-font-size: 32px;
+$h4-font-size: 18px;
+
+$h1-font-weight: $font-weight-extra-bold;
+$h2-font-weight: $font-weight-extra-bold;
+$h3-font-weight: $font-weight-light;
+$h4-font-weight: $font-weight-extra-bold;
+
+$headings-color: $primary;
+$headings-color-inverse: $white;
 $body-color: $gray-600;
 $body-color-light: $gray-100;
 
@@ -49,9 +67,9 @@ $btn-padding-x: 120px;
 $btn-padding-sm-x: 60px;
 $btn-padding-y: 10px;
 
-$btn-font-weight: $font-weight-light;
+$btn-font-weight: $font-weight-normal;
 
-$btn-cta-light: $secondary;
+$btn-cta-light: $teal;
 $btn-cta-dark: $primary;
 
 $theme-colors: (
@@ -66,9 +84,9 @@ $card-bg: transparent;
 
 // Nav
 
-$navbar-dark-color: $secondary;
+$navbar-dark-color: $white;
 $navbar-nav-link-padding-x: 30px;
-$navbar-dark-active-color: $gray-800;
+$navbar-dark-active-color: $secondary;
 
 // Spacing
 
@@ -84,11 +102,14 @@ $carousel-control-color: $gray-800;
 
 // Dropdowns
 
-$dropdown-bg: $gray-300;
-$dropdown-item-padding-y: 20px;
+$dropdown-bg: transparent;
+$dropdown-opacity: .85;
+$dropdown-item-padding-y: 12px;
 $dropdown-item-padding-x: 10px;
 $dropdown-border-radius: 0;
+$dropdown-border-width: 0;
 $dropdown-min-width: 100%;
+$dropdown-link-color: $white;
 
 // Forms
 

@@ -1,3 +1,5 @@
+// Buttons
+
 .btn {
   text-transform: uppercase;
 
@@ -7,6 +9,8 @@
   }
 }
 
+// Forms
+
 .form-control {
   border-bottom: solid 1px $input-border-color;
 
@@ -14,4 +18,34 @@
     border-bottom: solid 2px $input-focus-border-color;
     font-weight: $font-weight-bold;
   }
+}
+
+// Font
+
+h1,h2,h3,h4,h5,h6 {
+  letter-spacing: -0.1px;
+
+  &.spaced {
+    letter-spacing: 2.24px;
+  }
+}
+
+h1 {
+  font-weight: $h1-font-weight;
+}
+
+h2 {
+  font-weight: $h2-font-weight;
+}
+
+h3 {
+  font-weight: $h3-font-weight;
+}
+
+h4 {
+  font-weight: $h4-font-weight;
+}
+
+.inverse {
+  color: $headings-color-inverse;
 }

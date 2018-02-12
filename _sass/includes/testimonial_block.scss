@@ -1,47 +1,36 @@
 .ucr-testimonial {
   background: $primary;
-  text-align: center;
-  padding: 120px 0 100px 0;
-
-  @include media-breakpoint-down(md) {
-    padding: 60px 0;
-  }
+  text-align: left;
+  padding: 80px 0 80px 0;
 
   > div {
     position: relative;
 
     .ucr-quotes {
-      position: absolute;
+      position: relative;
       font-size: 70px;
-      color: $white;
+      color: $secondary;
 
       &.ucr-quotes-left {
-        left: 100px;
         top: -40px;
-      }
-
-      &.ucr-quotes-right {
-        right: 100px;
-        top: auto;
-        bottom: -20px;
       }
     }
 
     .inner-content {
-      h3 {
-        color: $white;
-      }
-
       strong {
-        font-weight: $font-weight-extra-bold;
+        font-weight: $font-weight-bold;
         text-transform: uppercase;
-        color: $gray-700;
+        color: $secondary;
       }
+    }
+  }
 
-      span {
-        font-weight: $font-weight-extra-light;
-        text-transform: uppercase;
-        color: $gray-600;
+  @include media-breakpoint-down(md) {
+    padding: 60px 0;
+
+    > div {
+      .ucr-quotes {
+        font-size: 50px;
       }
     }
   }

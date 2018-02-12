@@ -9,14 +9,12 @@
     <!-- Hero -->
     {% capture section_content %}
     <div class="row">
-        <div class="offset-sm-7 col-sm-5 text-right">
-            <h1>
-                {{ page.section_hero.header }}
-            </h1>
+        <div class="offset-sm-6 col-sm-6 text-right">
+            <h1 class="inverse">{{ page.section_hero.header }}</h1>
 
-            <p>{{ page.section_hero.subheader }}</p>
+            <p class="inverse">{{ page.section_hero.subheader }}</p>
 
-            <a class="btn btn-cta-dark">Learn More</a>
+            <a class="btn btn-cta-light">Learn More</a>
         </div>
     </div>
     {% endcapture %}
@@ -34,14 +32,14 @@
         <li class="col">
             <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
 
-            <h4>{{ benefit.name }}</h4>
+            <h4 class="spaced">{{ benefit.name }}</h4>
 
             <p>{{ benefit.description }}</p>
         </li>
         {% endfor %}
     </ul>
 
-    <a href="#" class="btn btn-cta-dark">Learn More</a>
+    <a href="#" class="btn btn-cta-light">Learn More</a>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-benefits' %}
 
@@ -56,11 +54,9 @@
         <p>{{ page.section_products.subheader }}</p>
     </div>
 
-    <a href="#" class="btn btn-cta-dark">Try for Free</a>
-
-    <div class="row pt-5 py-0 py-sm-6">
+    <div class="row pt-3 pt-sm-4 align-items-center">
         <div class="d-none d-sm-block col-sm-7">
-            <img src="/assets/images/placeholders/laptop.png" alt="responsive design" class="rellax" />
+            {% include mocks_block.html %}
         </div>
 
         <div class="col-12 col-sm-5">
@@ -74,6 +70,8 @@
             </ul>
         </div>
     </div>
+
+    <a href="#" class="btn btn-cta-light">Try for Free</a>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-products' %}
 
@@ -95,9 +93,9 @@
             <div class="carousel-item px-1 px-md-6{% if forloop.index0 == 0 %} active{% endif %}">
                 <img class="d-block rounded-circle" src="{{ slide.icon }}" alt="Featured {{ forloop.index0 }}" />
 
-                <h2>{{ slide.headline }}</h2>
+                <h3>{{ slide.headline }}</h3>
 
-                <a href="{{ slide.cta.url }}" class="btn btn-cta-dark">{{ slide.cta.text }}</a>
+                <a href="{{ slide.cta.url }}" class="btn btn-cta-light">{{ slide.cta.text }}</a>
             </div>
             {% endfor %}
         </div>
@@ -111,7 +109,7 @@
         </a>
     </div>
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-featured' %}
+    {% include content_block.html content=section_content section_name='ucr-section-featured pb-6' %}
 
     <!-- Testimonial #3 -->
     {% assign review = featured_reviews[2] %}

@@ -1,6 +1,5 @@
 .ucr-section {
-  min-height: 530px;
-  padding: 120px 0 60px 0;
+  padding: 100px 0 60px 0;
   box-sizing: content-box;
 
   @include media-breakpoint-down(md) {
@@ -8,7 +7,7 @@
   }
 
   p {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 
   .ucr-section-header {
@@ -18,5 +17,6 @@
 
   &.ucr-section-hero {
     background-color: $light;
+    padding-top: 0;
   }
 }
