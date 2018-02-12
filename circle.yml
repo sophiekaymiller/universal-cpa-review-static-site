@@ -34,10 +34,10 @@ deployment:
     branch: /feature.*/
     commands:
       - mv _site _ansible/
-      - ansible-playbook _ansible/site.yml -i _ansible/staging -e "build=staging-build"
+      - ansible-playbook _ansible/site.yml -i _ansible/staging -e "build=staging-build server_name=staging.universalcpareview.com"
 
   production:
     tag: /.*?/
     commands:
       - mv _site _ansible/
-      - ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$CIRCLE_TAG"
+      - ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$CIRCLE_TAG server_name=www.universalcpareview.com"

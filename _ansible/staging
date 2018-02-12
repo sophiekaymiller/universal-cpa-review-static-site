@@ -1,5 +1,2 @@
 [webservers]
 ubuntu@staging.static-web1.universalcpareview.com
-
-[webservers:vars]
-server_name=staging.universalcpareview.com
