@@ -4,7 +4,7 @@
   file: path=/var/www/html/builds state=directory mode=0755
 
 - name: Copy _site to remote tmp directory
-  copy: src=_site dest=/tmp/build
+  synchronize: src=_site dest=/tmp/build
 
 - name: Copy remote build to builds directory
   command: rsync -rv --exclude=.git /tmp/build/_site/ /var/www/html/builds/{{ build }}
