@@ -1,2 +1,5 @@
 [webservers]
 ubuntu@static-web1.universalcpareview.com
+
+[webservers:vars]
+server_name=www.universalcpareview.com
