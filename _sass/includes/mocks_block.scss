@@ -1,33 +1,3 @@
 .ucr-mocks {
-  position: relative;
 
-  img {
-    &#iphone {
-      position: absolute;
-      right: -60px;
-      bottom: -60px;
-      width: 50%;
-    }
-
-    &#laptop {
-      position: relative;
-      left: -50px;
-      width: 100%;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    img#iphone {
-      height: 200px;
-      right: -50px;
-    }
-  }
-
-  @include media-breakpoint-down(sm) {
-    img#iphone {
-      height: 180px;
-      right: 0px;
-      top: 50px;
-    }
-  }
 }

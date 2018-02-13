@@ -1,9 +1,9 @@
 - name: Facebook
   url: https://www.facebook.com/
-  icon: /assets/images/icons/facebook.png
+  icon: /assets/images/icons/facebook.svg
 - name: LinkedIn
   url: https://www.linkedin.com/
-  icon: /assets/images/icons/linkedin.png
+  icon: /assets/images/icons/linkedin.svg
 - name: Twitter
   url: https://www.twitter.com/
-  icon: /assets/images/icons/twitter.png
+  icon: /assets/images/icons/twitter.svg

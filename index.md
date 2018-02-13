@@ -11,17 +11,17 @@ section_products:
     subheader: aenean bibendum enim nec lorem venenatis hendredrit. Suspendisse sit amet eleifend mi, eu luctus neque. Nunc gravida mattis metus. aenean bibendum enim nec lorem venenatis hendredrit. Suspendisse sit amet eleifend mi, eu luctus neque. Nunc gravida mattis metus.
 section_featured:
     slides:
-        - icon: /assets/images/placeholders/pug1.jpg
+        - icon: /assets/images/icons/featured-1.svg
           headline: Lorem ipsum dolor sit amet, consec ipsum, tetu adipiscing, elit, praesent, mi nunc
           cta:
             text: Learn More
             url: /about
-        - icon: /assets/images/placeholders/pug2.png
+        - icon: /assets/images/icons/benefit-1.svg
           headline: Lorem ipsum dolor sit amet, consec ipsum, tetu adipiscing, elit, praesent, mi nunc
           cta:
             text: Try For Free
             url: /products/bundle  
-        - icon: /assets/images/placeholders/pug3.jpg
+        - icon: /assets/images/icons/benefit-3.svg
           headline: Lorem ipsum dolor sit amet, consec ipsum, tetu adipiscing, elit, praesent, mi nunc
           cta:
             text: Learn More

@@ -4,16 +4,9 @@
   padding: 80px 0 80px 0;
 
   > div {
-    position: relative;
-
     .ucr-quotes {
-      position: relative;
-      font-size: 70px;
+      width: 70px;
       color: $secondary;
-
-      &.ucr-quotes-left {
-        top: -40px;
-      }
     }
 
     .inner-content {
@@ -30,7 +23,17 @@
 
     > div {
       .ucr-quotes {
-        font-size: 50px;
+        width: 50px;
+      }
+    }
+
+    .inner-content {
+      h3 {
+        font-size: ($h3-font-size * .7);
+      }
+
+      strong {
+        font-size: 14px;
       }
     }
   }

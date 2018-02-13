@@ -2,7 +2,9 @@
 <section class="ucr-testimonial">
     <div class="container">
         <div class="row justify-content-center">
-            <span class="oi oi-double-quote-serif-left d-none d-md-block ucr-quotes ucr-quotes-left col-1" title="quotes left" aria-hidden="true"></span>
+            <div class="col-1 d-none d-md-block">
+                <img src="/assets/images/icons/quote.svg" class="ucr-quotes ucr-quotes-left" alt="quotes" />
+            </div>
 
             <div class="col-md-9 inner-content">
                 <h3 class="inverse text-center text-md-left">{{ review.content | remove: '<p>' }}</h3>

@@ -87,6 +87,7 @@ $card-bg: transparent;
 $navbar-dark-color: $white;
 $navbar-nav-link-padding-x: 30px;
 $navbar-dark-active-color: $secondary;
+$navbar-dark-toggler-border-color: transparent;
 
 // Spacing
 
@@ -99,6 +100,9 @@ $spacers: (
 // Carousel
 
 $carousel-control-color: $gray-800;
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
+$carousel-indicator-spacer: 6px;
 
 // Dropdowns
 

@@ -14,7 +14,7 @@
 
             <p class="inverse">{{ page.section_hero.subheader }}</p>
 
-            <a class="btn btn-cta-light">Learn More</a>
+            <a href="{% link about.md %}" class="btn btn-cta-light">Learn More</a>
         </div>
     </div>
     {% endcapture %}
@@ -27,9 +27,9 @@
         <p>{{ page.section_benefits.subheader }}</p>
     </div>
 
-    <ul class="row">
+    <ul class="row py-0 py-md-4 align-items-baseline">
         {% for benefit in site.data.benefits %}
-        <li class="col">
+        <li class="col-12 col-md-4 py-4 py-md-0">
             <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
 
             <h4 class="spaced">{{ benefit.name }}</h4>

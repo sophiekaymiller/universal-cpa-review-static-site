@@ -3,6 +3,10 @@
 .btn {
   text-transform: uppercase;
 
+  &.btn-cta-light {
+    color: $primary;
+  }
+
   @include media-breakpoint-down(sm) {
     padding-left: $btn-padding-sm-x;
     padding-right: $btn-padding-sm-x;
