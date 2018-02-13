@@ -1,0 +1,11 @@
+<ul class="row py-0 py-md-4 align-items-baseline ucr-benefits">
+    {% for benefit in site.data.benefits %}
+    <li class="col-12 col-md-4 py-4 py-md-0">
+        <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
+
+        <h4 class="spaced">{{ benefit.name }}</h4>
+
+        <p>{{ benefit.description }}</p>
+    </li>
+    {% endfor %}
+</ul>

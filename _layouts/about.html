@@ -6,22 +6,13 @@
     {% include nav.html %}
 
     {% capture section_content %}
-    <div class="ucr-section-header px-3 px-md-7">
+    <div class="ucr-section-header px-3 px-lg-7">
         <h1>{{ page.section_hero.header }}</h1>
         <p>{{ page.section_hero.subheader }}</p>
     </div>
 
-    <ul class="row">
-        {% for benefit in site.data.benefits %}
-        <li class="col-12 col-md">
-            <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
+    {% include benefits_block.html %}
 
-            <h4>{{ benefit.name }}</h4>
-
-            <p>{{ benefit.description }}</p>
-        </li>
-        {% endfor %}
-    </ul>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
@@ -29,9 +20,9 @@
     <h2>{{ page.section_about.header }}</h2>
     <p>{{ page.section_about.subheader }}</p>
 
-    <div class="row pt-3 pt-sm-5">
-        <div class="col-5 d-none d-md-block">
-            <img class="rounded-circle" src="/assets/images/placeholders/person.jpg" alt="Universal CPA &amp; Me" />
+    <div class="row pt-3 pt-sm-5 align-items-center">
+        <div class="col-5 d-none d-md-block px-4">
+            <img class="rounded-circle" src="/assets/images/banners/about-feature.jpg" alt="Universal CPA &amp; Me" />
         </div>
 
         <div class="col-12 col-md-7 ucr-section-about-content">
@@ -39,7 +30,7 @@
         </div>
     </div>
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-about' %}
+    {% include content_block.html content=section_content section_name='ucr-section-about text-left text-md-center' %}
 
     {% assign review=featured_reviews[1] %}
     {% include testimonial_block.html review=review %}
@@ -51,7 +42,7 @@
     <ul class="row justify-content-center pt-3 pt-sm-4 pt-md-5">
         {% assign team = site.team | sort:"index" %}
         {% for member in team %}
-        <li class="col-sm-6 col-md-3 pt-5 pt-sm-0">
+        <li class="col-12 col-sm-6 col-md-4 pt-5 pt-sm-0">
             <img class="rounded-circle" src="{{ member.picture }}" alt="{{ member.first_name }}" />
             <h4>{{ member.first_name }} {{ member.last_name }}</h4>
             <span>{{ member.position }}</span>

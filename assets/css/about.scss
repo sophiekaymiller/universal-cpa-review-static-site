@@ -5,27 +5,6 @@
 .ucr-section {
   text-align: center;
 
-  /**-- Hero Section --**/
-  &.ucr-section-hero {
-    ul {
-      list-style-type: none;
-      padding: 30px 0 10px 0;
-
-      li {
-        padding: 0 90px;
-      }
-
-      img {
-        width: 100px;
-      }
-
-      h4 {
-        padding-top: 40px;
-        font-weight: $font-weight-bold;
-      }
-    }
-  }
-
   /**-- About Section --**/
   &.ucr-section-about {
     img {
@@ -34,10 +13,6 @@
 
     .ucr-section-about-content {
       text-align: left;
-
-      h4 {
-        font-weight: $font-weight-bold;
-      }
 
       p {
         padding: 15px 0 30px 0;

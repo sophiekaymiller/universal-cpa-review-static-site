@@ -2,6 +2,6 @@
 first_name: Andrew
 last_name: N
 position: Digital Advertising
-picture: /assets/images/placeholders/person_small.png
+picture: /assets/images/placeholders/person-realistic.jpg
 index: 2
 ---

@@ -2,10 +2,6 @@
   padding: 100px 0 60px 0;
   box-sizing: content-box;
 
-  @include media-breakpoint-down(md) {
-    padding: 60px 0 40px 0;
-  }
-
   p {
     padding: 10px 0;
   }
@@ -17,6 +13,14 @@
 
   &.ucr-section-hero {
     background-color: $light;
-    padding-top: 0;
+    padding-top: 200px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 60px 0 40px 0;
+
+    &.ucr-section-hero {
+      padding-top: 120px;
+    }
   }
 }

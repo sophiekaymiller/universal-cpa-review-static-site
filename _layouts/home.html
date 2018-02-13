@@ -27,21 +27,11 @@
         <p>{{ page.section_benefits.subheader }}</p>
     </div>
 
-    <ul class="row py-0 py-md-4 align-items-baseline">
-        {% for benefit in site.data.benefits %}
-        <li class="col-12 col-md-4 py-4 py-md-0">
-            <img class="rounded-circle" src="{{ benefit.image }}" alt="{{ benefit.name }}" />
-
-            <h4 class="spaced">{{ benefit.name }}</h4>
-
-            <p>{{ benefit.description }}</p>
-        </li>
-        {% endfor %}
-    </ul>
+    {% include benefits_block.html %}
 
     <a href="#" class="btn btn-cta-light">Learn More</a>
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-benefits' %}
+    {% include content_block.html content=section_content section_name='ucr-section-benefits text-center' %}
 
     <!-- Testimonial #1 -->
     {% assign review = featured_reviews[0] %}
