@@ -9,9 +9,9 @@
     min-height: 750px;
     background-image: url('/assets/images/banners/home-hero-banner.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position-x: left;
-    background-position-y: bottom;
+    background-position-y: center;
     padding-top: 0;
 
     .text-right {
@@ -20,7 +20,6 @@
 
     @include media-breakpoint-down(lg) {
       min-height: 500px;
-      background-size: cover;
       background-position-x: 0;
 
       .text-right {
