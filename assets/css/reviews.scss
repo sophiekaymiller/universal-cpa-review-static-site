@@ -2,6 +2,7 @@
 ---
 @import 'site';
 
+
 .ucr-section-hero {
   .ucr-review {
     margin: 40px 0;
@@ -10,23 +11,25 @@
     // Specific to the pic rows
 
     &.ucr-review-picrow {
-      .ucr-review-inner {
-        background: $white;
-        padding: 60px 80px 60px 90px;
-      }
+      box-shadow: 1px 1px 6px 0 #00000026;
+      background: $white;
+      padding: 30px 40px 40px 20px;
 
-      @include media-breakpoint-down(md) {
-        .ucr-review-inner {
-          padding: 0;
+      @include media-breakpoint-between(sm, md) {
+        padding: 0;
 
-          .ucr-review-content {
-            padding: 20px;
+        .ucr-review-content {
+          padding: 30px 10px 20px 55px;
 
-            p {
-              padding: 10px;
-            }
+          p {
+            padding: 10px;
+            margin-bottom: 0;
           }
         }
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 30px 10px 40px 10px;
       }
     }
 
@@ -34,61 +37,84 @@
 
     &:not(.ucr-review-picrow) {
       .ucr-review-inner {
-        background: transparent;
-        padding: 0;
+        background: $white;
+        box-shadow: 1px 1px 6px 0 #00000026;
+        padding: 60px 40px 60px 30px;
+      }
 
-        > .row {
-          background: $white;
-          padding: 60px 40px 60px 30px;
-          width: 97%;
-          height: 100%;
-          margin: 0;
+      @include media-breakpoint-up(sm) {
+        .ucr-review-inner {
+          flex: 0 0 49%;
         }
+      }
 
-        &:nth-child(2) {
-          > .row {
-            float: right;
+      @include media-breakpoint-between(sm, md) {
+        .ucr-review-inner {
+          padding: 20px 10px 30px 10px;
+
+          .ucr-review-content {
+            padding: 40px 0 0 50px;
+            background-size: 50px;
           }
         }
       }
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         .ucr-review-inner {
-          padding: 0;
-          margin: 20px 0;
+          padding: 40px 20px 40px 20px;
 
-          > .row {
-            width: 100%;
-            padding: 20px;
-            height: auto;
-            float: none;
+          &:first-child {
+            margin-bottom: 40px;
           }
         }
       }
     }
 
-    .ucr-review-inner {
-      .ucr-review-quote {
-        text-align: right;
-        font-size: $font-size-huge;
-        position: relative;
-        top: -35px;
-      }
+    .ucr-review-content {
+      background: url('/assets/images/icons/quote-light.svg') no-repeat;
+      background-position-x: 0;
+      background-size: 65px;
+      padding: 0 25px 0 75px;
+    }
 
-      .ucr-review-picture {
-        overflow: hidden;
-        max-height: 270px;
+    .ucr-review-picture {
+      overflow: hidden;
+      max-height: 270px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .ucr-review-content {
+        background-size: 50px;
+        background-position-y: 20px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .ucr-review-content {
+        background: none;
+        padding: 5px;
 
         img {
-          width: 100%;
+          margin-right: 10px;
+          width: 50px;
+        }
+
+        h3 {
+          display: inline;
+          font-size: 25px;
         }
       }
+    }
 
-      @include media-breakpoint-down(lg) {
-        .ucr-review-quote {
-          font-size: ($font-size-huge - 3);
-          top: -15px;
-        }
+    .ucr-review-footer {
+      text-align: right;
+
+      strong {
+        display: block;
       }
     }
   }

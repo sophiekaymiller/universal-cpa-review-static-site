@@ -5,16 +5,20 @@
     {% include nav.html %}
 
     {% capture section_content %}
-    <div class="ucr-section-header px-3 px-md-7">
+    <div class="ucr-section-header px-3 px-md-5">
         <h1>{{ page.section_hero.header }}</h1>
         <p>{{ page.section_hero.subheader }}</p>
     </div>
 
+    {% assign reviews = site.reviews | sort:"created_date" | reverse %}
     {% for review in site.reviews %}
         {% capture rowtype %}{% cycle 'pic', 'pic', 'nopic', 'nopic' %}{% endcapture %}
         {% capture review_content %}
         <div class="ucr-review-content">
+            <img class="d-inline d-sm-none align-text-bottom" src="/assets/images/icons/quote-light.svg" />
+
             <h3>{{ review.key_quote }}...</h3>
+
             {{ review.content }}
 
             <div class="ucr-review-footer">
@@ -23,48 +27,25 @@
             </div>
         </div>
         {% endcapture %}
-        {% capture review_quote %}
-        <div class="ucr-review-quote">
-            <span class="oi oi-double-quote-serif-left d-none d-md-block" title="quotes left" aria-hidden="true"></span>
-        </div>
-        {% endcapture %}
         {% assign mod = forloop.index0 | modulo:2  %}
         {% assign default_pic = "/assets/images/placeholders/pug_wide_default.jpeg" %}
 
         {% if rowtype == 'pic' %}
-        <div class="row ucr-review ucr-review-picrow">
-            {% capture review_picture %}
+        <div class="row ucr-review ucr-review-picrow align-items-center">
             <div class="col-sm-5 ucr-review-picture order-0 order-sm-{% if mod == 1 %}0{% else %}1{% endif %}">
                 <img src="{{ review.picture | default:default_pic }}" alt="{{ review.name }}" />
             </div>
-            {% endcapture %}
-            {% capture review_content %}
-            <div class="col-sm-6 order-1 order-sm-{% if mod == 1 %}1}{% else %}0{% endif %}">{{ review_content }}</div>
-            {% endcapture %}
-            {% capture review_quote %}
-            <div class="col-1 d-none d-md-block">{{ review_quote }}</div>
-            {% endcapture %}
-
-            <div class="col-12 ucr-review-inner">
-                <div class="row">
-                    {{ review_picture }}
-                    {{ review_quote }}
-                    {{ review_content }}
-                </div>
-            </div>
+            <div class="col-sm-7 order-1 order-sm-{% if mod == 1 %}1}{% else %}0{% endif %}">{{ review_content }}</div>
         </div>
         {% else %}
             {% capture review_content %}
             <div class="col-sm-6 ucr-review-inner">
-                <div class="row">
-                    <div class="col-2">{{ review_quote }}</div>
-                    <div class="col-md-10">{{ review_content }}</div>
-                </div>
+                {{ review_content }}
             </div>
             {% endcapture %}
 
             {% if mod == 0 %}
-            <div class="row ucr-review">
+            <div class="row ucr-review justify-content-between">
             {{ review_content }}
             {% else %}
             {{ review_content }}
