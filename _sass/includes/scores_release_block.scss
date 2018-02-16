@@ -1,16 +1,18 @@
 #scores-timer {
-  margin-top: 95px;
+  margin-top: 90px;
   padding: 20px 0;
-  background: $secondary;
+  background: $scores;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 
   h4 {
-    color: $gray-600;
+    color: $gray-100;
     text-transform: uppercase;
     text-align: center;
     font-size: $font-size-sm;
   }
 
   @include media-breakpoint-down(md) {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
