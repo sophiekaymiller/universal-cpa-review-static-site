@@ -25,6 +25,9 @@
         </div>
     </div>
 </footer>
+{% if include.js %}
+    <script type="text/javascript" src="{{ include.js }}"></script>
+{% endif %}
 {% if page.js %}
     {% for js in page.js %}
     <script type="text/javascript" src="{{ js }}"></script>

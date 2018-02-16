@@ -10,9 +10,20 @@
     text-transform: uppercase;
     text-align: center;
     font-size: $font-size-sm;
+
+    &.ucr-release-date {
+      font-size: ($font-size-sm * .9);
+      font-weight: $font-weight-light;
+    }
   }
 
   @include media-breakpoint-down(md) {
     margin-top: 60px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    h4.ucr-release-date {
+      font-size: ($font-size-sm * .5);
+    }
   }
 }
