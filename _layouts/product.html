@@ -7,61 +7,91 @@
 
     {% include scores_release_block.html %}
 
+    <!-- Header Section -->
     {% capture section_content %}
-    <div class="ucr-section-header px-3 px-md-7">
-        <h1>{{ page.name }}</h1>
-        <p>{{ page.short_description }}</p>
+    <div class="ucr-section-header px-3 px-md-5">
+        <h1 class="inverse">{{ page.name }}</h1>
+        <p class="inverse">{{ page.short_description }}</p>
     </div>
 
     <div class="ucr-button-row py-2 py-sm-5">
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
-            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=1" class="btn btn-cta-dark">Try for Free</a>
+            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=1" class="btn btn-cta-light">Try for Free</a>
         </div>
 
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
-            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=0" class="btn btn-cta-light">Buy Now</a>
+            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=0" class="btn btn-cta-dark">Buy Now</a>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6" id="mocks">
-            <img src="/assets/images/placeholders/laptop.png" alt="Beautiful Desktop Experience" id="laptop" />
-            <img src="/assets/images/placeholders/iphone.png" alt="Responsive Mobile Design" id="iphone" />
-        </div>
-
-        <div class="col-sm-6 ucr-section-content pl-2 pt-3 pl-sm-3 pt-sm-0">
-            {{ page.content | markdownify }}
-        </div>
+    <div class="ucr-section-body text-center">
+    {% include mocks_block.html %}
     </div>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    <!-- Features Section -->
+    {% capture section_content %}
+    <div class="ucr-product-features">
+        <h3 class="text-center mb-3 mb-sm-5">Universal {{ page.name }} Exam Supplementary Material</h3>
+
+        <div class="row">
+            {% assign all_features = "" | split: "" %}
+            {% for feature in page.features %}
+            {% assign all_features = all_features | push:feature %}
+            {% endfor %}
+            {% for feature in site.data.shared_features %}
+            {% assign all_features = all_features | push:feature %}
+            {% endfor %}
+            <div class="col-sm-6">
+                <ul>
+                    {% for feature in all_features %}
+                    {% assign mod = forloop.index0 | modulo:2 %}
+                    {% if mod == 0  %}
+                    <li>{{ feature }}</li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <ul>
+                    {% for feature in all_features %}
+                    {% assign mod = forloop.index0 | modulo:2 %}
+                    {% if mod == 1  %}
+                    <li>{{ feature }}</li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-3 mt-sm-5">
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}&trial=1" class="btn btn-cta-light">Get Started Today</a>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-features' %}
 
     {% assign review = featured_reviews[3] %}
     {% include testimonial_block.html review=review %}
 
     {% capture section_content %}
-    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-7">
-        <h2>Check out our other exams</h2>
-        <span>this is some placeholder text</span>
+    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
+        <h2>Check out our other supplementary materials</h2>
+        <span>All products come with a free trial</span>
     </div>
 
-    <ul class="row pt-6">
-        {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
-        {% for product in other_products %}
-        <li class="ucr-product col-12 col-md-4 mb-6 mb-sm-0">
-            <div class="ucr-product-inner">
-                <img src="{{ product.thumbnail | default:"/assets/images/placeholders/pug1.jpg" }}" class="rounded-circle" alt="{{ product.name }}" />
-                <h3>{{ product.name }} Exam</h3>
-            </div>
+    {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
+    <div class="pt-6">
+    {% include products_block.html products=other_products %}
+    </div>
 
-            <div class="ucr-product-footer">
-                <a href="{{ product.url }}">Learn More</a>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product=all&trial=0" class="btn btn-cta-light">Get All Exams</a>
+    </div>
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-products ucr-section-hero pt-0 pt-sm-2' %}
+    {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
 
     {% include footer.html %}
 </body>

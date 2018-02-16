@@ -1,0 +1,16 @@
+<ul class="row ucr-products">
+    {% for product in include.products %}
+    <li class="ucr-product col-md mb-6 mb-md-0">
+        <div class="ucr-product-inner">
+            <div class="ucr-product-header">
+                <img src="{{ product.thumbnail | default:"/assets/images/placeholders/pug1.jpg" }}" class="rounded-circle" alt="{{ product.name }}" />
+                <h4 class="spaced">{{ product.name }} Exam</h4>
+            </div>
+
+            <div class="ucr-product-footer">
+                <a href="{{ product.url }}">Learn More</a>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

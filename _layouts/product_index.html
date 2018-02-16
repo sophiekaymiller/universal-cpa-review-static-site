@@ -25,22 +25,10 @@
         <span>{{ page.section_products.subheader }}</span>
     </div>
 
-    <ul class="row pt-6">
-        {% for product in site.products %}
-        <li class="ucr-product col-sm-6 col-md-3 mb-6 mb-sm-0">
-            <div class="ucr-product-inner">
-                <div class="ucr-product-header">
-                    <img src="{{ product.thumbnail | default:"/assets/images/placeholders/pug1.jpg" }}" class="rounded-circle" alt="{{ product.name }}" />
-                    <h4 class="spaced">{{ product.name }} Exam</h4>
-                </div>
-
-                <div class="ucr-product-footer">
-                    <a href="{{ product.url }}">Learn More</a>
-                </div>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="pt-6">
+    {% assign products = site.products  %}
+    {% include products_block.html products=products %}
+    </div>
 
     <div class="ucr-section-footer pt-0 pt-sm-5">
         <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product=all&trial=0" class="btn btn-cta-light">Get All Exams</a>
