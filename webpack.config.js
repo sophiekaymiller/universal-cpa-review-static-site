@@ -23,6 +23,7 @@ module.exports = {
         core: path.resolve(__dirname, "assets/js/core.js"),
         home: path.resolve(__dirname, "assets/js/home.js"),
         product_index: path.resolve(__dirname, "assets/js/product_index.js"),
+        product: path.resolve(__dirname, "assets/js/product.js"),
         careers: path.resolve(__dirname, "assets/js/careers.js"),
         contact: path.resolve(__dirname, "assets/js/contact.js")
     },
