@@ -11,12 +11,15 @@
     padding: 15px;
 
     .card-body {
+      box-shadow: 1px 1px 6px 0 #00000026;
       background-color: $white;
       padding: 40px 30px;
     }
 
     .card-title {
       font-weight: $font-weight-extra-bold;
+      line-height: 1.6em;
+      min-height: 60px;
     }
   }
 }

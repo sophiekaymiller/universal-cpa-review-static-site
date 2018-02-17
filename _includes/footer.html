@@ -1,9 +1,9 @@
 <footer class="ucr-footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-9">
                 <ul class="text-center text-md-left">
-                    <li><a href="{% link about.md %}">About Us</a></li>
+                    <li><a href="{% link about.md %}">About Universal CPA Review</a></li>
                     <li><a href="{% link careers.md %}">Careers</a></li>
                     <li><a href="{% link contact.md %}">Contact</a></li>
                     <li><a href="{% link terms.md %}">Terms of Use</a></li>
@@ -11,7 +11,7 @@
                 </ul>
             </div>
 
-            <div class="col-12 col-md-4 ucr-social py-3 py-md-0">
+            <div class="col-12 col-md-3 ucr-social py-3 py-md-0">
                 <ul class="text-center text-md-right">
                     {% for s in site.data.social %}
                         <li>
@@ -25,6 +25,9 @@
         </div>
     </div>
 </footer>
+{% if include.js %}
+    <script type="text/javascript" src="{{ include.js }}"></script>
+{% endif %}
 {% if page.js %}
     {% for js in page.js %}
     <script type="text/javascript" src="{{ js }}"></script>

@@ -17,6 +17,7 @@
 
     .card-title {
       font-weight: $font-weight-extra-bold;
+      min-height: 50px;
     }
 
     .card-footer {
@@ -40,6 +41,13 @@
             margin-top: 30px;
           }
         }
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      .ucr-job-form form input[type="submit"] {
+        padding-left: $btn-padding-sm-x;
+        padding-right: $btn-padding-sm-x;
       }
     }
   }

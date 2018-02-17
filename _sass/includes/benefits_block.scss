@@ -1,0 +1,31 @@
+.ucr-benefits {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    padding: 0 60px;
+  }
+
+  img {
+    width: 100px;
+    height: 85.7px; // we need to set this explicitly because one of the icons is slightly larger than the other 2.
+  }
+
+  h4 {
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-down(lg) {
+    li {
+      padding: 0 30px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    li {
+      padding: 0 20px;
+    }
+  }
+}

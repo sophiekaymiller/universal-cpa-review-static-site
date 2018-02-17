@@ -6,34 +6,29 @@
 .ucr-section {
   /**-- Hero Section --**/
   &.ucr-section-hero {
-    padding-top: 160px;
-    background-image: url('/assets/images/placeholders/person.jpg');
+    min-height: 750px;
+    background-image: url('/assets/images/banners/home-hero-banner.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position-x: left;
-    background-position-y: bottom;
-  }
+    background-position-y: center;
+    padding-top: 0;
 
-  /**-- Benefits Section --**/
-  &.ucr-section-benefits {
-    text-align: center;
+    .text-right {
+      padding-top: 290px;
+    }
 
-    ul {
-      list-style-type: none;
-      padding: 30px 0 10px 0;
+    @include media-breakpoint-down(lg) {
+      min-height: 500px;
+      background-position-x: 0;
 
-      li {
-        padding: 0 90px;
+      .text-right {
+        padding-top: 130px;
       }
+    }
 
-      img {
-        width: 100px;
-      }
-
-      h4 {
-        padding-top: 40px;
-        font-weight: $font-weight-extra-bold;
-      }
+    @include media-breakpoint-down(md) {
+      background-position-x: -200px;
     }
   }
 
@@ -59,10 +54,6 @@
     img {
       width: 100%;
     }
-
-    h4 {
-      font-weight: $font-weight-extra-bold;
-    }
   }
 
   /**-- Featured Section --**/
@@ -81,13 +72,36 @@
       }
     }
 
-    h2 {
+    .carousel-control-prev, .carousel-control-next {
+      top: 50%;
+    }
+
+    .carousel-control-prev {
+      left: -100px;
+    }
+
+    .carousel-control-next {
+      right: -100px;
+    }
+
+    h3 {
       padding: 40px 0;
+      color: $gray-700;
     }
 
     img {
       width: 100px;
       margin: auto;
+    }
+
+    @include media-breakpoint-down(lg) {
+      .carousel-control-prev {
+        left: 0;
+      }
+
+      .carousel-control-next {
+        right: 0;
+      }
     }
   }
 }

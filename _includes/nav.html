@@ -20,10 +20,10 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
 
                 <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% link product_index.md %}">All</a>
                     {% for product in site.products %}
                     <a class="dropdown-item" href="{{ product.url }}">{{ product.name }} Exam</a>
                     {% endfor %}
-                    <a class="dropdown-item" href="{% link product_index.md %}">Bundle</a>
                 </div>
             </li>
             <li class="nav-item{% if page.name == 'reviews' %} active{% endif %}">
@@ -37,7 +37,7 @@
                     <a class="dropdown-item" href="https://blog.universalcpareview.com" target="_blank">News</a>
                 </div>
             </li>
-            <li class="nav-item text-center text-md-right ml-0 ml-md-5">
+            <li class="nav-item text-center text-lg-right ml-0 ml-lg-5">
                 <a href="https://app.universalcpareview.com/accounts/login/?next=https://www.universalcpareview.com{{ page.url }}" class="btn btn-cta-light">Login/Sign Up</a>
             </li>
         </ul>

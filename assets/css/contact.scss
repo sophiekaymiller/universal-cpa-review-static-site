@@ -2,20 +2,17 @@
 ---
 @import 'site';
 
+
 .ucr-section-hero {
-  ul {
+  ul:not(.ucr-social) {
     padding-left: 0;
     list-style-type: none;
 
     li {
       padding: 0 20px 80px 0;
 
-      strong {
+      h4 {
         text-transform: uppercase;
-        font-weight: $font-weight-bold;
-        color: $gray-600;
-        display: block;
-        padding: 0 0 15px 0;
       }
 
       a {
@@ -24,21 +21,31 @@
         font-size: $font-size-lg;
       }
     }
-  }
 
-  @include media-breakpoint-down(lg) {
-    ul li a {
-      font-size: $font-size-base;
+    @include media-breakpoint-down(lg) {
+      li a {
+        font-size: $font-size-base;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      li {
+        padding: 0 0 30px 0;
+      }
     }
   }
-  @include media-breakpoint-down(md) {
-    ul li {
-      padding: 0 0 30px 0;
+
+  ul.ucr-social {
+    padding-left: 0;
+    list-style-type: none;
+
+    li:first-child {
+      padding-left: 0 !important;
     }
   }
 
   form {
     background: $white;
-    padding: 60px 25px 25px 25px
+    padding: 60px 25px 25px 25px;
   }
 }

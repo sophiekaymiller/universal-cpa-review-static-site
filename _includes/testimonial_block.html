@@ -1,15 +1,18 @@
 {% assign review = include.review %}
 <section class="ucr-testimonial">
     <div class="container">
-        <span class="oi oi-double-quote-serif-left d-none d-md-block ucr-quotes ucr-quotes-left" title="quotes left" aria-hidden="true"></span>
+        <div class="row justify-content-center">
+            <div class="col-1 d-none d-md-block">
+                <img src="/assets/images/icons/quote.svg" class="ucr-quotes ucr-quotes-left" alt="quotes" />
+            </div>
 
-        <div class="offset-md-3 col-md-6 inner-content">
-            <h3>{{ review.content | remove: '<p>' }}</h3>
+            <div class="col-md-9 inner-content">
+                <h3 class="inverse text-center text-md-left">{{ review.content | remove: '<p>' }}</h3>
 
-            <strong>- {{ review.name }}, {{ review.occupation }}</strong>
-            <span class="d-block">Completed exam in {{ review.completion_year }}</span>
+                <div class="ucr-testimonial-author text-center text-md-right">
+                    <strong>- {{ review.name }}, {{ review.occupation }}, Completed exam in {{ review.completion_year }}</strong>
+                </div>
+            </div>
         </div>
-
-        <span class="oi oi-double-quote-serif-right d-none d-md-block ucr-quotes ucr-quotes-right" title="quotes right" aria-hidden="true"></span>
     </div>
 </section>

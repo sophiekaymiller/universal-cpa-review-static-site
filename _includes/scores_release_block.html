@@ -1,3 +1,9 @@
+<script type="text/javascript">
+    window.UCR = window.UCR || {};
+    window.UCR.SCORES_RELEASE_DATE = "{{ site.data.scores_release.next_date }}";
+</script>
+
 <div class="ucr-thin-banner" id="scores-timer">
-    <h4>Scores Released {{ site.data.scores_release.next_date | timeago }}</h4>
+    <h4 class="spaced ucr-release-date-header">Scores Released In</h4>
+    <h4 class="spaced ucr-release-date"></h4>
 </div>

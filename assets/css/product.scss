@@ -2,39 +2,47 @@
 ---
 @import 'site';
 
-.ucr-section-hero {
-  .ucr-section-header p {
+
+.ucr-section {
+  &.ucr-section-hero {
+    padding-top: 100px;
     padding-bottom: 0;
-  }
-}
-#mocks {
-  position: relative;
+    background-image: linear-gradient(to bottom, $gradient-primary, $white);
 
-  img {
-    &#iphone {
-      position: absolute;
-      right: -100px;
-      bottom: -50px;
-      height: 300px;
+    .ucr-section-header p {
+      padding-bottom: 0;
+      font-weight: $font-weight-light;
     }
 
-    &#laptop {
-      width: 100%;
+    .ucr-section-body {
+      padding-bottom: 0;
+
+      img {
+        height: 400px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 60px;
+
+      .ucr-section-body img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
-  @include media-breakpoint-down(md) {
-    img#iphone {
-      height: 200px;
-      right: -50px;
-    }
-  }
+  &.ucr-section-features {
+    padding-top: 15px;
 
-  @include media-breakpoint-down(sm) {
-    img#iphone {
-      height: 180px;
-      right: 0px;
-      top: 50px;
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+
+      li {
+        padding: 15px 20px 15px 45px;
+        background: url('/assets/images/icons/feature-check.svg') no-repeat center left;
+      }
     }
   }
 }
@@ -48,58 +56,7 @@
     width: 300px;
   }
 
-  a.btn-cta-light {
-    background: transparent;
-    color: $gray-700;
-    border-color: $gray-700;
-  }
-}
-
-.ucr-section-content {
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-
-    li:before {
-      content: '✓';
-      padding-right: 10px;
-    }
-  }
-}
-
-.ucr-section-products {
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-
-    li {
-      .ucr-product-inner {
-        background: $white;
-        text-align: center;
-
-        img {
-          width: 140px;
-          height: 140px;
-          background: $primary;
-          margin: auto;
-          position: relative;
-          top: -35px;
-          display: inline-block;
-        }
-
-        h3 {
-          padding: 0 0 20px 0;
-          margin-bottom: 0;
-        }
-      }
-      .ucr-product-footer {
-        a {
-          background: $primary;
-          display: block;
-          padding: 10px 0;
-          text-align: center;
-        }
-      }
-    }
+  .btn.btn-cta-dark {
+    color: $secondary;
   }
 }

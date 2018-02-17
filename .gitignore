@@ -9,3 +9,6 @@ node_modules/
 
 # compiled
 dist/
+
+# system
+.DS_Store
