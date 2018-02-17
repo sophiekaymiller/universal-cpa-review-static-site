@@ -5,12 +5,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     {% if include.style_override %}
-    <link rel="stylesheet" type="text/css" href="/assets/css/{{ include.style_override }}.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/{{ include.style_override }}.css?v={{ site.env.VERSION }}" />
     {% else %}
-    <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.name | replace:'.md','' }}.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.name | replace:'.md','' }}.css?v={{ site.env.VERSION }}" />
     {% endif %}
 
-    <script type="text/javascript" src="/assets/dist/core.min.js"></script>
+    <script type="text/javascript" src="/assets/dist/core.min.js?v={{ site.env.VERSION }}"></script>
 
     {% seo %}
 

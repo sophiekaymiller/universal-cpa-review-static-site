@@ -26,10 +26,10 @@
     </div>
 </footer>
 {% if include.js %}
-    <script type="text/javascript" src="{{ include.js }}"></script>
+    <script type="text/javascript" src="{{ include.js }}?v={{ site.env.VERSION }}"></script>
 {% endif %}
 {% if page.js %}
     {% for js in page.js %}
-    <script type="text/javascript" src="{{ js }}"></script>
+    <script type="text/javascript" src="{{ js }}?v={{ site.env.VERSION }}"></script>
     {% endfor %}
 {% endif %}
