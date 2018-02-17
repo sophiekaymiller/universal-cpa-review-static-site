@@ -47,33 +47,5 @@
   form {
     background: $white;
     padding: 60px 25px 25px 25px;
-
-    .form-group {
-      position: relative;
-
-      &.ucr-field-indicator {
-        &::after {
-          content: "";
-          background-size: contain;
-          position: absolute;
-          right: 0;
-          top: 0;
-          width: 40px;
-          height: 40px;
-        }
-
-        &.has-danger::after, &.ucr-nokeys::after {
-          background: url('/assets/images/icons/check-inactive.svg') no-repeat;
-        }
-
-        &:not(.ucr-nokeys):not(.has-danger)::after {
-          background: url('/assets/images/icons/check-active.svg') no-repeat;
-        }
-      }
-
-      .text-help {
-        display: none;
-      }
-    }
   }
 }
