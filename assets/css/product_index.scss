@@ -5,8 +5,7 @@
 .ucr-section.ucr-section-hero {
   padding-top: 100px;
   padding-bottom: 0;
-  background: url('/assets/images/patterns/products-background-gradient.jpg') no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, $gradient-primary, $white);
 
   .ucr-section-header {
     p {
@@ -18,7 +17,7 @@
     padding-bottom: 0;
 
     img {
-      height: 300px;
+      height: 400px;
     }
   }
 
@@ -26,8 +25,8 @@
     padding-top: 60px;
 
     .ucr-section-body img {
-      height: 260px;
-      max-width: 100%;
+      width: 100%;
+      height: auto;
     }
   }
 }
