@@ -1,0 +1,18 @@
+---
+pages:
+- _products/far.md
+- _products/bec.md
+- _products/reg.md
+- _products/aud.md
+hide_body: false
+fields:
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: product
