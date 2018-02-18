@@ -1,6 +1,4 @@
 ---
-pages:
-- _team/test-person.md
 hide_body: false
 fields:
 - type: text
