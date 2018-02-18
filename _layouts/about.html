@@ -42,7 +42,7 @@
     <ul class="row justify-content-center pt-3 pt-sm-4 pt-md-5">
         {% assign team = site.team | sort:"index" %}
         {% for member in team %}
-        <li class="col-12 col-sm-6 col-md-4 pt-5 pt-sm-0">
+        <li class="col-12 col-sm-6 col-md-4 pt-5">
             <img class="rounded-circle" src="{{ member.picture }}" alt="{{ member.first_name }}" />
             <h4>{{ member.first_name }} {{ member.last_name }}</h4>
             <span>{{ member.position }}</span>
