@@ -1,3 +1,34 @@
 ---
 hide_body: false
-fields: []
+fields:
+- type: text
+  name: first_name
+  label: First Name
+  description: The first name
+  config:
+    required: true
+- type: text
+  name: last_name
+  label: Last Name
+  description: The last name
+  config:
+    required: true
+- type: text
+  name: position
+  label: Position
+  description: The teammates job title
+  config:
+    required: true
+- type: file
+  name: picture
+  label: Picture
+  description: The teammates picture
+  config:
+    maxSize: ".6"
+- type: number
+  name: index
+  label: Index
+  description: The order in which to show this person. 0 is the front of the list,
+    higher is later in the list
+  config:
+    min: '0'
