@@ -1,4 +1,6 @@
 ---
+pages:
+- _team/pratik-dhanesha.md
 hide_body: false
 fields:
 - type: text
