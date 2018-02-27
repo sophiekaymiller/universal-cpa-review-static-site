@@ -14,6 +14,10 @@
   &.ucr-section-hero {
     background-color: $light;
     padding-top: 200px;
+
+    p {
+      font-weight: $font-weight-light;
+    }
   }
 
   @include media-breakpoint-down(md) {
