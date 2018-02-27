@@ -14,7 +14,7 @@
     background-position-y: center;
     padding-top: 0;
 
-    .text-right {
+    .ucr-section-hero-inner {
       padding-top: 290px;
     }
 
@@ -22,13 +22,18 @@
       min-height: 500px;
       background-position-x: 0;
 
-      .text-right {
+      .ucr-section-hero-inner {
         padding-top: 130px;
       }
     }
 
     @include media-breakpoint-down(md) {
-      background-position-x: -200px;
+      background-position-x: -130px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      background-position-x: 0;
+      background-image: linear-gradient(to bottom, $gradient-primary, $white);
     }
   }
 
