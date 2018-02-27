@@ -34,6 +34,7 @@
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9",
     "rellax": "^1.5.0",
-    "save": "^2.3.2"
+    "save": "^2.3.2",
+    "scrollpos-styler": "^0.7.0"
   }
 }

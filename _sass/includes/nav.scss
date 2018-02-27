@@ -1,6 +1,15 @@
 .ucr-nav {
   background: $primary;
   padding: 0 20px;
+  -webkit-transition: background 1s; /* Safari */
+  transition: background 1s;
+
+  &.sps--blw {
+    background: $footer;
+    -webkit-transition: background 1s; /* Safari */
+    transition: background 1s;
+    border-bottom: solid 1px;
+  }
 
   .btn {
     padding-left: 25px;
