@@ -1,7 +1,7 @@
 ---
 pages:
-- _products/far.md
 - _products/bec.md
+- _products/far.md
 - _products/reg.md
 - _products/aud.md
 hide_body: false
