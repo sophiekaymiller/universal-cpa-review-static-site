@@ -27,6 +27,10 @@
     font-size: 12px;
   }
 
+  .navbar-brand img {
+    width: 270px;
+  }
+
 
   @include media-breakpoint-down(lg) {
     ul li {
@@ -42,6 +46,10 @@
 
   @include media-breakpoint-down(md) {
     padding: 10px;
+
+    .navbar-brand img {
+      width: 170px;
+    }
   }
 
   .dropdown {
