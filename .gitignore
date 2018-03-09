@@ -12,3 +12,6 @@ dist/
 
 # system
 .DS_Store
+
+# big
+assets/images/raw/
