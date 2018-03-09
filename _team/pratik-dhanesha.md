@@ -5,5 +5,5 @@ first_name: Pratik
 last_name: Dhanesha
 position: 'Lead Content Supervisor '
 index: 3
-picture: "/uploads/2018/03/09/pratik_fullsize_small.jpg"
+picture: "/uploads/2018/03/09/pratik_fullsize_small-1.jpg"
 ---
