@@ -1,7 +1,7 @@
 ---
 name: Carlo D.
 occupation: Staff Accountant at O'Connor Davies, LLP
-completion_year: 2018
+completion_year: Completed 2 of 4 parts
 featured: true
 picture: "/assets/images/banners/review-2.jpg"
 key_quote: 'Questions and resources are top-notch. I would recommend to anybody pursuing
