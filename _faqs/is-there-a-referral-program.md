@@ -1,4 +1,9 @@
 ---
 question: Is There A Referral Program?
+date: 2018-03-09 19:00:39 +0000
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet sem diam, id fringilla magna tempor eu. Morbi at laoreet nisi. Integer ac tortor sed diam ultrices vulputate. Phasellus semper ligula orci, vel ornare lorem feugiat scelerisque. Aenean malesuada laoreet dui, quis interdum massa tempor porttitor. Sed pulvinar, magna sit.
+An Affiliate Program allows you to place links to our products on your web site. After placing these links, visitors to your site have the opportunity to buy products. If a product is purchased by one of your visitors through our web sites, we pay you a commission for each sale.  
+
+It is totally free to join our Affiliate Program. There is no charge to apply and there is no minimum sales requirement.  
+
+Please email Joseph Reeve at J.Reeve@universalcpareview.com for all affiliate related inquiries. 
