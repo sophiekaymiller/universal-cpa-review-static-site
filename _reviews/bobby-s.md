@@ -1,10 +1,12 @@
 ---
-name: Bobby S.
-occupation: Employee at XYZ
-completion_year: 2018
+name: Carlo D.
+occupation: Staff Accountant at O'Connor Davies, LLP
+completion_year: Completed 2 of 4 parts
 featured: true
-picture: /assets/images/banners/review-2.jpg
-key_quote: Wow. Just wow.
-created_date: 2018-01-03T00:00:00Z
+picture: "/assets/images/banners/review-2.jpg"
+key_quote: 'Questions and resources are top-notch. I would recommend to anybody pursuing
+  the CPA. '
+created_date: 2018-01-03 00:00:00 +0000
+date: 2018-03-09 19:00:39 +0000
 ---
-Lorem ipsum dolor sit amet consec ipsum, tetur adipscing elit praesent mi nunc
+Universal CPA Review has supported me through my entire CPA journey.  

@@ -1,4 +1,5 @@
 ---
 question: How Long Does The Trial Last?
+date: 2018-03-09 19:00:39 +0000
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet sem diam, id fringilla magna tempor eu. Morbi at laoreet nisi. Integer ac tortor sed diam ultrices vulputate. Phasellus semper ligula orci, vel ornare lorem feugiat scelerisque. Aenean malesuada laoreet dui, quis interdum massa tempor porttitor. Sed pulvinar, magna sit.
+Universal CPA Review is committed to allowing our students to have a clear understanding of what they are purchasing. We are proud of our adaptive learning platform as well as our course material. We offer our students the opportunity to see 10 free multiple choice questions as 1 free task-based simulation, so that you are fully aware as to what you are purchasing. 
