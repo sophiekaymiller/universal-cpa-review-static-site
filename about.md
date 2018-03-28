@@ -23,7 +23,7 @@ title: Who Is Universal CPA Review
 ---
 #### Our Story
 
-We are CPAs that wanted to make an accessible, cost-effective and efficient CPA studying platform. University CPA Review is a New York City based company that is built on an old school study foundation: we believe that there is no secret formula to passing these exams and that the only way to truly understand the material is through repetition, and to put in the time.Universal CPA Review is passionate about delivering a low cost yet highly effective approach to passing these exams. We are committed to offering you the with the highest quality study materials and support.
+We are CPAs that wanted to make an accessible, cost-effective and efficient CPA studying platform. University CPA Review is a New York City based company that is built on an old school study foundation: we believe that there is no secret formula to passing these exams and that the only way to truly understand the material is through repetition, and to put in the time. Universal CPA Review is passionate about delivering a low cost yet highly effective approach to passing these exams. We are committed to offering you the with the highest quality study materials and support.
 
 #### Beyond The Exam
 
