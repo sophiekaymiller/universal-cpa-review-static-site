@@ -49,6 +49,7 @@ portal:
   url: "https://app.universalcpareview.com"
   paths:
     login: /accounts/login/
+    trial: /accounts/start-trial/
     cart: /checkout/cart/
 
 # Build settings
