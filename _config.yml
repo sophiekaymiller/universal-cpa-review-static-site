@@ -48,8 +48,8 @@ jekyll_timeago:
 portal:
   url: "https://app.universalcpareview.com"
   paths:
-    login: /accounts/login/
-    trial: /accounts/start-trial/
+    login: /account/login/
+    trial: /account/start-trial/
     cart: /checkout/cart/
 
 # Build settings
