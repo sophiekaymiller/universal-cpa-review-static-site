@@ -1,6 +1,6 @@
 ---
-name: Carlo D.
-occupation: Staff Accountant at O'Connor Davies, LLP
+name: Michelle
+occupation: 'Senior Tax Associate '
 completion_year: '2018 '
 featured: true
 picture: "/assets/images/banners/review-2.jpg"
