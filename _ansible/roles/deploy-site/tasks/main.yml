@@ -4,4 +4,4 @@
   command: aws s3 sync _site s3://{{ bucket }}/{{ build }}
 
 - name: Move build live
-  command: aws s3 sync s3://{{ bucket }}/{{ build }} s3://{{ bucket }}/live
+  command: aws s3 sync s3://{{ bucket }}/{{ build }} s3://{{ bucket }}
