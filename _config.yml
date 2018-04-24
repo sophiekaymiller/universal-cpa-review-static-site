@@ -57,6 +57,7 @@ markdown: kramdown
 gems:
   - jekyll-seo-tag
   - jekyll-timeago
+  - jekyll-sitemap
 
 exclude:
   - Gemfile

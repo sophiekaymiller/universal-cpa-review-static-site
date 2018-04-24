@@ -20,6 +20,9 @@ gem 'jekyll-seo-tag'
 # Timedeltas
 gem 'jekyll-timeago'
 
+# Sitemap
+gem 'jekyll-sitemap'
+
 # If you have any plugins, put them here!
 #group :jekyll_plugins do
 #   gem "jekyll-feed", "~> 0.6"
