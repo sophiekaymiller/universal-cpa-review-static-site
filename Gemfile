@@ -21,6 +21,6 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-timeago'
 
 # If you have any plugins, put them here!
-group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
-end
+#group :jekyll_plugins do
+#   gem "jekyll-feed", "~> 0.6"
+#end

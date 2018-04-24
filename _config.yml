@@ -55,7 +55,6 @@ portal:
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-timeago
 
