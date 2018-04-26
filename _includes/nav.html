@@ -25,10 +25,10 @@
                     {% endfor %}
                 </div>
             </li>
-            <li class="nav-item{% if page.name == 'reviews' %} active{% endif %}">
+            <li class="nav-item{% if page.url == '/reviews/' %} active{% endif %}">
                 <a class="nav-link" href="{% link reviews.md %}">Reviews</a>
             </li>
-            <li class="nav-item dropdown{% if page.url == '/faq/' %} active{% endif %}">
+            <li class="nav-item dropdown{% if page.url == '/faqs/' %} active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
 
                 <div class="dropdown-menu">
