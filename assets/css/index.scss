@@ -62,7 +62,7 @@
     text-align: center;
 
     ol {
-      bottom: -100px;
+      bottom: -20px;
 
       li {
         background-color: $gray-500;
@@ -71,6 +71,10 @@
           background-color: $gray-800;
         }
       }
+    }
+
+    .carousel-inner {
+      min-height: 400px;
     }
 
     .carousel-control-prev, .carousel-control-next {
