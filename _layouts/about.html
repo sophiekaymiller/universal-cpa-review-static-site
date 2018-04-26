@@ -13,6 +13,11 @@
 
     {% include benefits_block.html %}
 
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+            <a href="{% link product_index.md %}" class="btn btn-cta-light">Start Free Trial</a>
+        </div>
+    </div>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
@@ -27,6 +32,12 @@
 
         <div class="col-12 col-md-7 ucr-section-about-content">
             {{ page.content | markdownify }}
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+            <a href="{% link product_index.md %}" class="btn btn-cta-light">Try Us Out</a>
         </div>
     </div>
     {% endcapture %}
