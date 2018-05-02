@@ -1,6 +1,6 @@
 {
   "name": "universal-cpa-review",
-  "version": "1.27.12",
+  "version": "1.27.13",
   "description": "UniversalCPAReview static site",
   "main": "index.js",
   "scripts": {
