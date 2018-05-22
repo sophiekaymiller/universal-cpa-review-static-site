@@ -1,7 +1,6 @@
 ---
-pages:
-- _team/pratik-dhanesha.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   name: first_name
@@ -34,3 +33,5 @@ fields:
     higher is later in the list
   config:
     min: '0'
+pages:
+- _team/pratik-dhanesha.md
