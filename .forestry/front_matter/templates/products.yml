@@ -12,6 +12,12 @@ fields:
   type: text
   hidden: false
   default: product
+- type: textarea
+  label: Short Description
+  name: short_description
+  description: Renders to the short description
+  config:
+    required: true
 pages:
 - _products/bec.md
 - _products/aud.md
