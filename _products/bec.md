@@ -5,7 +5,8 @@ short_description: aenean bibendum enim nec lorem venenatis hendrerit. Suspendis
   et.
 thumbnail: "/assets/images/icons/products/bec.svg"
 features:
-  - 1st feature
+- this is also a site feature and something very good about the BEC product
+- this is a site feature and something that is very good about the bec product
 date: 2018-03-09 19:00:39 +0000
 layout: ''
 ---
