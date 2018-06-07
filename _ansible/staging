@@ -1,2 +1,2 @@
-[webservers]
-ubuntu@staging.static-web1.universalcpareview.com
+[local]
+localhost ansible_connection=local

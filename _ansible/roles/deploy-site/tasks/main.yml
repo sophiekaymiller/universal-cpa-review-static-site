@@ -1,14 +1,10 @@
 ---
 
-- name: Ensure builds directory exists
-  file: path=/var/www/html/builds state=directory mode=0755
+- name: Upload Build To S3
+  command: aws s3 sync _site s3://{{ bucket }}/{{ build }}
 
-- name: Copy _site to remote tmp directory
-  synchronize: src=_site dest=/tmp/build
+- name: Move build live
+  command: aws s3 sync s3://{{ bucket }}/{{ build }} s3://{{ bucket }}
 
-- name: Copy remote build to builds directory
-  command: rsync -rv --exclude=.git /tmp/build/_site/ /var/www/html/builds/{{ build }}
-
-- name: Hot load new build
-  file: src=/var/www/html/builds/{{ build }} dest=/var/www/html/{{ site_name }} state=link force=yes
-
+- name: Invalidate CF
+  command: aws cloudfront create-invalidation --distribution-id {{ cloudfront_distribution }} --paths "/*"

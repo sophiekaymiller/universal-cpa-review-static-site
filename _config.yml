@@ -48,15 +48,16 @@ jekyll_timeago:
 portal:
   url: "https://app.universalcpareview.com"
   paths:
-    login: /accounts/login/
+    login: /account/login/
+    trial: /account/start-trial/
     cart: /checkout/cart/
 
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-timeago
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
