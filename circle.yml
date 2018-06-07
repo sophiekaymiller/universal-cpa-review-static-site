@@ -29,12 +29,6 @@ test:
     - echo 'NO TESTS'
 
 deployment:
-  staging:
-    branch: /feature.*/
-    commands:
-      - mv _site _ansible/
-      - ansible-playbook _ansible/site.yml -i _ansible/staging -e "build=staging-build"
-
   production:
     tag: /.*?/
     commands:
