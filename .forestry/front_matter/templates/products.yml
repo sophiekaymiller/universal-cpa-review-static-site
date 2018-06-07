@@ -18,17 +18,15 @@ fields:
   description: Renders to the short description
   config:
     required: true
-- type: field_group_list
+- type: list
+  default: []
   label: Features
   name: features
-  description: The features unique to this product
-  fields:
-  - type: text
-    name: feature
-    label: Feature
-    description: A single feature
   config:
-    labelField: feature
+    use_select: false
+    source:
+      type: datafiles
+  description: ''
 pages:
 - _products/bec.md
 - _products/aud.md
