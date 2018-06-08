@@ -1,12 +1,14 @@
 ---
 name: BEC
-short_description: aenean bibendum enim nec lorem venenatis hendrerit. Suspendisse
-  sit amet eleifend mi, eu luctus neque. Nunc gragvidea mattis metus,ac commodo neque
-  et.
+short_description: |
+  Enhance your BEC exam study schedule with the best online CPA exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement in studying for the Uniform CPA Exam. Our FAR test bank includes over 1,300 multiple choice practice questions that come with detailed answer rationales, as well as 45 task-based simulations to better prepare you for test day.
 thumbnail: "/assets/images/icons/products/bec.svg"
 features:
-- this is also a site feature and something very good about the BEC product
-- this is a site feature and something that is very good about the bec product
+- 1,300 Multiple choice BEC questions that replicate the CPA exam.
+- 65 Task-based simulations that will prepare you for test day.
+- In depth explanations that will give you a step-by-step, systematic way of solving
+  problems.
+- Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-03-09 19:00:39 +0000
 layout: ''
 ---
