@@ -4,7 +4,8 @@ short_description: 'Enhance your FAR exam study schedule with the best online CP
   exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
   in studying for the Uniform CPA Exam. Our FAR test bank includes over 1,500 multiple
   choice practice questions that come with detailed answer rationales, as well as
-  65 task-based simulations to better prepare you for test day. '
+  65 task-based simulations to better prepare you for test day. Try your free trial
+  today! '
 thumbnail: "/assets/images/icons/products/far.svg"
 features:
 - '1,500 Multiple choice FAR questions that replicate the CPA exam. '
