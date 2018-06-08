@@ -1,7 +1,7 @@
 ---
-name: Anonymous
-occupation: Employee at XYZ
-completion_year: 2016
+name: Damian
+occupation: A large public accounting firm
+completion_year: 2018
 featured: true
 picture: "/assets/images/banners/review-3.jpg"
 key_quote: I'd never have passed without Universal CPA Review
