@@ -10,7 +10,7 @@ features:
   problems.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-03-09 19:00:39 +0000
-layout: ''
+layout: product
 ---
 ## You need this material
 * This is a list item
