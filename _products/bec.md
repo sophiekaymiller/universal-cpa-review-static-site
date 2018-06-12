@@ -5,9 +5,9 @@ short_description: |
 thumbnail: "/assets/images/icons/products/bec.svg"
 features:
 - 1,300 Multiple choice BEC questions that replicate the CPA exam.
-- 65 Task-based simulations that will prepare you for test day.
 - In depth explanations that will give you a step-by-step, systematic way of solving
   problems.
+- 45 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-03-09 19:00:39 +0000
 layout: product

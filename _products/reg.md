@@ -5,9 +5,9 @@ short_description: |
 thumbnail: "/assets/images/icons/products/reg.svg"
 features:
 - 1,400 Multiple choice FAR questions that replicate the CPA exam.
-- 65 Task-based simulations that will prepare you for test day.
 - In depth explanations that will give you a step-by-step, systematic way of solving
   problems.
+- 65 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-06-07 02:59:40 +0000
 layout: product
