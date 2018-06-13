@@ -1,4 +1,5 @@
 ---
 question: Do You Offer Study Guides For Other Tests?
+date: 2018-06-10 17:10:11 +0000
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet sem diam, id fringilla magna tempor eu. Morbi at laoreet nisi. Integer ac tortor sed diam ultrices vulputate. Phasellus semper ligula orci, vel ornare lorem feugiat scelerisque. Aenean malesuada laoreet dui, quis interdum massa tempor porttitor. Sed pulvinar, magna sit.
+Cram courses that include e-books, audio, flashcards and a mobile app will be available December 2018!
