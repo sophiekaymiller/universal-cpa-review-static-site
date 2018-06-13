@@ -1,7 +1,7 @@
 ---
 layout: contact
 section_hero:
-  header: Contact us
+  header: Contact Us
   subheader: 'Universal CPA Review was started by people and CPA''s just like you.
     All study material has been written and edited by people and CPA''s just like
     you. And just like you, we make mistakes. For us to offer the best product possible,
