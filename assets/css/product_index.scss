@@ -11,6 +11,15 @@
     p {
       font-weight: $font-weight-light;
     }
+
+    .new-price {
+      color: $light-teal;
+    }
+
+    .old-price {
+      color: $red;
+      text-decoration: line-through;
+    }
   }
 
   .ucr-section-body {
