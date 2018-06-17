@@ -1,7 +1,7 @@
 ---
 name: AUD
-old_price: $110
-price: $99
+old_price: ''
+price: "$99"
 short_description: 'Enhance your Audit exam study schedule with the best online CPA
   exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
   in studying for the Uniform CPA Exam. Our Audit test bank includes over 1,300 multiple
