@@ -1,0 +1,56 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.4-stretch
+      - image: circleci/ruby:2.5.1-stretch-node
+    steps:
+      - checkout
+      - run:
+          name: Install Bundle
+          command: bundle install
+      - restore_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Build Project
+          command: npm run build
+      - save_cache:
+          key: built-{{ CIRCLE_SHA1 }}
+          paths:
+            - _site
+
+  deploy:
+    docker:
+      - image: circleci/python:2.7-node
+    steps:
+      - checkout
+      - run:
+          name: Install Ansible
+          command: pip install ansible
+      - restore_cache:
+          key: built-{{ CIRCLE_SHA1 }}
+      - run:
+          name: Ansible Deploy
+          command: |
+            mv _site _ansible/
+#            ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$CIRCLE_TAG"
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /.*?/
