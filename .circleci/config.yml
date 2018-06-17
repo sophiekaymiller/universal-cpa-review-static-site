@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build-js:
+  install-js:
     docker:
       - image: circleci/node:10.4-stretch
     steps:
@@ -14,6 +14,14 @@ jobs:
           key: js-dependencies-{{ checksum "package.json" }}
           paths:
             - node_modules
+
+  build-js:
+    docker:
+      - image: circleci/node:10.4-stretch
+    steps:
+      - checkout
+      - restore_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
       - run:
           name: Build Project
           command: npm run build
@@ -27,6 +35,8 @@ jobs:
       - image: circleci/ruby:2.5.1-stretch-node
     steps:
       - checkout
+      - restore_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
       - run:
           name: Install Bundle
           command: bundle install
@@ -63,8 +73,13 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build-js
-      - build-jekyll
+      - install-js
+      - build-js:
+          requires:
+            - install-js
+      - build-jekyll:
+          requires:
+            - install-js
       - deploy:
           requires:
             - build-js
