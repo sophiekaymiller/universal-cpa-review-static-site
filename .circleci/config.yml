@@ -26,7 +26,7 @@ jobs:
           name: Build Project
           command: npm run build
       - save_cache:
-          key: js-build-{{ CIRCLE_SHA1 }}
+          key: js-build-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - assets/dist
 
@@ -44,7 +44,7 @@ jobs:
           name: Build Jekyll
           command: VERSION=$CIRCLE_TAG bundle exec jekyll build
       - save_cache:
-          key: jekyll-build-{{ CIRCLE_SHA1 }}
+          key: jekyll-build-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - _site
 
@@ -57,9 +57,9 @@ jobs:
           name: Install Ansible
           command: sudo pip install ansible
       - restore_cache:
-          key: jekyll-build-{{ CIRCLE_SHA1 }}
+          key: jekyll-build-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: js-build-{{ CIRCLE_SHA1 }}
+          key: js-build-{{ .Environment.CIRCLE_SHA1 }}
       - run:
           name: Move JS Build Into Site
           command: mv assets/dist _site/assets/dist
