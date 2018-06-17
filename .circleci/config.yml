@@ -55,7 +55,7 @@ jobs:
       - checkout
       - run:
           name: Install Ansible
-          command: pip install ansible
+          command: sudo pip install ansible
       - restore_cache:
           key: jekyll-build-{{ CIRCLE_SHA1 }}
       - restore_cache:
