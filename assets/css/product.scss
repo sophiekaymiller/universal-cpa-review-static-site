@@ -9,9 +9,20 @@
     padding-bottom: 0;
     background-image: linear-gradient(to bottom, $gradient-primary, $white);
 
-    .ucr-section-header p {
-      padding-bottom: 0;
-      font-weight: $font-weight-light;
+    .ucr-section-header {
+      .new-price {
+        color: $light-teal;
+      }
+
+      .old-price {
+        color: $red;
+        text-decoration: line-through;
+      }
+
+      p {
+        padding-bottom: 0;
+        font-weight: $font-weight-light;
+      }
     }
 
     .ucr-section-body {
