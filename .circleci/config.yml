@@ -71,7 +71,7 @@ jobs:
           command: |
             mv _site _ansible/
             BUILD=${CIRCLE_TAG:-latest}
-            ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$CIRCLE_TAG"
+            ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$BUILD"
 
 workflows:
   version: 2
