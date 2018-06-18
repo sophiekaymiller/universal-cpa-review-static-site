@@ -1,6 +1,5 @@
 ---
 name: REG
-price: $99
 short_description: |
   Enhance your REG exam study schedule with the best online CPA exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement in studying for the Uniform CPA Exam. Our REG test bank includes over 1,300 multiple choice practice questions that come with detailed answer rationales, as well as 65 task-based simulations to better prepare you for test day.
 thumbnail: "/assets/images/icons/products/reg.svg"
@@ -12,4 +11,6 @@ features:
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-06-07 02:59:40 +0000
 layout: product
+price: "$99 "
+old_price: ''
 ---
