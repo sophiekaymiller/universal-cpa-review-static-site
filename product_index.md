@@ -2,7 +2,7 @@
 layout: product_index
 permalink: "/products/"
 old_price: "$400"
-price: "$350"
+price: "$375"
 section_hero:
   header: Universal CPA Review Sections
   subheader: 'The optimal supplemental support in preparing for your CPA exam. Universal
