@@ -2,14 +2,15 @@
 name: AUD
 old_price: ''
 price: "$99"
-short_description: 'Enhance your Audit exam study schedule with the best online CPA
-  exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
-  in studying for the Uniform CPA Exam. Our Audit test bank includes over 1,300 multiple
-  choice practice questions that come with detailed answer rationales, as well as
-  55 task-based simulations to better prepare you for test day. '
+short_description: 'Enhance your Audit and Attestation exam study schedule with the
+  best online CPA exam study resource. The Universal CPA Review Online Test Bank is
+  a brand-new supplement in studying for the Uniform CPA Exam. Our Audit test bank
+  includes over 1,200 multiple choice practice questions that come with detailed answer
+  rationales, as well as 55 task-based simulations to better prepare you for test
+  day. '
 thumbnail: "/assets/images/icons/products/aud.svg"
 features:
-- 1,300 Multiple choice FAR questions that replicate the CPA exam.
+- 1,200 Multiple choice Audit questions that replicate the CPA exam.
 - In depth explanations that will give you a step-by-step, systematic way of solving
   problems.
 - 55 Task-based simulations that will prepare you for test day.
