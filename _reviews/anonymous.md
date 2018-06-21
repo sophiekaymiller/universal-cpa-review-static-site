@@ -1,6 +1,6 @@
 ---
 name: Damian
-occupation: A large public accounting firm
+occupation: 'Staff Forensic Accountant '
 completion_year: 2018
 featured: true
 picture: "/assets/images/banners/review-3.jpg"
