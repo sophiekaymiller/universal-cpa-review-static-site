@@ -2,7 +2,7 @@
 name: BEC
 price: "$99 "
 short_description: |
-  Enhance your BEC exam study schedule with the best online CPA exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement in studying for the Uniform CPA Exam. Our FAR test bank includes over 1,050 multiple choice practice questions that come with detailed answer rationales, as well as 45 task-based simulations to better prepare you for test day.
+  Enhance your BEC exam study schedule with the best online CPA exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement in studying for the Uniform CPA Exam. Our BEC test bank includes over 1,050 multiple choice practice questions that come with detailed answer rationales, as well as 45 task-based simulations to better prepare you for test day.
 thumbnail: "/assets/images/icons/products/bec.svg"
 features:
 - 1,050 Multiple choice BEC questions that replicate the CPA exam.
