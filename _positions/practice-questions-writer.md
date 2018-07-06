@@ -4,4 +4,4 @@ date: 2018-03-09 19:00:39 +0000
 ---
 We are seeking forward thinking, highly motivated individuals looking to work on a part time basis in growing our brand awareness.
 
-For all Brand Ambassador inquiries please contact Julian at Julian@universalcpareview.com. 
+For all Brand Ambassador inquiries please contact Matthew at Matthew@universalcpareview.com.
