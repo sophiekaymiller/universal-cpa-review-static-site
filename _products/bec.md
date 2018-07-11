@@ -1,4 +1,21 @@
 ---
+seo:
+  title: BEC CPA Review | Universal CPA Review
+  description: |
+    Enhance your BEC exam study schedule with over 1,050 multiple
+    choice questions, in-depth answer explanations, and over 45 task-based simulations replicating your real exam experience.
+  og_type: product.item
+  additional_meta:
+    - property: og:product:availability
+      content: in stock
+    - property: og:product:condition
+      content: new
+    - property: og:product:price:amount
+      content: 99
+    - property: og:product:price:currency
+      content: USD
+    - property: og:product:retailer_item_id
+      content: BEC
 name: BEC
 price: "$99 "
 short_description: |

@@ -1,4 +1,21 @@
 ---
+seo:
+  title: REG CPA Review | Universal CPA Review
+  description: |
+    Enhance your REG exam study schedule with over 1,100 multiple choice questions,
+    in-depth answer explanations, and over 65 task-based simulations to prepare you for test day.
+  og_type: product.item
+  additional_meta:
+    - property: og:product:availability
+      content: in stock
+    - property: og:product:condition
+      content: new
+    - property: og:product:price:amount
+      content: 99
+    - property: og:product:price:currency
+      content: USD
+    - property: og:product:retailer_item_id
+      content: REG
 name: REG
 short_description: |
   Enhance your REG exam study schedule with the best online CPA exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement in studying for the Uniform CPA Exam. Our REG test bank includes over 1,100 multiple choice practice questions that come with detailed answer rationales, as well as 65 task-based simulations to better prepare you for test day.
