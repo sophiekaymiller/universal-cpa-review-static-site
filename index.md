@@ -1,4 +1,6 @@
 ---
+title: Universal CPA Review | Supplemental CPA Course
+description: Universal CPA Review | Supplemental CPA Course
 layout: home
 section_hero:
   header: 'Supplemental Support to Pass the CPA Exam. '
