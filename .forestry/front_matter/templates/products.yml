@@ -12,8 +12,31 @@ fields:
   type: text
   hidden: false
   default: product
+- type: textarea
+  label: Short Description
+  name: short_description
+  description: Renders to the short description
+  config:
+    required: true
+- type: list
+  default: []
+  label: Features
+  name: features
+  config:
+    use_select: false
+    source:
+      type: datafiles
+  description: ''
+- type: text
+  name: price
+  label: Price
+  description: The price to display for the product
+- type: text
+  name: old_price
+  label: Old Price
+  description: If you want to show a crossed out "original price", set this value
 pages:
-- _products/bec.md
 - _products/aud.md
-- _products/far.md
 - _products/reg.md
+- _products/far.md
+- _products/bec.md

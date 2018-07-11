@@ -1,5 +1,5 @@
 ---
-name: Michelle
+name: Katherine
 occupation: 'Senior Tax Associate '
 completion_year: '2018 '
 featured: true

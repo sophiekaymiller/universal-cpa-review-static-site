@@ -1,0 +1,93 @@
+version: 2
+jobs:
+  install-js:
+    docker:
+      - image: circleci/node:10.4-stretch
+    steps:
+      - checkout
+      - restore_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+  build-js:
+    docker:
+      - image: circleci/node:10.4-stretch
+    steps:
+      - checkout
+      - restore_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Build Project
+          command: npm run build
+      - save_cache:
+          key: js-build-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - assets/dist
+
+  build-jekyll:
+    docker:
+      - image: circleci/ruby:2.5.1-stretch-node
+    steps:
+      - checkout
+      - restore_cache:
+          key: js-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Install Bundle
+          command: bundle install
+      - run:
+          name: Build Jekyll
+          command: VERSION=$CIRCLE_TAG bundle exec jekyll build
+      - save_cache:
+          key: jekyll-build-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - _site
+
+  deploy:
+    docker:
+      - image: circleci/python:2.7-node
+    steps:
+      - checkout
+      - run:
+          name: Install Ansible
+          command: sudo pip install ansible
+      - run:
+          name: Install AWS CLI
+          command: sudo pip install awscli
+      - restore_cache:
+          key: jekyll-build-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: js-build-{{ .Environment.CIRCLE_SHA1 }}
+      - run:
+          name: Move JS Build Into Site
+          command: mv assets/dist _site/assets/dist
+      - run:
+          name: Ansible Deploy
+          command: |
+            mv _site _ansible/
+            BUILD=${CIRCLE_TAG:-latest}
+            ansible-playbook _ansible/site.yml -i _ansible/production -e "build=$BUILD"
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - install-js
+      - build-js:
+          requires:
+            - install-js
+      - build-jekyll:
+          requires:
+            - install-js
+      - deploy:
+          requires:
+            - build-js
+            - build-jekyll
+          filters:
+            branches:
+              only: master

@@ -15,7 +15,7 @@ section_benefits:
 section_products:
   header: 'Already Invested in a Review Program? '
   subheader: |
-    If you have already committed to another review course, Universal CPA Review might still be for you. Our course products are guaranteed a new look at exam multiple choice questions, and practice simulations that you haven’t yet seen.
+    No problem. If you have already committed to another review course, Universal CPA Review might still be for you. Our course products are guaranteed a new look at exam multiple choice questions, and practice simulations that you haven’t yet seen.
 section_featured:
   slides:
   - icon: "/assets/images/icons/featured-1.svg"
@@ -36,4 +36,3 @@ section_featured:
 js:
 - "/assets/dist/home.min.js"
 ---
-test some content

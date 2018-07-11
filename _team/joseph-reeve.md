@@ -1,6 +1,6 @@
 ---
 first_name: Joseph
-last_name: Reeve
+last_name: Reeve, CPA
 position: 'Founder / CEO '
 picture: "/uploads/2018/03/09/joey_fullsize_small-1.jpg"
 index: 0

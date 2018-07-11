@@ -1,6 +1,6 @@
 ---
 name: Josh
-occupation: Associate at BDO
+occupation: Tax Associate
 completion_year: 2017
 picture: "/assets/images/banners/review-1.jpg"
 key_quote: 'Universal CPA was a key factor in bringing my score from a 67% to an 81% '

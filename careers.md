@@ -1,7 +1,7 @@
 ---
 layout: careers
 section_hero:
-  header: Work with us
+  header: Work With Us
   subheader: "Whether you are a recent graduate looking to start your career, or looking
     to build on an already successful one, Universal CPA Review prides itself on continuously
     growing our talented, qualified global team. Our unique culture offers a collaborative

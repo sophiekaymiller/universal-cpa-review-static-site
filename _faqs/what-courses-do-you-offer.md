@@ -1,5 +1,5 @@
 ---
 question: What Courses Do You Offer?
-date: 2018-02-17 12:38:54 -0500
+date: 2018-02-17 17:38:54 +0000
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet sem diam, id fringilla magna tempor eu. Morbi at laoreet nisi. Integer ac tortor sed diam ultrices vulputate. Phasellus semper ligula orci, vel ornare lorem feugiat scelerisque. Aenean malesuada laoreet dui, quis interdum massa tempor porttitor. Sed pulvinar, magna sit. test
+At Universal CPA Review we offer supplemental support for the Uniform CPA Exam. We offer multiple choice questions and realistic task-based simulations for the Financial Accounting and Reporting, Audit, Regulation and the Business Environment and Concepts sections of the CPA exam. Our Universal cram course will be coming soon! 
