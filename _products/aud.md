@@ -1,4 +1,22 @@
 ---
+seo:
+  title: Affordable CPA Review Material | Universal CPA Review
+  description: |
+    Studying for the CPA exam shouldnt break the bank. With over 4,200 multiple
+    choice questions, detailed answer descriptions, and over 200 task-based simulations replicating your real exam experience,
+    Universal CPA Review is your essential study companion.
+  og_type: product.item
+  additional_meta:
+    - property: og:product:availability
+      content: in stock
+    - property: og:product:condition
+      content: new
+    - property: og:product:price:amount
+      content: 99
+    - property: og:product:price:currency
+      content: USD
+    - property: og:product:retailer_item_id
+      content: AUD
 name: AUD
 old_price: ''
 price: "$99"

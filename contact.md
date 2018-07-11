@@ -1,4 +1,9 @@
 ---
+seo:
+  title: Contact Us | Universal CPA Review
+  description: |
+    Universal CPA Review was started by people and CPA's just like you.
+    Get in touch with any questions, concerns, comments, or just to say hi!
 layout: contact
 section_hero:
   header: Contact Us

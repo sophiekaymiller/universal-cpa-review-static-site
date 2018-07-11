@@ -1,4 +1,6 @@
 ---
+seo:
+  title: Terms and Conditions | Universal CPA Review
 layout: simple
 permalink: /terms-of-use/
 section_hero:

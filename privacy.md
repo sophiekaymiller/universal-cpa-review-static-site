@@ -1,4 +1,6 @@
 ---
+seo:
+  title: Privacy Policy | Universal CPA Review
 layout: simple
 permalink: /privacy-policy/
 section_hero:

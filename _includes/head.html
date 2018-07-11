@@ -2,6 +2,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title>{{ page.seo.title | default:site.title }}</title>
+
+    <meta property="description" content="{{ page.seo.description | default:site.description }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type" content="{{ page.seo.og_type | default:'article' }}" />
+    <meta property="og:title" content="{{ page.seo.title | default:site.title }}" />
+    <meta property="og:description" content="{{ page.seo.description | default:site.description }}" />
+    <meta property="og:image" content="{{ page.seo.og_image | default:site.default_share_image }}" />
+    {% if page.seo.additional_meta %}
+    {% for additional_meta in page.seo.additional_meta %}
+    <meta property="{{ additional_meta.property }}" content="{{ additional_meta.content }}" />
+    {% endfor %}
+    {% endif %}
+
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
     <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='/assets/favicon/favicon.ico' /> <!-- IE -->
     <link rel='apple-touch-icon' type='image/png' href='/assets/favicon/apple-touch-icon-57x57.png' /> <!-- iPhone -->
     <link rel='apple-touch-icon' type='image/png' sizes='72x72' href='/assets/favicon/apple-touch-icon-72x72.png' /> <!-- iPad -->

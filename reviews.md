@@ -1,4 +1,9 @@
 ---
+seo:
+  title: Reviews From Real CPAs | Universal CPA Review
+  description: |
+    Universal CPA Review prides itself on a superior study platform, affordable pricing,
+    quick and friendly customer service, and no nonsense approach to passing the CPA exam.
 layout: reviews
 section_hero:
   header: How Our Students Feel

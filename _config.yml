@@ -13,13 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Universal CPA Review
+title: Universal CPA Review | Supplemental CPA Review Course
 email: info@universalcpareview.com
 author: Universal CPA Review
 description: >
-  Pass the CPA on the first try. More effective than simple books. Try it now.
+  Universal CPA Review products optimize efficiency and effectiveness, all in an affordable package. Easy to get started, sign up for a free trial now.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.universalcpareview.com" # the base hostname & protocol for your site, e.g. http://example.com
+default_share_image: https://www.universalcpareview.com/assets/images/banners/mocks-combined@2x.png
 logo: /assets/images/logo.png
 permalink: pretty
 

@@ -1,4 +1,9 @@
 ---
+seo:
+  title: About Us | Universal CPA Review
+  description: |
+    Universal CPA Review is a New York City based company passionate and dedicated
+    to providing quality Uniform CPA exam study resources at a more affordable price.
 layout: about
 section_hero:
   header: About Universal CPA Review
