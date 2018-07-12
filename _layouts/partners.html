@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    {% include nav.html %}
+
+    {% capture section_content %}
+    <div class="ucr-section-header px-3 px-lg-5">
+        <h1>{{ page.section_hero.header }}</h1>
+        <p>{{ page.section_hero.subheader }}</p>
+    </div>
+    {% endcapture %}
+
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+    {% capture section_content %}
+    {% for partner in site.partners %}
+    <div class="ucr-partner row px-3 py-3">
+        <div class="col-md-4 d-flex align-items-center">
+            <img src="{{ partner.logo }}" alt="{{ partner.name }} Logo" />
+        </div>
+
+        <div class="col-md-8">
+            <h5 class="pb-4 text-left">Interested in learning more about {{ partner.name }}?</h5>
+
+            <form method="post" action="{{ partner.submission_url }}" class="form">
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <input type="text" name="first_name" placeholder="First Name" class="form-control" required />
+                    </div>
+                    <div class="col-6 form-group">
+                        <input type="text" name="last_name" placeholder="Last Name" class="form-control" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control" required />
+                    </div>
+
+                    <div class="col-6 form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <textarea name="comments" placeholder="Comments" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="alert alert-success alert-dismissible fade d-none mt-4" role="alert">
+                    Submission Received, we'll be in touch ASAP!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="text-center pt-4">
+                    <input type="submit" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-partners text-left text-md-center' %}
+
+    {% include footer.html %}
+</body>
+</html>

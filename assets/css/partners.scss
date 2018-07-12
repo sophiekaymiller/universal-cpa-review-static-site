@@ -1,0 +1,18 @@
+---
+---
+@import 'site';
+
+.ucr-section {
+  text-align: center;
+
+  /**-- About Section --**/
+  &.ucr-section-partners {
+    .ucr-partner {
+      box-shadow: 1px 1px 6px 0 #00000026;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -25,7 +25,8 @@ module.exports = {
         product_index: path.resolve(__dirname, "assets/js/product_index.js"),
         product: path.resolve(__dirname, "assets/js/product.js"),
         careers: path.resolve(__dirname, "assets/js/careers.js"),
-        contact: path.resolve(__dirname, "assets/js/contact.js")
+        contact: path.resolve(__dirname, "assets/js/contact.js"),
+        partners: path.resolve(__dirname, "assets/js/partners.js"),
     },
 
     output: {

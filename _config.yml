@@ -35,6 +35,8 @@ collections:
     output: false
   positions:
     output: false
+  partners:
+    output: false
 
 defaults:
   - scope:
