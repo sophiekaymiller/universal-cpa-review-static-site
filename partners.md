@@ -8,7 +8,7 @@ section_hero:
   header: Universal CPA Partner Network
   subheader: |
     Our partners consist of some of the best services to help you pass the CPA.
-    By maintaining exclusive premium partnerships, Universal CPA is able to offer exclusive discounts
+    By maintaining exclusive premium partnerships, Universal CPA is able to offer steep discounts
     to our users. Sign up below for more information.
 js:
   - /assets/dist/partners.min.js     
