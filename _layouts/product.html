@@ -4,18 +4,20 @@
 
 {% capture data_layer %}
 <script type="text/javascript">
+    window.UCR.PageProduct = {
+        'name': '{{ page.name }}',         // Name or ID is required.
+        'id': '{{ page.name }}',
+        'price': '{{ page.price | replace:"$", "" }}',
+        'brand': 'Universal CPA Review',
+        'category': 'CPA',
+        'variant': 'CPA'
+    };
+
     dataLayer.push({
         'ecommerce': {
             'detail': {
                 'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
-                'products': [{
-                    'name': '{{ page.name }}',         // Name or ID is required.
-                    'id': '{{ page.name }}',
-                    'price': '{{ page.price | replace:"$", "" }}',
-                    'brand': 'Universal CPA Review',
-                    'category': 'CPA',
-                    'variant': 'CPA'
-                }]
+                'products': [window.UCR.PageProduct]
             }
         }
     });
@@ -47,7 +49,7 @@
         </div>
 
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
-            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}" class="btn btn-cta-dark">Buy Now</a>
+            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}" class="btn btn-cta-dark btn-buy">Buy Now</a>
         </div>
     </div>
 

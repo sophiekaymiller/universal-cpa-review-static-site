@@ -32,6 +32,12 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.name | replace:'.md','' }}.css?v={{ site.env.VERSION }}" />
     {% endif %}
 
+    <!-- Global Namespace -->
+    <script type="text/javascript">
+        window.UCR = window.UCR || {};
+    </script>
+    <!-- End Global Namespace -->
+
     <!-- Google Tag Manager -->
     <script type="text/javascript">
         var dataLayer = [];
