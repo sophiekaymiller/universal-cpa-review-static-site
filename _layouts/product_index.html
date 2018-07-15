@@ -1,7 +1,28 @@
 {% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+
+{% capture data_layer %}
+<script type="text/javascript">
+    dataLayer.push({
+        'ecommerce': {
+            'detail': {
+                'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
+                'products': [{
+                    'name': '{{ page.name }}',         // Name or ID is required.
+                    'id': '{{ page.name }}',
+                    'price': '{{ page.price | replace:"$", "" }}',
+                    'brand': 'Universal CPA Review',
+                    'category': 'CPA',
+                    'variant': 'CPA'
+                }]
+            }
+        }
+    });
+</script>
+{% endcapture %}
+{% include head.html data_layer=data_layer %}
+
 <body>
     {% include nav.html %}
 

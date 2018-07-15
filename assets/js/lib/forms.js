@@ -1,4 +1,5 @@
 import { Validation } from 'bunnyjs/src/Validation';
+import postToZapierWebhook from "./zaps";
 
 
 export function serializeFormToObject($form) {
@@ -25,4 +26,23 @@ export function setupValidation($form) {
     });
 
     return Validation;
+}
+
+/**
+ * zapier forms have the unique property that we don't want to allow the form submission, and we want to POST the
+ * form data to either a provided webhook URL (or use the forms' action as a fallback)
+ * @param $form
+ * @param webhookUrl
+ */
+export function zapierForm($form, webhookUrl) {
+    const submissionUrl = webhookUrl || $form.attr('action');
+
+    $form.on('submit', evt => {
+        evt.preventDefault();
+
+        postToZapierWebhook(submissionUrl, serializeFormToObject($form))
+            .then(() => {
+                $form.find('.alert').removeClass('d-none').addClass('show');
+            });
+    });
 }

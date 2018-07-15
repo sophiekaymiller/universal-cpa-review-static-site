@@ -32,7 +32,21 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.name | replace:'.md','' }}.css?v={{ site.env.VERSION }}" />
     {% endif %}
 
+    <!-- Global Namespace -->
+    <script type="text/javascript">
+        window.UCR = window.UCR || {};
+    </script>
+    <!-- End Global Namespace -->
+
     <!-- Google Tag Manager -->
+    <script type="text/javascript">
+        var dataLayer = [];
+    </script>
+
+    {% if include.data_layer %}
+    {{ include.data_layer }}
+    {% endif %}
+    
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=

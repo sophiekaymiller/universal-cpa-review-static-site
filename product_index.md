@@ -7,6 +7,7 @@ seo:
     Universal CPA Review is your essential study companion.
   og_type: product.group
 layout: product_index
+name: ALL
 permalink: "/products/"
 old_price: ''
 price: "$299"
