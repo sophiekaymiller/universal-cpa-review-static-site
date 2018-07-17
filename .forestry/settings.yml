@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 collections:
+- path: _partners
+  label: Partners
+  create: all
 - path: _posts
   label: Posts
   create: all
