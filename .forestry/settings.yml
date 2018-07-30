@@ -3,29 +3,41 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-collections:
-- path: _partners
+sections:
+- type: directory
+  path: _partners
   label: Partners
   create: all
-- path: _posts
+  match: "**/*"
+- type: jekyll-posts
   label: Posts
   create: all
-- path: _products
+- type: directory
+  path: _products
   label: Products
   create: all
-- path: _reviews
+  match: "**/*"
+- type: directory
+  path: _reviews
   label: Reviews
   create: all
-- path: _team
+  match: "**/*"
+- type: directory
+  path: _team
   label: Team
   create: all
-- path: _faqs
+  match: "**/*"
+- type: directory
+  path: _faqs
   label: Faqs
   create: all
-- path: _positions
+  match: "**/*"
+- type: directory
+  path: _positions
   label: Positions
   create: all
-- path: ''
+  match: "**/*"
+- type: jekyll-pages
   label: Pages
   create: all
 upload_dir: uploads
