@@ -44,9 +44,11 @@
     </div>
 
     <div class="ucr-button-row py-2 py-sm-5">
+        {% if page.has_trial %}
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
             <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.name }}" class="btn btn-cta-light">Try for Free</a>
         </div>
+        {% endif %}
 
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
             <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.name }}" class="btn btn-cta-dark btn-buy">Buy Now</a>

@@ -28,6 +28,7 @@ features:
 - 45 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-03-09 19:00:39 +0000
+has_trial: false
 layout: product
 old_price: ''
 ---
