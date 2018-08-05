@@ -19,7 +19,8 @@ section_hero:
     as well as over 200 task-based simulations that will replicate your exam experience. '
 section_products:
   header: Choose Your CPA Exam
-  subheader: Select test section to begin your free 10 questions
+  subheader: Select test section to begin your practice questions
 js:
 - "/assets/dist/product_index.min.js"
+
 ---
