@@ -31,9 +31,9 @@ section_featured:
       text: Learn More
       url: "/about"
   - icon: "/assets/images/icons/benefit-1.svg"
-    headline: 'Worth the money? Give it a try before you buy! '
+    headline: Proven to help over 5,000 candidates pass their CPA sections.
     cta:
-      text: Try For Free
+      text: LEARN MORE
       url: "/products/"
   - icon: "/assets/images/icons/benefit-3.svg"
     headline: Contact us! We're great listeners
