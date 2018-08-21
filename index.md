@@ -11,10 +11,12 @@ section_hero:
     time and money. Study with Universal CPA Review and pass the CPA exam on your
     first try. \n"
 section_benefits:
-  header: 'Let''s Get Back to the Basics '
-  subheader: "Optimize efficiency and effectiveness with Universal CPA Review products.
-    You now have the opportunity to study smarter without spending thousands of dollars
-    on over-priced review courses. \n"
+  header: 'Cram Course Coming Soon! '
+  subheader: "But wait, there's more! If you purchase one or more sections of the
+    Universal CPA Review test-banks by September 10th you will receive your cram course
+    FOR FREE! \n\nUniversal CPA Review Cram Courses will include an e-book with page-by-page
+    audio functionality so that you can better understand the concepts that you are
+    struggling with. Target launch date: September 31st! \n"
 section_products:
   header: 'Already Invested in a Review Program? '
   subheader: 'No problem. If you have already committed to another review course,
