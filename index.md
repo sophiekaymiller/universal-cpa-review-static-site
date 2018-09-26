@@ -13,10 +13,10 @@ section_hero:
 section_benefits:
   header: 'Cram Course Coming Soon! '
   subheader: "But wait, there's more! If you purchase one or more sections of the
-    Universal CPA Review test-banks by September 30th you will receive your cram course
+    Universal CPA Review test-banks by November 30th you will receive your cram course
     FOR FREE! \n\nUniversal CPA Review Cram Courses will include an e-book with page-by-page
     audio functionality so that you can better understand the concepts that you are
-    struggling with. Target launch date: October 1st!\n"
+    struggling with. Target launch date: December 1st!\n"
 section_products:
   header: 'Already Invested in a Review Program? '
   subheader: 'No problem. If you have already committed to another review course,
