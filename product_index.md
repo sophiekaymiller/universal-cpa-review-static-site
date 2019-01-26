@@ -8,6 +8,8 @@ seo:
   og_type: product.group
 layout: product_index
 name: ALL
+checkout_code: all
+product_noun: Exam
 permalink: "/products/"
 old_price: ''
 price: "$299"
@@ -20,6 +22,7 @@ section_hero:
 section_products:
   header: Choose Your CPA Exam
   subheader: Select test section to begin your practice questions
+  tag: practice
 js:
 - "/assets/dist/product_index.min.js"
 

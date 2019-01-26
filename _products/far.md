@@ -17,6 +17,9 @@ seo:
     - property: og:product:retailer_item_id
       content: FAR
 name: FAR
+name_full: FAR Exam
+checkout_code: FAR
+bundle_checkout_code: all
 short_description: 'Enhance your FAR exam study schedule with the best online CPA
   exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
   in studying for the Uniform CPA Exam. Our FAR test bank includes over 1,250 multiple
@@ -35,4 +38,6 @@ has_trial: false
 layout: product
 price: "$99"
 old_price: ''
+tags: ["practice", "featured"]
+noun: Exam
 ---

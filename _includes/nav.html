@@ -20,9 +20,11 @@
 
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="{% link product_index.md %}">All</a>
-                    {% for product in site.products %}
-                    <a class="dropdown-item" href="{{ product.url }}">{{ product.name }} Exam</a>
+                    {% assign products = site.products | where_exp:"item", "item.tags contains 'featured'" %}
+                    {% for product in products %}
+                    <a class="dropdown-item" href="{{ product.url }}">{{ product.name_full }}</a>
                     {% endfor %}
+                    <a class="dropdown-item" href="{% link ebook_index.md %}">EBooks</a>
                 </div>
             </li>
             <li class="nav-item{% if page.url == '/reviews/' %} active{% endif %}">

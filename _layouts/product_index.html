@@ -21,7 +21,7 @@
     });
 </script>
 {% endcapture %}
-{% include head.html data_layer=data_layer %}
+{% include head.html data_layer=data_layer style_override="product_index" %}
 
 <body>
     {% include nav.html %}
@@ -53,13 +53,16 @@
     </div>
 
     <div class="pt-6">
-    {% assign products = site.products  %}
+    {% assign products = site.products %}
+    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
     {% include products_block.html products=products %}
     </div>
 
+    {% if page.checkout_code %}
     <div class="ucr-section-footer pt-0 pt-sm-5">
-        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product=all&trial=0" class="btn btn-cta-light">Get All Exams</a>
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">Get All {{ page.product_noun }}s</a>
     </div>
+    {% endif %}
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
 

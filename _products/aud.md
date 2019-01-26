@@ -17,6 +17,9 @@ seo:
     - property: og:product:retailer_item_id
       content: AUD
 name: AUD
+name_full: AUD Exam
+checkout_code: AUD
+bundle_checkout_code: all
 old_price: ''
 price: "$99"
 short_description: 'Enhance your Audit and Attestation exam study schedule with the
@@ -35,4 +38,6 @@ features:
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
+tags: ["practice", "featured"]
+noun: Exam
 ---
