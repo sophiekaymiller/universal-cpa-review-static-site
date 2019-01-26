@@ -1,9 +1,9 @@
 ---
 seo:
   title: Universal CPA Review | Supplemental CPA Course
-  description: |
+  description: |-
     Universal CPA Review products optimize efficiency and effectiveness, all in an affordable package.
-    Easy to get started, sign up for a free trial now.
+    Easy to get started, sign up today!
 layout: home
 section_hero:
   header: 'Everything You Need to Pass the CPA Exam. '
