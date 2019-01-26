@@ -6,23 +6,28 @@ seo:
     choice questions, in-depth answer explanations, and over 45 task-based simulations replicating your real exam experience.
   og_type: product.item
   additional_meta:
-    - property: og:product:availability
-      content: in stock
-    - property: og:product:condition
-      content: new
-    - property: og:product:price:amount
-      content: 99
-    - property: og:product:price:currency
-      content: USD
-    - property: og:product:retailer_item_id
-      content: BEC
+  - property: og:product:availability
+    content: in stock
+  - property: og:product:condition
+    content: new
+  - property: og:product:price:amount
+    content: 99
+  - property: og:product:price:currency
+    content: USD
+  - property: og:product:retailer_item_id
+    content: BEC
 name: BEC
 name_full: BEC Exam
 checkout_code: BEC
 bundle_checkout_code: all
 price: "$99 "
-short_description: |
-  Enhance your BEC exam study schedule with the best online CPA exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement in studying for the Uniform CPA Exam. Our BEC test bank includes over 1,050 multiple choice practice questions that come with detailed answer rationales, as well as 45 task-based simulations to better prepare you for test day.
+short_description: 'Enhance your BEC exam study schedule with the best online CPA
+  exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
+  in studying for the Uniform CPA Exam. Our BEC test bank includes over 1,050 multiple
+  choice practice questions that come with detailed answer rationales, as well as
+  45 task-based simulations to better prepare you for test day.
+
+'
 thumbnail: "/assets/images/icons/products/bec.svg"
 features:
 - 1,050 Multiple choice BEC questions that replicate the CPA exam.
@@ -33,9 +38,12 @@ features:
 date: 2018-03-09 19:00:39 +0000
 has_trial: false
 layout: product
-old_price: ''
-tags: ["practice", "featured"]
+old_price: 129
+tags:
+- practice
+- featured
 noun: Exam
+
 ---
 ## You need this material
 * This is a list item
