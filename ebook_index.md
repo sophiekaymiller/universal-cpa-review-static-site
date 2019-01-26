@@ -7,18 +7,18 @@ seo:
     Universal CPA Review is your essential study companion.
   og_type: product.group
 layout: product_index
-name: ALL EBooks
-product_noun: "EBook"
+name: 'All Four Sections: E-Books + Page-by-Page Explanations'
+product_noun: EBook
 permalink: "/ebooks/"
-old_price: ''
-price: "$299"
+old_price: 899
+price: "$699"
 section_hero:
-  header: Universal CPA Review EBooks
-  subheader: 'EBooks for the CPA Review'
+  header: Universal CPA Review E-Books
+  subheader: E-Books + Page-by-Page Audio Explanations
 section_products:
-  header: Individual EBooks
-  subheader: Select an individual ebook for studying
-  tag: ebook 
+  header: Individual E-Books
+  subheader: Select an Individual E-book for the Section That You Are Studying For
+  tag: ebook
 js:
 - "/assets/dist/product_index.min.js"
 
