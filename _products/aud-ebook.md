@@ -1,36 +1,39 @@
 ---
 seo:
   title: AUD CPA EBook | Universal CPA Review
-  description: |
-    EBook for support in the AUD CPA Exam
+  description: 'EBook for support in the AUD CPA Exam
+
+'
   og_type: product.item
   additional_meta:
-    - property: og:product:availability
-      content: in stock
-    - property: og:product:condition
-      content: new
-    - property: og:product:price:amount
-      content: 99
-    - property: og:product:price:currency
-      content: USD
-    - property: og:product:retailer_item_id
-      content: AUDE
-name: AUD EBook
+  - property: og:product:availability
+    content: in stock
+  - property: og:product:condition
+    content: new
+  - property: og:product:price:amount
+    content: 99
+  - property: og:product:price:currency
+    content: USD
+  - property: og:product:retailer_item_id
+    content: AUDE
+name: AUD E-Book
 name_full: AUD EBook
 checkout_code: AUDE
-product_header: EBook For The AUD CPA Exam
+product_header: 'E-Book + Page-by-Page Audio '
 old_price: ''
-price: "$99"
-short_description: 'Some ebook stuff'
+price: "$179"
+short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/assets/images/icons/products/aud.svg"
 features:
-- EBook Feature 1
-- EBook Feature 2
-- EBook Feature 3
-- EBook Feature 4
+- Interactive Adaptive Learning Technology
+- One Time Purchase With Access Until You Pass
+- 139 Pages of E-book Information
+- 'Online Community and Unlimited Instructor Support '
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
-tags: ["ebook"]
+tags:
+- ebook
 noun: EBook
+
 ---

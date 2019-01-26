@@ -37,7 +37,7 @@ fields:
   label: Old Price
   description: If you want to show a crossed out "original price", set this value
 pages:
-- _products/aud.md
 - _products/reg.md
+- _products/aud.md
 - _products/far.md
 - _products/bec.md
