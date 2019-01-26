@@ -28,7 +28,7 @@ features:
 - Interactive Adaptive Learning Technology
 - 125 Pages of E-Book Information
 - Unlimited Instructor Support
-- Page-by-Page Audio Functionality
+- Page-by-Page Audio Explanations
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
