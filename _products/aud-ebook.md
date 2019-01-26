@@ -16,7 +16,7 @@ seo:
     content: USD
   - property: og:product:retailer_item_id
     content: AUDE
-name: 'AUD E-Book + Audio '
+name: AUD E-Book + Audio Explanations
 name_full: AUD EBook
 checkout_code: AUDE
 product_header: 'E-Book + Page-by-Page Audio '
