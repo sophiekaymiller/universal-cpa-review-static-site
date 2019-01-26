@@ -6,16 +6,16 @@ seo:
     choice questions, in-depth answer explanations, and over 65 task-based simulations to prepare you for test day.
   og_type: product.item
   additional_meta:
-    - property: og:product:availability
-      content: in stock
-    - property: og:product:condition
-      content: new
-    - property: og:product:price:amount
-      content: 99
-    - property: og:product:price:currency
-      content: USD
-    - property: og:product:retailer_item_id
-      content: FAR
+  - property: og:product:availability
+    content: in stock
+  - property: og:product:condition
+    content: new
+  - property: og:product:price:amount
+    content: 99
+  - property: og:product:price:currency
+    content: USD
+  - property: og:product:retailer_item_id
+    content: FAR
 name: FAR
 name_full: FAR Exam
 checkout_code: FAR
@@ -37,7 +37,10 @@ date: 2018-06-07 02:59:40 +0000
 has_trial: false
 layout: product
 price: "$99"
-old_price: ''
-tags: ["practice", "featured"]
+old_price: 129
+tags:
+- practice
+- featured
 noun: Exam
+
 ---
