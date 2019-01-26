@@ -6,7 +6,7 @@ seo:
     Easy to get started, sign up for a free trial now.
 layout: home
 section_hero:
-  header: 'Supplemental Support to Pass the CPA Exam. '
+  header: 'Everything You Need to Pass the CPA Exam. '
   subheader: "By integrating the AICPA blueprint, Universal CPA Review will save you
     time and money. Study with Universal CPA Review and pass the CPA exam on your
     first try. \n"
