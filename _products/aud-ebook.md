@@ -20,7 +20,7 @@ name: AUD E-Book
 name_full: AUD EBook
 checkout_code: AUDE
 product_header: 'E-Book + Page-by-Page Audio '
-old_price: ''
+old_price: 225
 price: "$179"
 short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/assets/images/icons/products/aud.svg"
