@@ -26,9 +26,9 @@ short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/assets/images/icons/products/aud.svg"
 features:
 - Interactive Adaptive Learning Technology
-- One Time Purchase With Access Until You Pass
+- Page-by-Page Audio Explanations
 - 139 Pages of E-book Information
-- 'Online Community and Unlimited Instructor Support '
+- 'Unlimited Instructor Support '
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
