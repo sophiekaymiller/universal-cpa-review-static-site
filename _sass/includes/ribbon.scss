@@ -1,0 +1,64 @@
+// ripped from https://css-tricks.com/snippets/css/ribbon/
+
+.non-semantic-protector {
+  position: relative;
+  z-index: 1;
+}
+
+@mixin ribbon($bgcolor: $light-teal, $textcolor: $dark-grey, $bordercolor: $teal, $bordercolor-shade: $dark-teal) {
+  font-size: 16px;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 50%;
+  position: relative;
+  background: $bgcolor;
+  color: $textcolor;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 2em auto 3em;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid $bordercolor;
+    z-index: -1;
+  }
+
+  &:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+  }
+
+  &:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+  }
+
+  & > :before, & > :after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: $dark-teal transparent transparent transparent;
+    bottom: -1em;
+  }
+
+  & > :before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+  }
+
+  & > :after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+  }
+}
+
+.ribbon {
+  @include ribbon();
+}

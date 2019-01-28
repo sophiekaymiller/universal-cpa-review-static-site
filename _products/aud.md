@@ -38,6 +38,14 @@ features:
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
+featured_bundle:
+  header: "Great Things Come In Two's"
+  subheader: Maximize your learning with AUD practice tests, guided by comprehensive eBook supplement.
+  name: AUD Practice Tests + eBook
+  images:
+    - "/uploads/2019/01/27/aud_ebook_cover.png"
+    - "/assets/images/icons/products/aud.svg"
+  checkout_code: AUDEBUNDLE
 tags:
 - practice
 - featured
