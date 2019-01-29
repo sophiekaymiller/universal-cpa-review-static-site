@@ -48,7 +48,8 @@ featured_bundle:
   subheader: Maximize your learning with REG test banks and task-based simulations,
     guided by our comprehensive eBook and page-by-page supplement.
   name: REG Practice Tests + eBook
-  images: []
+  images:
+  - image: "/uploads/2019/01/29/REG EBOOK.png"
   cta_text: Get Them Together
   checkout_code: REGBUNDLE
 
