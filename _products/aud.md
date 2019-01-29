@@ -40,8 +40,8 @@ date: 2018-06-07 02:59:40 +0000
 layout: product
 featured_bundle:
   header: Great Things Come In Two's
-  subheader: Maximize your learning with AUD practice tests, guided by comprehensive
-    eBook supplement.
+  subheader: Maximize your learning with Audit test banks and task-based simulations,
+    guided by our comprehensive eBook and page-by-page supplement.
   name: AUD Practice Tests + eBook
   images:
   - image: "/uploads/2019/01/27/aud_ebook_cover.png"
