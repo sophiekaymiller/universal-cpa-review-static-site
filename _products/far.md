@@ -42,5 +42,13 @@ tags:
 - practice
 - featured
 noun: Exam
+featured_bundle:
+  header: Great Things Come In Two's
+  subheader: Maximize your learning with FAR test banks and task-based simulations,
+    guided by our comprehensive eBook and page-by-page supplement.
+  name: FAR Practice Tests + eBook
+  images: []
+  cta_text: Get Them Together
+  checkout_code: FARBUNDLE
 
 ---
