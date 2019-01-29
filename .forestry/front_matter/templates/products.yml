@@ -59,6 +59,10 @@ fields:
     description: List of images representing the items in the bundle
     config:
       max: '4'
+    fields:
+    - type: file
+      name: image
+      label: Image
   - type: text
     label: CTA Text
     name: cta_text
