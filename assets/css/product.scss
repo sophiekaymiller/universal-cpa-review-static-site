@@ -56,6 +56,22 @@
       }
     }
   }
+
+  .ucr-images-list {
+    .plus {
+      font-size: 3rem;
+      font-weight: $font-weight-bold;
+      color: $dark-grey;
+    }
+
+    .ucr-images-list__image {
+      max-width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .ucr-button-row {
