@@ -44,7 +44,7 @@ featured_bundle:
     eBook supplement.
   name: AUD Practice Tests + eBook
   images:
-  - image: "/uploads/2019/01/29/Screen Shot 2019-01-15 at 1.05.55 AM.png"
+  - image: "/uploads/2019/01/27/aud_ebook_cover.png"
   - image: "/assets/images/banners/mocks-combined@2x.png"
   cta_text: Get Them Together
   checkout_code: AUDEBUNDLE
