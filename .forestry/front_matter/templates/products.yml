@@ -36,8 +36,40 @@ fields:
   name: old_price
   label: Old Price
   description: If you want to show a crossed out "original price", set this value
+- type: field_group
+  name: featured_bundle
+  label: Featured Bundle
+  description: A bundle to feature on the page
+  fields:
+  - type: text
+    name: header
+    label: Header
+    description: The featured bundle section header
+  - type: textarea
+    name: subheader
+    label: Subheader
+    description: The featured bundle section subheader
+  - type: text
+    name: name
+    label: Name
+    description: The name of the Product Bundle (for instance 'Practice Test and eBook')
+  - type: field_group_list
+    name: images
+    label: Images
+    description: List of images representing the items in the bundle
+    config:
+      max: '4'
+  - type: text
+    label: CTA Text
+    name: cta_text
+    description: The text of the CTA button in the Featured Bundle section
+  - type: text
+    name: checkout_code
+    label: Checkout Code
+    description: The shortcode of the product bundle. Needs to match the shortcode
+      set in the app Admin exactly
 pages:
-- _products/reg.md
 - _products/aud.md
+- _products/reg.md
 - _products/far.md
 - _products/bec.md
