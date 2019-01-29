@@ -48,7 +48,8 @@ featured_bundle:
   subheader: Maximize your learning with BEC test banks and task-based simulations,
     guided by our comprehensive eBook and page-by-page supplement.
   name: BEC Practice Tests + eBook
-  images: []
+  images:
+  - image: "/uploads/2019/01/29/test bank.png"
   cta_text: Get Them Together
   checkout_code: BECBUNDLE
 
