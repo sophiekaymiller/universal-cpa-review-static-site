@@ -1,3 +1,7 @@
+$section-colors: (
+  ("gray": $grey)
+);
+
 .ucr-section {
   padding: 100px 0 60px 0;
   box-sizing: content-box;
@@ -27,4 +31,14 @@
       padding-top: 120px;
     }
   }
+
+  @each $kls, $color in $section-colors {
+    &.#{$kls} {
+      background: $color;
+    }
+  }
 }
+
+
+
+

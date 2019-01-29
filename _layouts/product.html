@@ -109,6 +109,41 @@
     {% assign review = featured_reviews[3] %}
     {% include testimonial_block.html review=review %}
 
+    {% if page.featured_bundle %}
+    {% capture section_content %}
+    <!-- Featured Bundle -->
+    {% include ribbon.html text="Featured Bundle" %}
+
+    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
+        <h2>{{ page.featured_bundle.header }}</h2>
+        <span>{{ page.featured_bundle.subheader }}</span>
+    </div>
+
+    {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
+    {% assign other_products = other_products | where_exp:"item", "item.tags == page.tags" %}
+    <div class="py-5">
+        <h4 class="text-center pb-3">{{ page.featured_bundle.name }}</h4>
+
+        <div class="ucr-images-list d-flex justify-content-center align-items-center">
+            {% for image in page.featured_bundle.images %}
+            <div class="ucr-images-list__image">
+                <img src="{{ image }}" />
+            </div>
+
+            {% if forloop.last != true %}
+            <span class="plus px-5">+</span>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.featured_bundle.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.featured_bundle.cta_text }}</a>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-featured-bundle pt-0 pt-sm-2 gray' %}
+    {% endif %}
+
     {% capture section_content %}
     <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
         <h2>Check out our other supplementary materials</h2>
