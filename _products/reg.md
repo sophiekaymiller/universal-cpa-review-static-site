@@ -50,7 +50,7 @@ featured_bundle:
   name: REG Practice Tests + eBook
   images:
   - image: "/uploads/2019/01/29/REG EBOOK-1.png"
-  - image: "/uploads/2019/01/29/REG EBOOK.png"
+  - image: "/uploads/2019/01/29/test bank.png"
   cta_text: Get Them Together
   checkout_code: REGBUNDLE
 
