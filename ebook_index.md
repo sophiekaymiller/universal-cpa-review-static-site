@@ -10,8 +10,8 @@ layout: product_index
 name: 'All Four Sections: E-Books + Page-by-Page Explanations'
 product_noun: EBook
 permalink: "/ebooks/"
-old_price: 899
-price: "$699"
+old_price: 699
+price: 550
 section_hero:
   header: Universal CPA Review E-Books
   subheader: E-Books + Page-by-Page Audio Explanations
