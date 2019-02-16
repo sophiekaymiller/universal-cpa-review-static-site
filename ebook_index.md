@@ -15,6 +15,11 @@ price: "$699"
 section_hero:
   header: Universal CPA Review E-Books
   subheader: E-Books + Page-by-Page Audio Explanations
+  bundle:
+    image: /assets/images/icons/ebook.png
+    title: Complete E-Book Bundle
+    description: The complete e-book bundle is the best possible deal
+    cta_text: Buy Complete Bundle
 section_products:
   header: Individual E-Books
   subheader: Select an Individual E-book for the Section That You Are Studying For

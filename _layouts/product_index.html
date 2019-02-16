@@ -83,7 +83,9 @@
         </div>
     </div>
     {% endcapture %}
+    {% if page.section_bundles %}
     {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
+    {% endif %}
 
     <!-- Bundles Section -->
     {% capture section_content %}

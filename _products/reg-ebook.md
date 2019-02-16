@@ -16,7 +16,7 @@ seo:
     content: USD
   - property: og:product:retailer_item_id
     content: AUDE
-name: REG E-Book + Page-by-Page Audio Explanations
+name: REG E-Book + Audio Explanations
 name_full: REG EBook
 checkout_code: REGE
 product_header: EBook For The REG CPA Exam
