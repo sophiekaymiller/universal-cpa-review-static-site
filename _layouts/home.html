@@ -44,9 +44,14 @@
         <p>{{ page.section_products.subheader }}</p>
     </div>
 
-    <div class="row pt-3 pt-sm-4 align-items-center">
+    {% assign products_yt_id = page.section_products.yt_id %}
+    <div class="row pt-3 pt-sm-4 {% if products_yt_id %}align-items-top{% else %}align-items-center{% endif %}">
         <div class="d-none d-sm-block col-sm-7">
+            {% if products_yt_id %}
+            <iframe width="100%" src="https://www.youtube.com/embed/{{ products_yt_id }}?controls=0&iv_load_policy=3&playsinline=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% else %}
             {% include mocks_block.html %}
+            {% endif %}
         </div>
 
         <div class="col-12 col-sm-5">

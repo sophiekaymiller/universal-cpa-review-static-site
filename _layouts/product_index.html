@@ -41,7 +41,17 @@
     </div>
 
     <div class="ucr-section-body text-center pt-5 pt-sm-3" id="mocks">
+        {% if page.section_hero.bundle.image %}
+        <div class="ucr-bundle">
+            <img class="ucr-bundle-image" src="{{ page.section_hero.bundle.image }}" />
+            <h4 class="ucr-bundle-title">{{ page.section_hero.bundle.title }}</h4>
+            <p class="ucr-bundle-description">{{ page.section_hero.bundle.description }}</p>
+        </div>
+        {% else %}
         {% include mocks_block.html %}
+        {% endif %}
+
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
     </div>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-hero' %}

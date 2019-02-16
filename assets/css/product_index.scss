@@ -24,10 +24,10 @@
 
   .ucr-section-body {
     padding-bottom: 0;
+  }
 
-    img {
-      height: 400px;
-    }
+  .ucr-bundle-image {
+    width: 300px;
   }
 
   @include media-breakpoint-down(sm) {

@@ -19,6 +19,11 @@ section_hero:
     CPA Review includes actual questions distributed by the AICPA to better prepare
     you for exam day. Over 4,200 multiple choice questions with detailed answer descriptions
     as well as over 200 task-based simulations that will replicate your exam experience. '
+  bundle:
+    image: /assets/images/icons/bundle.png
+    title: Complete Bundle
+    description: The complete bundle is the best possible deal
+    cta_text: Buy Complete Bundle
 section_products:
   header: Choose Your CPA Exam
   subheader: Select test section to begin your practice questions
