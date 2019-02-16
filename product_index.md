@@ -24,6 +24,25 @@ section_hero:
     title: Complete Bundle
     description: The complete bundle is the best possible deal
     cta_text: Buy Complete Bundle
+section_features:
+  header: Universal Full Cram Course Supplementary Material
+  features:
+    - 4,200+ Multiple Choice Questions on all section replicating the CPA exam
+    - 200 plus task-based simulations preparing you for test day
+section_bundles:
+    header: Get The Best Deal With A Bundle
+    subheader: Our bundles are the best bang for your buck.
+    bundles:
+      - name: All E-Books
+        description: Includes e-book access for all test sections
+        thumbnail: /assets/images/icons/ebook.png
+        checkout_code: alle
+        cta_text: Buy E-Books
+      - name: All Test Banks
+        description: Includes test bank access for all test sections
+        thumbnail: /assets/images/icons/test-bank.png
+        checkout_code: allbanks
+        cta_text: Buy Test Banks
 section_products:
   header: Choose Your CPA Exam
   subheader: Select test section to begin your practice questions

@@ -28,13 +28,16 @@
 
   .ucr-bundle-image {
     width: 300px;
+
+    @include media-breakpoint-down(sm) {
+      width: 200px;
+    }
   }
 
   @include media-breakpoint-down(sm) {
     padding-top: 60px;
 
     .ucr-section-body img {
-      width: 100%;
       height: auto;
     }
   }

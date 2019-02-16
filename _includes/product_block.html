@@ -1,0 +1,25 @@
+{% assign thumbnail = include.thumbnail | default:"/assets/images/placeholders/pug1.jpg" %}
+{% assign name = include.name %}
+{% assign description = include.description %}
+{% assign cta_theme = include.cta_theme | default:"secondary" %}
+{% assign cta_url = include.cta_url %}
+{% assign cta_text = include.cta_text %}
+
+<div class="ucr-product">
+    <div class="ucr-product-inner">
+        <div class="ucr-product-header px-3">
+            <img src="{{ thumbnail }}" class="rounded-circle" alt="{{ name }}"/>
+            <h4 class="spaced">{{ name }}</h4>
+
+            {% if description %}
+            <p class="ucr-product-description">
+                {{ description }}
+            </p>
+            {% endif %}
+        </div>
+
+        <div class="ucr-product-footer">
+            <a class="ucr-product-cta {{ cta_theme }}" href="{{ cta_url }}">{{ cta_text }}</a>
+        </div>
+    </div>
+</div>

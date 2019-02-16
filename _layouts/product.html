@@ -63,42 +63,19 @@
 
     <!-- Features Section -->
     {% capture section_content %}
-    <div class="ucr-product-features">
-        {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
-        {% assign product_header = page.product_header | default:default_product_header %}
-        <h3 class="text-center mb-3 mb-sm-5">{{ product_header }}</h3>
 
-        <div class="row">
-            {% assign all_features = "" | split: "" %}
-            {% for feature in page.features %}
-            {% assign all_features = all_features | push:feature %}
-            {% endfor %}
-            {% for feature in site.data.shared_features %}
-            {% assign all_features = all_features | push:feature %}
-            {% endfor %}
-            <div class="col-sm-6">
-                <ul>
-                    {% for feature in all_features %}
-                    {% assign mod = forloop.index0 | modulo:2 %}
-                    {% if mod == 0  %}
-                    <li>{{ feature }}</li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
+    {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
+    {% assign product_header = page.product_header | default:default_product_header %}
 
-            <div class="col-sm-6">
-                <ul>
-                    {% for feature in all_features %}
-                    {% assign mod = forloop.index0 | modulo:2 %}
-                    {% if mod == 1  %}
-                    <li>{{ feature }}</li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </div>
+    {% assign all_features = "" | split: "" %}
+    {% for feature in page.features %}
+    {% assign all_features = all_features | push:feature %}
+    {% endfor %}
+    {% for feature in site.data.shared_features %}
+    {% assign all_features = all_features | push:feature %}
+    {% endfor %}
+
+    {% include features_block.html features_header=product_header features=all_features %}
 
     <div class="text-center mt-3 mt-sm-5">
         <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
