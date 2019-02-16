@@ -31,6 +31,10 @@
       img {
         height: 400px;
       }
+
+      .ucr-product-thumbnail {
+        height: 250px;
+      }
     }
 
     @include media-breakpoint-down(sm) {
@@ -56,6 +60,14 @@
       img {
         width: 100%;
       }
+    }
+  }
+
+  .ucr-video iframe {
+    height: 500px;
+
+    @include media-breakpoint-down(sm) {
+      height: 250px;
     }
   }
 }
