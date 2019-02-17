@@ -87,6 +87,26 @@
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-features' %}
 
+    <!-- Sub-Products Section -->
+    {% capture section_content %}
+    <div class="ucr-section-header pt-3 px-3 px-md-5 pb-4">
+        <h2>Choose a Study Option</h2>
+    </div>
+
+    <div class="d-block d-md-flex justify-content-center equal-width pt-5">
+        <!-- Test Bank -->
+        <div class="px-3 mx-3 mb-5 mb-md-0">
+            {% include product_block.html thumbnail="/assets/images/icons/test-bank.png" name="Test Bank Only" cta_theme="primary" cta_text="Buy Test" checkout_code=page.checkout_code %}
+        </div>
+
+        <!-- Ebook -->
+        <div class="px-3 mx-3 mt-4 mt-md-0">
+            {% include product_block.html thumbnail="/assets/images/icons/ebook.png" name="E-Book Only" cta_theme="primary" cta_text="Buy E-Book" checkout_code=page.ebook.checkout_code %}
+        </div>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-subproducts gray pt-3' %}
+
     <!-- Testimonials -->
     {% assign review = featured_reviews[3] %}
     {% include testimonial_block.html review=review %}

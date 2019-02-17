@@ -73,7 +73,7 @@
     </div>
 
     <div class="pt-6">
-        <div class="d-md-flex justify-content-center">
+        <div class="d-md-flex justify-content-center equal-width">
         {% for bundle in page.section_bundles.bundles %}
             {% capture cta_url %}{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ bundle.checkout_code }}&trial=0{% endcapture %}
             <div class="px-3 mx-4 pb-5 pb-md-0">
@@ -87,7 +87,7 @@
     {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
     {% endif %}
 
-    <!-- Bundles Section -->
+    <!-- Other Products Section -->
     {% capture section_content %}
     <div class="ucr-section-header px-0 px-md-5">
         <h2>{{ page.section_products.header }}</h2>

@@ -38,6 +38,8 @@ features:
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
+ebook:
+  checkout_code: aude
 featured_bundle:
   header: Great Things Come In Two's
   subheader: Maximize your learning with AUD practice tests, guided by comprehensive

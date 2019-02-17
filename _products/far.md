@@ -36,6 +36,8 @@ features:
 date: 2018-06-07 02:59:40 +0000
 has_trial: false
 layout: product
+ebook:
+  checkout_code: fare
 price: "$99"
 old_price: 129
 tags:
