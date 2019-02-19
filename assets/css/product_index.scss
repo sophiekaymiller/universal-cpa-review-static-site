@@ -25,8 +25,16 @@
   .ucr-section-body {
     padding-bottom: 0;
 
-    img {
-      height: 400px;
+    .ucr-mocks img {
+      width: 50%;
+    }
+  }
+
+  .ucr-bundle-image {
+    width: 300px;
+
+    @include media-breakpoint-down(sm) {
+      width: 200px;
     }
   }
 
@@ -34,7 +42,6 @@
     padding-top: 60px;
 
     .ucr-section-body img {
-      width: 100%;
       height: auto;
     }
   }

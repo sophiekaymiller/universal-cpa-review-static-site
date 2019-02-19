@@ -44,9 +44,14 @@
         <p>{{ page.section_products.subheader }}</p>
     </div>
 
-    <div class="row pt-3 pt-sm-4 align-items-center">
+    {% assign products_yt_id = page.section_products.yt_id %}
+    <div class="row pt-3 pt-sm-4 {% if products_yt_id %}align-items-top{% else %}align-items-center{% endif %}">
         <div class="d-none d-sm-block col-sm-7">
+            {% if products_yt_id %}
+            {% include yt_video.html yt_id=products_yt_id %}
+            {% else %}
             {% include mocks_block.html %}
+            {% endif %}
         </div>
 
         <div class="col-12 col-sm-5">

@@ -28,6 +28,7 @@
 
     {% include scores_release_block.html %}
 
+    <!-- Hero Section -->
     {% capture section_content %}
     <div class="ucr-section-header px-0 px-md-5">
         <h1 class="inverse">{{ page.section_hero.header }}</h1>
@@ -40,12 +41,53 @@
         <p class="inverse">{{ page.section_hero.subheader }}</p>
     </div>
 
-    <div class="ucr-section-body text-center pt-5 pt-sm-3" id="mocks">
+    <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-5" id="mocks">
+        {% if page.section_hero.bundle.image %}
+        <div class="ucr-bundle">
+            <img class="ucr-bundle-image" src="{{ page.section_hero.bundle.image }}" />
+            <h4 class="ucr-bundle-title pt-3">{{ page.section_hero.bundle.title }}</h4>
+            <p class="ucr-bundle-description">{{ page.section_hero.bundle.description }}</p>
+        </div>
+        {% else %}
         {% include mocks_block.html %}
+        {% endif %}
+
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
     </div>
     {% endcapture %}
     {% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
+    <!-- Features Section -->
+    {% capture section_content %}
+        <div class="py-4">
+            {% include features_block.html features_header=page.section_features.header features=page.section_features.features %}
+        </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-features' %}
+
+    <!-- Bundles Section -->
+    {% capture section_content %}
+    <div class="ucr-section-header px-0 px-md-5">
+        <h2>{{ page.section_bundles.header }}</h2>
+        <span>{{ page.section_bundles.subheader }}</span>
+    </div>
+
+    <div class="pt-6">
+        <div class="d-md-flex justify-content-center equal-width">
+        {% for bundle in page.section_bundles.bundles %}
+            {% capture cta_url %}{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ bundle.checkout_code }}&trial=0{% endcapture %}
+            <div class="px-3 mx-4 pb-5 pb-md-0">
+                {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description cta_url=cta_url cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    {% endcapture %}
+    {% if page.section_bundles %}
+    {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
+    {% endif %}
+
+    <!-- Other Products Section -->
     {% capture section_content %}
     <div class="ucr-section-header px-0 px-md-5">
         <h2>{{ page.section_products.header }}</h2>
@@ -60,7 +102,7 @@
 
     {% if page.checkout_code %}
     <div class="ucr-section-footer pt-0 pt-sm-5">
-        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">Get All {{ page.product_noun }}s</a>
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
     </div>
     {% endif %}
     {% endcapture %}

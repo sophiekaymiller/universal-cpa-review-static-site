@@ -31,6 +31,10 @@
       img {
         height: 400px;
       }
+
+      .ucr-product-thumbnail {
+        height: 250px;
+      }
     }
 
     @include media-breakpoint-down(sm) {
@@ -39,20 +43,6 @@
       .ucr-section-body img {
         width: 100%;
         height: auto;
-      }
-    }
-  }
-
-  &.ucr-section-features {
-    padding-top: 15px;
-
-    ul {
-      padding-left: 0;
-      list-style-type: none;
-
-      li {
-        padding: 15px 20px 15px 45px;
-        background: url('/assets/images/icons/feature-check.svg') no-repeat center left;
       }
     }
   }
@@ -70,6 +60,14 @@
       img {
         width: 100%;
       }
+    }
+  }
+
+  .ucr-video iframe {
+    height: 500px;
+
+    @include media-breakpoint-down(sm) {
+      height: 250px;
     }
   }
 }

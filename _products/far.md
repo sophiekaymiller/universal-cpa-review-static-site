@@ -36,21 +36,13 @@ features:
 date: 2018-06-07 02:59:40 +0000
 has_trial: false
 layout: product
+ebook:
+  checkout_code: fare
+  price: "$99"
 price: "$99"
 old_price: 129
 tags:
 - practice
 - featured
 noun: Exam
-featured_bundle:
-  header: Great Things Come In Two's
-  subheader: Maximize your learning with FAR test banks and task-based simulations,
-    guided by our comprehensive eBook and page-by-page supplement.
-  name: FAR Practice Tests + eBook
-  images:
-  - image: "/uploads/2019/01/29/download.png"
-  - image: "/uploads/2019/01/29/test bank.png"
-  cta_text: Get Them Together
-  checkout_code: FARBUNDLE
-
 ---

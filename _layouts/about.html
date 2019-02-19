@@ -46,22 +46,20 @@
     {% assign review=featured_reviews[1] %}
     {% include testimonial_block.html review=review %}
 
+    <!-- Video Section -->
+    {% if page.section_video and page.section_video.yt_id %}
     {% capture section_content %}
-    <h2>{{ page.section_team.header }}</h2>
-    <p>{{ page.section_team.subheader }}</p>
+    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
+        <h2>{{ page.section_video.header }}</h2>
+        <span>{{ page.section_video.subheader }}</span>
+    </div>
 
-    <ul class="row justify-content-center pt-3 pt-sm-4 pt-lg-5">
-        {% assign team = site.team | sort:"index" %}
-        {% for member in team %}
-        <li class="col-12 col-sm-6 col-md-3 pt-5">
-            <img class="rounded-circle" src="{{ member.picture }}" alt="{{ member.first_name }}" />
-            <h4>{{ member.first_name }} {{ member.last_name }}</h4>
-            <span>{{ member.position }}</span>
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="ucr-video pt-4">
+        {% include yt_video.html yt_id=page.section_video.yt_id %}
+    </div>
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-team' %}
+    {% include content_block.html content=section_content section_name='ucr-section-video pt-4' %}
+    {% endif %}
 
     {% include banner_block.html headline=page.banner.headline cta_url=page.banner.cta_url cta_text=page.banner.cta_text %}
 

@@ -20,35 +20,12 @@
     }
   }
 
-  /**-- Team Section --**/
-  &.ucr-section-team {
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+  /**-- Video Section --**/
+  .ucr-video iframe {
+    height: 500px;
 
-      li {
-        display: inline-block;
-        padding-left: 5px;
-        padding-right: 5px;
-
-        h4 {
-          padding-top: 10px;
-          margin-bottom: 0;
-          font-weight: $font-weight-bold;
-        }
-
-        img {
-          width: 150px;
-          height: 150px;
-        }
-      }
-    }
-
-    @include media-breakpoint-between(sm, md) {
-      ul li img {
-        width: 100px;
-        height: 100px;
-      }
+    @include media-breakpoint-down(sm) {
+      height: 250px;
     }
   }
 }

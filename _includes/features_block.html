@@ -1,0 +1,32 @@
+{% assign features_header = include.features_header %}
+{% assign features_list = include.features %}
+
+<div class="ucr-product-features">
+    {% if features_header %}
+    <h3 class="text-center mb-3 mb-sm-5">{{ features_header }}</h3>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-sm-6">
+            <ul>
+                {% for feature in features_list %}
+                {% assign mod = forloop.index0 | modulo:2 %}
+                {% if mod == 0  %}
+                <li>{{ feature }}</li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="col-sm-6">
+            <ul>
+                {% for feature in features_list %}
+                {% assign mod = forloop.index0 | modulo:2 %}
+                {% if mod == 1  %}
+                <li>{{ feature }}</li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

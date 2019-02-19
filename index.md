@@ -27,6 +27,7 @@ section_products:
     a new look at exam multiple choice questions, and practice simulations that you
     haven’t yet seen. In addition, Universal CPA Review offers over 550 pages of E-book
     text materials that come with page-by-page audio explanations. \n"
+  yt_id:
 section_featured:
   slides:
   - icon: "/assets/images/icons/featured-1.svg"
