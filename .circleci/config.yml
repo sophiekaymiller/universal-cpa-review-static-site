@@ -42,7 +42,7 @@ jobs:
           command: bundle install
       - run:
           name: Build Jekyll
-          command: VERSION=$CIRCLE_TAG bundle exec jekyll build
+          command: VERSION=$CIRCLE_SHA1 bundle exec jekyll build
       - save_cache:
           key: jekyll-build-{{ .Environment.CIRCLE_SHA1 }}
           paths:
