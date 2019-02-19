@@ -85,6 +85,23 @@ fields:
     name: price
     label: Price
     description: The price for the ebook (like "$99")
+- type: field_group
+  name: section_video
+  label: Section Video
+  description: The video section (if desired)
+  fields:
+  - type: text
+    name: header
+    label: Header
+    description: The header for the section
+  - type: text
+    name: subheader
+    label: Subheader
+    description: the video section subheader (if desired)
+  - type: text
+    label: yt_id
+    name: yt_id
+    description: The YouTube ID of the video to embed
 pages:
 - _products/reg.md
 - _products/aud.md
