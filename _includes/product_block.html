@@ -3,7 +3,7 @@
 {% assign description = include.description %}
 {% assign price = include.price %}
 {% assign cta_theme = include.cta_theme | default:"secondary" %}
-{% assign cta_url = include.cta_url %}
+{% capture cta_url %}{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ include.checkout_code }}{% endcapture %}
 {% assign cta_text = include.cta_text %}
 
 <div class="ucr-product">
