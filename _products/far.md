@@ -38,6 +38,7 @@ has_trial: false
 layout: product
 ebook:
   checkout_code: fare
+  price: "$99"
 price: "$99"
 old_price: 129
 tags:

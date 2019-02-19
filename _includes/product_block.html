@@ -1,6 +1,7 @@
 {% assign thumbnail = include.thumbnail | default:"/assets/images/placeholders/pug1.jpg" %}
 {% assign name = include.name %}
 {% assign description = include.description %}
+{% assign price = include.price %}
 {% assign cta_theme = include.cta_theme | default:"secondary" %}
 {% assign cta_url = include.cta_url %}
 {% assign cta_text = include.cta_text %}
@@ -15,6 +16,12 @@
             <p class="ucr-product-description">
                 {{ description }}
             </p>
+            {% endif %}
+
+            {% if price %}
+            <strong class="ucr-product-price d-block pb-3">
+            {{ price }}
+            </strong>
             {% endif %}
         </div>
 

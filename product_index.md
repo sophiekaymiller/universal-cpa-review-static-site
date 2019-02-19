@@ -38,11 +38,13 @@ section_bundles:
         thumbnail: /assets/images/icons/ebook.png
         checkout_code: alle
         cta_text: Buy E-Books
+        price: "$299"
       - name: All Test Banks
         description: Includes test bank access for all test sections
         thumbnail: /assets/images/icons/test-bank.png
         checkout_code: allbanks
         cta_text: Buy Test Banks
+        price: "$299"
 section_products:
   header: Choose Your CPA Exam
   subheader: Select test section to begin your practice questions

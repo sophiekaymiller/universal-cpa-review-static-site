@@ -20,7 +20,7 @@ section_about:
 section_video:
   header: See how it works
   subheader: ''
-  yt_id: ytCrcO_dm7U
+  yt_id:
 banner:
   headline: We're hiring! Join the Universal CPA Team
   cta_url: "/careers/"
