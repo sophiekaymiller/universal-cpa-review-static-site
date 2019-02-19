@@ -43,11 +43,11 @@ ebook:
   price: "$99"
 featured_bundle:
   header: Great Things Come In Two's
-  subheader: Maximize your learning with AUD practice tests, guided by comprehensive
-    eBook supplement.
+  subheader: Maximize your learning with Audit test banks and task-based simulations,
+    guided by our comprehensive eBook and page-by-page supplement.
   name: AUD Practice Tests + eBook
   images:
-  - image: "/uploads/2019/01/29/Screen Shot 2019-01-15 at 1.05.55 AM.png"
+  - image: "/uploads/2019/01/27/aud_ebook_cover.png"
   - image: "/assets/images/banners/mocks-combined@2x.png"
   cta_text: Get Them Together
   checkout_code: AUDEBUNDLE

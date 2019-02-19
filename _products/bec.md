@@ -43,6 +43,16 @@ tags:
 - practice
 - featured
 noun: Exam
+featured_bundle:
+  header: Great Things Come In Two's
+  subheader: Maximize your learning with BEC test banks and task-based simulations,
+    guided by our comprehensive eBook and page-by-page supplement.
+  name: BEC Practice Tests + eBook
+  images:
+  - image: "/uploads/2019/01/29/download (1).png"
+  - image: "/uploads/2019/01/29/test bank.png"
+  cta_text: Get Them Together
+  checkout_code: BECBUNDLE
 
 ---
 ## You need this material

@@ -2,9 +2,10 @@
 seo:
   title: Terms and Conditions | Universal CPA Review
 layout: simple
-permalink: /terms-of-use/
+permalink: "/terms-of-use/"
 section_hero:
-    header: Universal CPA Review Terms of Use
+  header: Universal CPA Review Terms of Use
+
 ---
 TERMS OF SERVICE AGREEMENT
 PLEASE READ THE FOLLOWING TERMS OF SERVICE AGREEMENT CAREFULLY. BY
@@ -18,18 +19,13 @@ SERVICE AGREEMENT IS EFFECTIVE AS OF 02/08/2018.
 
 ACCEPTANCE OF TERMS
 
-The following Terms of Service Agreement (the "TOS") is a legally binding agreement that shall
-govern the relationship with our users and others which may interact or interface with Universal
-CPA Review, also known as Universal CPA Review, located at 10 Hanover Square, New York,
-New York 10005 and our subsidiaries and affiliates, in association with the use of the Universal
-CPA Review website, which includes https://www.universalcpareview.com, (the "Site") and its
-Services, which shall be defined below.
+The following Terms of Service Agreement (the "TOS") is a legally binding agreement that shall govern the relationship with our users and others which may interact or interface with Universal CPA Review, also known as Universal CPA Review, located at 10 Hanover Square, New York, New York 10005 and our subsidiaries and affiliates, in association with the use of the Universal CPA Review website, which includes https://www.universalcpareview.com, (the "Site") and its Services, which shall be defined below. **Please note, that all sales are final.** 
 
 DESCRIPTION OF WEBSITE SERVICES OFFERED
 
 The Site is an e-commerce website which has the following description:
 
-*Promotion and sale of study material for the CPA exam.*
+_Promotion and sale of study material for the CPA exam._
 
 Any and all visitors to our site, despite whether they are registered or not, shall be deemed as
 "users" of the herein contained Services provided for the purpose of this TOS. Once an individual
@@ -103,7 +99,6 @@ https://www.universalcpareview.com/privacy-policy/). As a member, you herein con
 collection and use of the information provided, including the transfer of information within the
 United States and/or other countries for storage, processing or use by Universal CPA Review
 and/or our subsidiaries and affiliates.
-
 
 MEMBER ACCOUNT, USERNAME, PASSWORD AND SECURITY
 
@@ -262,7 +257,7 @@ to use, distribute, reproduce, modify, adapt, publicly perform and/or publicly d
 Content on our network Services are for the sole purpose of providing and promoting the
 specific area in which this content was placed and/or made available for viewing. This
 
-license shall be available so long as you are a member of Universal CPA Review's sites
+license shall be available so long as you are a member of Universal CPA Review's sites
 and shall terminate at such time when you elect to discontinue your membership.
 c) For any other content submitted or made available for inclusion on the publicly accessible
 areas of Universal CPA Review's sites, the continuous, binding and completely sublicensable license which is meant to permit to use, distribute, reproduce, modify, adapt,
@@ -302,7 +297,7 @@ liable for any claim or demand, which may include, but is not limited to, reason
 made by any third party which may arise from any content a member or user of our site may
 submit, post, modify, transmit or otherwise make available through our Services, the use of
 
-Universal CPA Review Services or your connection with these Services, your violations of the
+Universal CPA Review Services or your connection with these Services, your violations of the
 Terms of Service and/or your violation of any such rights of another person.
 
 COMMERCIAL REUSE OF SERVICES
@@ -344,7 +339,7 @@ immediately suspend, terminate, discontinue and/or limit your account, any email
 your account, and access to any of our Services. The cause for such termination, discontinuance,
 suspension and/or limitation of access shall include, but is not limited to:
 
-a) any breach or violation of our TOS or any other incorporated agreement, regulation and/or
+a) any breach or violation of our TOS or any other incorporated agreement, regulation and/or
 guideline;
 
 b) by way of requests from law enforcement or any other governmental agencies;
@@ -382,7 +377,7 @@ advertiser. Moreover, you herein agree that Universal CPA Review shall not be he
 or liable for any loss or damage of any nature or manner incurred as a direct result of any such
 dealings or as a result of the presence of such advertisers on our website.
 
-LINKS
+LINKS
 
 Either Universal CPA Review or any third parties may provide links to other websites and/or
 resources. Thus, you acknowledge and agree that we are not responsible for the availability of
@@ -468,7 +463,7 @@ FOLLOWING SYMPTOMS WHILE USING OUR SERVICES: DIZZINESS, ALTERED
 VISION, EYE OR MUSCLE TWITCHES, LOSS OF AWARENESS, DISORIENTATION,
 ANY INVOLUNTARY MOVEMENT, OR CONVULSIONS.
 
-LIMITATION OF LIABILITY
+LIMITATION OF LIABILITY
 
 YOU EXPLICITLY ACKNOWLEDGE, UNDERSTAND AND AGREE THAT UNIVERSAL CPA
 REVIEW AND OUR SUBSIDIARIES, AFFILIATES, OFFICERS, EMPLOYEES, AGENTS,
@@ -510,7 +505,7 @@ accuracy, usefulness or availability of any information transmitted and/or made 
 of our Services, and shall not be responsible or liable for any trading and/or investment decisions
 based on any such information.
 
-EXCLUSION AND LIMITATIONS
+EXCLUSION AND LIMITATIONS
 
 THERE ARE SOME JURISDICTIONS WHICH DO NOT ALLOW THE EXCLUSION OF CERTAIN
 WARRANTIES OR THE LIMITATION OF EXCLUSION OF LIABILITY FOR INCIDENTAL OR
@@ -637,5 +632,3 @@ Universal CPA Review <br />
 New York, New York 10005 <br />
 Telephone: 1-888-484-7157 <br />
 Email: support@universalcpareview.com
-
-
