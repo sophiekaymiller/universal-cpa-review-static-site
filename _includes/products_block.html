@@ -1,7 +1,7 @@
 <ul class="row ucr-products">
     {% for product in include.products %}
     <li class="col-md mb-6 mb-md-0">
-        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_url=product.url cta_text="Learn More" %}
+        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_text="Learn More" checkout_code=product.checkout_code %}
     </li>
     {% endfor %}
 </ul>
