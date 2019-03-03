@@ -20,8 +20,8 @@ name: AUD
 name_full: AUD Exam
 checkout_code: AUD
 bundle_checkout_code: all
-old_price: 129
-price: "$99"
+old_price: ''
+price: "$225"
 short_description: 'Enhance your Audit and Attestation exam study schedule with the
   best online CPA exam study resource. The Universal CPA Review Online Test Bank is
   a brand-new supplement in studying for the Uniform CPA Exam. Our Audit test bank
@@ -47,6 +47,7 @@ featured_bundle:
     guided by our comprehensive eBook and page-by-page supplement.
   name: AUD Practice Tests + eBook
   images:
+  - image: "/uploads/2019/03/03/AUD COMBO.png"
   - image: "/uploads/2019/01/27/aud_ebook_cover.png"
   - image: "/assets/images/banners/mocks-combined@2x.png"
   cta_text: Get Them Together
