@@ -40,7 +40,7 @@ date: 2018-06-07 02:59:40 +0000
 layout: product
 ebook:
   checkout_code: aude
-  price: "$99"
+  price: "$179"
 featured_bundle:
   header: Great Things Come In Two's
   subheader: Maximize your learning with Audit test banks and task-based simulations,
@@ -54,7 +54,7 @@ featured_bundle:
 section_video:
   header: See how it works
   subheader: ''
-  yt_id:
+  yt_id: ''
 tags:
 - practice
 - featured
