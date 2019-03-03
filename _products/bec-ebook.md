@@ -23,7 +23,7 @@ product_header: 'BEC E-Book + Page-by-Page Audio '
 old_price: 225
 price: "$179"
 short_description: Cover Everything That You Need to Know in Under 5 Hours
-thumbnail: "/assets/images/icons/products/bec.svg"
+thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
 features:
 - Interactive Adaptive Learning Technology
 - 125 Pages of E-Book Information
