@@ -8,7 +8,7 @@ seo:
   og_type: product.group
 layout: product_index
 name: ALL
-checkout_code: all
+checkout_code: Total CPA Exam Package
 product_noun: Exam
 permalink: "/products/"
 old_price: ''
