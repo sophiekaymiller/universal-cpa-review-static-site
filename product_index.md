@@ -36,7 +36,7 @@ section_bundles:
   - name: All E-Books
     description: Includes e-book access for all test sections
     thumbnail: "/assets/images/icons/ebook.png"
-    checkout_code: alle
+    checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$299"
   - name: All Test Banks
