@@ -103,7 +103,7 @@ fields:
     name: yt_id
     description: The YouTube ID of the video to embed
 pages:
-- _products/reg.md
-- _products/aud.md
-- _products/far.md
 - _products/bec.md
+- _products/aud.md
+- _products/reg.md
+- _products/far.md
