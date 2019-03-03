@@ -42,7 +42,7 @@ section_bundles:
   - name: All Test Banks
     description: Includes test bank access for all test sections
     thumbnail: "/assets/images/icons/test-bank.png"
-    checkout_code: allbanks
+    checkout_code: ALL
     cta_text: Buy Test Banks
     price: "$299"
 section_products:
