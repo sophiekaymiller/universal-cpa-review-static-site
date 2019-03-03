@@ -12,7 +12,7 @@ checkout_code: Total CPA Exam Package
 product_noun: Exam
 permalink: "/products/"
 old_price: ''
-price: "$299"
+price: 699
 section_hero:
   header: Universal CPA Review Sections
   subheader: 'The optimal supplemental support in preparing for your CPA exam. Universal
