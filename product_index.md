@@ -35,7 +35,7 @@ section_bundles:
   bundles:
   - name: All E-Books
     description: Includes e-book access for all test sections
-    thumbnail: "/assets/images/icons/ebook.png"
+    thumbnail: "/uploads/2019/03/03/universal cpa images-05 (1).png"
     checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$299"
