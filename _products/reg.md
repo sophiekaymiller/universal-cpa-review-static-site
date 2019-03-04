@@ -53,5 +53,12 @@ featured_bundle:
   - image: "/uploads/2019/01/29/test bank.png"
   cta_text: Get Them Together
   checkout_code: REGBUNDLE
+ebook:
+  checkout_code: REGE
+  price: 179
+section_video:
+  header: ''
+  subheader: ''
+  yt_id: ''
 
 ---
