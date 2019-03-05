@@ -18,7 +18,7 @@ seo:
     content: BEC
 name: BEC
 name_full: BEC Exam
-checkout_code: BEC
+checkout_code: BECBUNDLE
 bundle_checkout_code: all
 price: "$99 "
 short_description: 'Enhance your BEC exam study schedule with the best online CPA
@@ -28,7 +28,7 @@ short_description: 'Enhance your BEC exam study schedule with the best online CP
   45 task-based simulations to better prepare you for test day.
 
 '
-thumbnail: "/assets/images/icons/products/bec.svg"
+thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
 features:
 - 1,050 Multiple choice BEC questions that replicate the CPA exam.
 - In depth explanations that will give you a step-by-step, systematic way of solving
@@ -54,16 +54,16 @@ featured_bundle:
   cta_text: Get Them Together
   checkout_code: BECBUNDLE
 sub_products:
-  - thumbnail: "/assets/images/icons/test-bank.png"
-    name: "Test Bank Only" 
-    cta_text: "Buy Test Bank" 
-    checkout_code: bec
-    price: "$179"
-  - thumbnail: "/assets/images/icons/ebook.png"
-    name: "E-Book Only"
-    cta_text: "Buy E-Book"  
-    checkout_code: bece
-    price: "$179"
+- thumbnail: "/assets/images/icons/test-bank.png"
+  name: Test Bank Only
+  cta_text: Buy Test Bank
+  checkout_code: bec
+  price: "$179"
+- thumbnail: "/assets/images/icons/ebook.png"
+  name: E-Book Only
+  cta_text: Buy E-Book
+  checkout_code: bece
+  price: "$179"
 section_video:
   header: ''
   subheader: ''
