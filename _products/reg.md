@@ -59,7 +59,7 @@ sub_products:
   cta_text: Buy Test Bank
   checkout_code: reg
   price: "$99"
-- thumbnail: "/assets/images/icons/ebook.png"
+- thumbnail: "/uploads/2019/03/05/FAR.png"
   name: E-Book Only
   cta_text: Buy E-Book
   checkout_code: REGE
