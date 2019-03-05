@@ -61,6 +61,7 @@ sub_products:
   checkout_code: FARE
   price: "$179"
   name: E-book & Audio Only
+  cta_text: Buy E-book
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-bank Only '
   checkout_code: FAR
