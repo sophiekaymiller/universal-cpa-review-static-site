@@ -39,7 +39,7 @@ layout: product
 ebook:
   checkout_code: fare
   price: "$99"
-price: 225
+price: "$225"
 old_price: ''
 tags:
 - practice
