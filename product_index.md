@@ -25,7 +25,7 @@ section_hero:
     description: The complete bundle is the best possible deal
     cta_text: Buy Complete Bundle
 section_features:
-  header: Universal Full Cram Course Supplementary Material
+  header: Universal CPA Full Review Course
   features:
   - 4,200+ Multiple Choice Questions on all section replicating the CPA exam
   - 200 plus task-based simulations preparing you for test day
