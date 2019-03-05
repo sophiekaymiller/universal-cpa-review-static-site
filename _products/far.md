@@ -57,6 +57,10 @@ section_video:
   subheader: ''
   yt_id: ''
 sub_products:
-- thumbnail: "/uploads/2019/03/05/REG COMBO.png"
+- {}
+- thumbnail: "/uploads/2019/01/29/test bank.png"
+  name: 'Test-bank Only '
+  checkout_code: FAR
+  price: "$99"
 
 ---
