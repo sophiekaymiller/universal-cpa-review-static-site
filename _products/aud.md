@@ -38,24 +38,15 @@ features:
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
-sub_products:
-  - thumbnail: "/assets/images/icons/test-bank.png"
-    name: "Test Bank Only" 
-    cta_text: "Buy Test Bank" 
-    checkout_code: aud
-    price: "$179"
-  - thumbnail: "/assets/images/icons/ebook.png"
-    name: "E-Book Only"
-    cta_text: "Buy E-Book"  
-    checkout_code: aude
-    price: "$179"
+ebook:
+  checkout_code: aude
+  price: "$179"
 featured_bundle:
   header: Great Things Come In Two's
   subheader: Maximize your learning with Audit test banks and task-based simulations,
     guided by our comprehensive eBook and page-by-page supplement.
   name: AUD Practice Tests + eBook
   images:
-  - image: "/uploads/2019/03/03/AUD COMBO.png"
   - image: "/uploads/2019/01/27/aud_ebook_cover.png"
   - image: "/assets/images/banners/mocks-combined@2x.png"
   cta_text: Get Them Together
@@ -68,5 +59,11 @@ tags:
 - practice
 - featured
 noun: Exam
+sub_products:
+- thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
+  name: Test-bank Only
+  cta_text: Buy Test-bank
+  checkout_code: AUD
+  price: "$99"
 
 ---
