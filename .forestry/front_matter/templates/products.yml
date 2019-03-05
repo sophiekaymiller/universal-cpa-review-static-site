@@ -73,19 +73,6 @@ fields:
     description: The shortcode of the product bundle. Needs to match the shortcode
       set in the app Admin exactly
 - type: field_group
-  name: ebook
-  label: Ebook
-  description: EBook associated with this product
-  fields:
-  - type: text
-    label: Checkout Code
-    name: checkout_code
-    description: The checkout code for the ebook
-  - type: text
-    name: price
-    label: Price
-    description: The price for the ebook (like "$99")
-- type: field_group
   name: section_video
   label: Section Video
   description: The video section (if desired)
@@ -102,6 +89,35 @@ fields:
     label: yt_id
     name: yt_id
     description: The YouTube ID of the video to embed
+- type: field_group_list
+  name: sub_products
+  label: Sub Products
+  description: Sub products for a product
+  config:
+    min: '1'
+    max: '3'
+  fields:
+  - type: file
+    name: thumbnail
+    label: Thumbnail
+    description: The thumbnail for the sub product
+  - type: text
+    name: name
+    label: Name
+    description: The name of the sub product (like "Test Bank")
+  - type: text
+    name: cta_text
+    label: CTA Text
+    description: The text of the buy button (like "Buy Test Bank")
+  - type: text
+    label: Checkout Code
+    name: checkout_code
+    description: The exact checkout code of the Product, as copied from the Django
+      Admin
+  - type: text
+    label: Price
+    name: price
+    description: The price of the sub-product (like "$99")
 pages:
 - _products/reg.md
 - _products/aud.md
