@@ -59,11 +59,11 @@ sub_products:
   cta_text: 'Buy E-book '
   checkout_code: BECE
   price: "$179"
-- thumbnail: "/assets/images/icons/ebook.png"
-  name: E-Book Only
-  cta_text: Buy E-Book
-  checkout_code: bece
-  price: "$179"
+- thumbnail: "/uploads/2019/01/29/test bank.png"
+  name: 'Test-Bank Only '
+  cta_text: Buy Test-bank
+  checkout_code: BEC
+  price: "$99"
 section_video:
   header: ''
   subheader: ''
