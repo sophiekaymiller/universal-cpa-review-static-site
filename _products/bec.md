@@ -54,10 +54,10 @@ featured_bundle:
   cta_text: Get Them Together
   checkout_code: BECBUNDLE
 sub_products:
-- thumbnail: "/assets/images/icons/test-bank.png"
-  name: Test Bank Only
-  cta_text: Buy Test Bank
-  checkout_code: bec
+- thumbnail: "/uploads/2019/03/05/BEC.png"
+  name: 'E-book & Audio Only '
+  cta_text: 'Buy E-book '
+  checkout_code: BECE
   price: "$179"
 - thumbnail: "/assets/images/icons/ebook.png"
   name: E-Book Only
