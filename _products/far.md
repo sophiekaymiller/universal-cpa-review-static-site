@@ -18,7 +18,7 @@ seo:
     content: FAR
 name: FAR
 name_full: FAR Exam
-checkout_code: FAR
+checkout_code: FARBUNDLE
 bundle_checkout_code: all
 short_description: 'Enhance your FAR exam study schedule with the best online CPA
   exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
@@ -26,7 +26,7 @@ short_description: 'Enhance your FAR exam study schedule with the best online CP
   choice practice questions that come with detailed answer rationales, as well as
   65 task-based simulations to better prepare you for test day. Try your free trial
   today! '
-thumbnail: "/assets/images/icons/products/far.svg"
+thumbnail: "/uploads/2019/03/05/far combo.png"
 features:
 - '1,250 Multiple choice FAR questions that replicate the CPA exam. '
 - In depth explanations that will give you a step-by-step, systematic way of solving
@@ -36,21 +36,27 @@ features:
 date: 2018-06-07 02:59:40 +0000
 has_trial: false
 layout: product
-sub_products:
-  - thumbnail: "/assets/images/icons/test-bank.png"
-    name: "Test Bank Only" 
-    cta_text: "Buy Test Bank" 
-    checkout_code: far
-    price: "$179"
-  - thumbnail: "/assets/images/icons/ebook.png"
-    name: "E-Book Only"
-    cta_text: "Buy E-Book"  
-    checkout_code: fare
-    price: "$99"
-price: "$99"
-old_price: 129
+ebook:
+  checkout_code: fare
+  price: "$99"
+price: 225
+old_price: ''
 tags:
 - practice
 - featured
 noun: Exam
+featured_bundle:
+  header: ''
+  subheader: ''
+  name: ''
+  images: []
+  cta_text: ''
+  checkout_code: ''
+section_video:
+  header: ''
+  subheader: ''
+  yt_id: ''
+sub_products:
+- thumbnail: "/uploads/2019/03/05/REG COMBO.png"
+
 ---
