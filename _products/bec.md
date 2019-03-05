@@ -20,7 +20,7 @@ name: BEC
 name_full: BEC Exam
 checkout_code: BECBUNDLE
 bundle_checkout_code: all
-price: "$99 "
+price: "$225"
 short_description: 'Enhance your BEC exam study schedule with the best online CPA
   exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
   in studying for the Uniform CPA Exam. Our BEC test bank includes over 1,050 multiple
@@ -38,7 +38,7 @@ features:
 date: 2018-03-09 19:00:39 +0000
 has_trial: false
 layout: product
-old_price: 129
+old_price: ''
 tags:
 - practice
 - featured
