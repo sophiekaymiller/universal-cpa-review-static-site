@@ -27,7 +27,7 @@ short_description: 'Enhance your REG exam study schedule with the best online CP
   65 task-based simulations to better prepare you for test day.
 
 '
-thumbnail: "/assets/images/icons/products/reg.svg"
+thumbnail: "/uploads/2019/03/05/REG COMBO.png"
 features:
 - 1,100 Multiple choice REG questions that replicate the CPA exam.
 - In depth explanations that will give you a step-by-step, systematic way of solving
@@ -54,16 +54,16 @@ featured_bundle:
   cta_text: Get Them Together
   checkout_code: REGBUNDLE
 sub_products:
-  - thumbnail: "/assets/images/icons/test-bank.png"
-    name: "Test Bank Only" 
-    cta_text: "Buy Test Bank" 
-    checkout_code: reg
-    price: "$179"
-  - thumbnail: "/assets/images/icons/ebook.png"
-    name: "E-Book Only"
-    cta_text: "Buy E-Book"  
-    checkout_code: REGE
-    price: "$179"
+- thumbnail: "/uploads/2019/01/29/test bank.png"
+  name: Test Bank Only
+  cta_text: Buy Test Bank
+  checkout_code: reg
+  price: "$99"
+- thumbnail: "/assets/images/icons/ebook.png"
+  name: E-Book Only
+  cta_text: Buy E-Book
+  checkout_code: REGE
+  price: "$179"
 section_video:
   header: ''
   subheader: ''
