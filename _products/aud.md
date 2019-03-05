@@ -38,9 +38,17 @@ features:
 has_trial: false
 date: 2018-06-07 02:59:40 +0000
 layout: product
-ebook:
-  checkout_code: aude
-  price: "$179"
+sub_products:
+  - thumbnail: "/assets/images/icons/test-bank.png"
+    name: "Test Bank Only" 
+    cta_text: "Buy Test Bank" 
+    checkout_code: aud
+    price: "$179"
+  - thumbnail: "/assets/images/icons/ebook.png"
+    name: "E-Book Only"
+    cta_text: "Buy E-Book"  
+    checkout_code: aude
+    price: "$179"
 featured_bundle:
   header: Great Things Come In Two's
   subheader: Maximize your learning with Audit test banks and task-based simulations,

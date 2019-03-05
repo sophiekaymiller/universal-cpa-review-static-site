@@ -36,9 +36,17 @@ features:
 date: 2018-06-07 02:59:40 +0000
 has_trial: false
 layout: product
-ebook:
-  checkout_code: fare
-  price: "$99"
+sub_products:
+  - thumbnail: "/assets/images/icons/test-bank.png"
+    name: "Test Bank Only" 
+    cta_text: "Buy Test Bank" 
+    checkout_code: far
+    price: "$179"
+  - thumbnail: "/assets/images/icons/ebook.png"
+    name: "E-Book Only"
+    cta_text: "Buy E-Book"  
+    checkout_code: fare
+    price: "$99"
 price: "$99"
 old_price: 129
 tags:
