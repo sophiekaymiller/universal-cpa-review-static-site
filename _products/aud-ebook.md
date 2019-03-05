@@ -18,12 +18,12 @@ seo:
     content: AUDE
 name: AUD E-Book + Audio Explanations
 name_full: AUD EBook
-checkout_code: AUDE
+checkout_code: AUDEBUNDLE
 product_header: 'E-Book + Page-by-Page Audio '
-old_price: 225
-price: "$179"
+old_price: ''
+price: 225
 short_description: Cover Everything That You Need to Know in Under 5 Hours
-thumbnail: "/assets/images/icons/products/aud.svg"
+thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
 features:
 - Interactive Adaptive Learning Technology
 - Page-by-Page Audio Explanations
