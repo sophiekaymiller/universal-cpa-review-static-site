@@ -18,7 +18,7 @@ seo:
     content: AUD
 name: AUD
 name_full: AUD Exam
-checkout_code: AUD
+checkout_code: AUDEBUNDLE
 bundle_checkout_code: all
 old_price: ''
 price: "$225"
@@ -28,7 +28,7 @@ short_description: 'Enhance your Audit and Attestation exam study schedule with 
   includes over 1,200 multiple choice practice questions that come with detailed answer
   rationales, as well as 55 task-based simulations to better prepare you for test
   day. '
-thumbnail: "/assets/images/icons/products/aud.svg"
+thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
 features:
 - 1,200 Multiple choice Audit questions that replicate the CPA exam.
 - In depth explanations that will give you a step-by-step, systematic way of solving
