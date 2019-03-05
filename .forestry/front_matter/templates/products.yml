@@ -118,6 +118,12 @@ fields:
     label: Price
     name: price
     description: The price of the sub-product (like "$99")
+- type: text
+  name: checkout_code
+  label: Checkout Code
+- type: file
+  name: thumbnail
+  label: Thumbnail
 pages:
 - _products/aud.md
 - _products/reg.md
