@@ -57,7 +57,10 @@ section_video:
   subheader: ''
   yt_id: ''
 sub_products:
-- {}
+- thumbnail: "/uploads/2019/03/05/FAR.png"
+  checkout_code: FARE
+  price: "$179"
+  name: E-book & Audio Only
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-bank Only '
   checkout_code: FAR
