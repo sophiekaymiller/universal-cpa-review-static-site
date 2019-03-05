@@ -60,6 +60,11 @@ tags:
 - featured
 noun: Exam
 sub_products:
+- thumbnail: "/uploads/2019/03/03/AUD.png"
+  name: E-book & Audio Only
+  cta_text: Buy E-book
+  checkout_code: AUDE
+  price: "$179"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
   cta_text: Buy Test-bank

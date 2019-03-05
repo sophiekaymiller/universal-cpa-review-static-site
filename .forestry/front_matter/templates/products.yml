@@ -119,7 +119,7 @@ fields:
     name: price
     description: The price of the sub-product (like "$99")
 pages:
-- _products/reg.md
 - _products/aud.md
+- _products/reg.md
 - _products/bec.md
 - _products/far.md
