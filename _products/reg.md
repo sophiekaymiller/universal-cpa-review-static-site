@@ -18,7 +18,7 @@ seo:
     content: REG
 name: REG
 name_full: REG Exam
-checkout_code: REG
+checkout_code: REGBUNDLE
 bundle_checkout_code: all
 short_description: 'Enhance your REG exam study schedule with the best online CPA
   exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
@@ -37,8 +37,8 @@ features:
 date: 2018-06-07 02:59:40 +0000
 has_trial: false
 layout: product
-price: "$99 "
-old_price: 129
+price: "$225"
+old_price: ''
 tags:
 - practice
 - featured
