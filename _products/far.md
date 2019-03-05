@@ -65,5 +65,6 @@ sub_products:
   name: 'Test-bank Only '
   checkout_code: FAR
   price: "$99"
+  cta_text: Buy Test-bank
 
 ---
