@@ -27,8 +27,17 @@ section_hero:
 section_features:
   header: Universal CPA Full Review Course
   features:
-  - 4,200+ Multiple Choice Questions on all section replicating the CPA exam
-  - 200 plus task-based simulations preparing you for test day
+  - Additional brand-new, unique practice questions created by CPA instructors and
+    accounting professors.
+  - Licensed AICPA questions that have been distributed in actual past Uniform CPA
+    Exams.
+  - Video and audio answer explanations for multiple-choice questions and task-based
+    simulations.
+  - One time purchase for access until you pass!
+  - 'Page-by-page audio explanations '
+  - 575 pages of e-book material covering all of the critical components of each section.
+  - 4,200+ Multiple Choice Questions on all section replicating the CPA exam.
+  - 200 plus task-based simulations preparing you for test day.
 section_bundles:
   header: Get The Best Deal With A Bundle
   subheader: Our bundles are the best bang for your buck.
