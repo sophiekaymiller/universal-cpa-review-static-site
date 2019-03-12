@@ -24,7 +24,6 @@
                     {% for product in products %}
                     <a class="dropdown-item" href="{{ product.url }}">{{ product.name_full }}</a>
                     {% endfor %}
-                    <a class="dropdown-item" href="{% link ebook_index.md %}">EBooks</a>
                 </div>
             </li>
             <li class="nav-item{% if page.url == '/reviews/' %} active{% endif %}">
