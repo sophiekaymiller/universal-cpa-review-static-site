@@ -75,9 +75,8 @@
     <div class="pt-6">
         <div class="d-md-flex justify-content-center equal-width">
         {% for bundle in page.section_bundles.bundles %}
-            {% capture cta_url %}{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ bundle.checkout_code }}&trial=0{% endcapture %}
             <div class="px-3 mx-4 pb-5 pb-md-0">
-                {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description cta_url=cta_url cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
+                {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description checkout_code=bundle.checkout_code cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
             </div>
         {% endfor %}
         </div>
