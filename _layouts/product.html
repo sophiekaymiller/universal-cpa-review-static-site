@@ -124,7 +124,7 @@
     {% include content_block.html content=section_content section_name='ucr-section-video gray pt-3' %}
     {% endif %}
 
-    {% if page.featured_bundle %}
+    {% if page.featured_bundle and page.featured_bundle.checkout_code != '' %}
     {% capture section_content %}
     <!-- Featured Bundle -->
     {% include ribbon.html text="Featured Bundle" %}
