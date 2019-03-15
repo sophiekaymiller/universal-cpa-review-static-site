@@ -1,7 +1,11 @@
+{% assign cta_type = include.cta_type | default:"detail" %}
 <ul class="row ucr-products">
     {% for product in include.products %}
     <li class="col-md mb-6 mb-md-0">
-        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_text="Learn More" checkout_code=product.checkout_code %}
+        {% if cta_type == "detail" %}
+        {% assign cta_url = product.url %}
+        {% endif %}
+        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_url=cta_url cta_text="Learn More" checkout_code=product.checkout_code %}
     </li>
     {% endfor %}
 </ul>
