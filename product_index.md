@@ -41,12 +41,12 @@ section_bundles:
   header: Get The Best Deal With A Bundle
   subheader: Our bundles are the best bang for your buck.
   bundles:
-  - name: All E-Books
-    description: Includes e-book access for all test sections
+  - name: All Textbooks & Animated Video Lectures
+    description: Includes Textbook Materials & Animated Video Lectures for All Sections
     thumbnail: "/uploads/2019/03/03/test banks .png"
     checkout_code: All Ebooks
     cta_text: Buy E-Books
-    price: "$499"
+    price: "$550"
   - name: All Test Banks
     description: Includes test bank access for all test sections
     thumbnail: "/uploads/2019/01/29/test bank.png"
