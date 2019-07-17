@@ -21,21 +21,19 @@ name_full: BEC Exam
 checkout_code: BECBUNDLE
 bundle_checkout_code: all
 price: "$225"
-short_description: 'Enhance your BEC exam study schedule with the best online CPA
-  exam study resource. The Universal CPA Review Online Test Bank is a brand-new supplement
-  in studying for the Uniform CPA Exam. Our BEC test bank includes over 1,050 multiple
-  choice practice questions that come with detailed answer rationales, as well as
-  45 task-based simulations to better prepare you for test day.
-
-'
+short_description: 'Enhance your Business Environmental Concepts (BEC) exam study
+  schedule with the best online CPA exam study resource. The Universal CPA Review
+  Online review course offers candidates over 300 pages of textbook materials, 10
+  hours of animated video lectures, over 1,050 multiple choice practice questions
+  that come with detailed answer rationales, and 45 task-based simulations to better
+  prepare you for test day. '
 thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
 features:
 - 1,050 Multiple choice BEC questions that replicate the CPA exam.
-- In depth explanations that will give you a step-by-step, systematic way of solving
-  problems.
+- Over 10 Hours of Animated Video Lectures
 - 45 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
-date: 2018-03-09 19:00:39 +0000
+date: 2018-03-09T19:00:39.000+00:00
 has_trial: false
 layout: product
 old_price: ''
@@ -54,11 +52,11 @@ featured_bundle:
   cta_text: Get Them Together
   checkout_code: BECBUNDLE
 sub_products:
-- thumbnail: "/uploads/2019/03/05/BEC.png"
-  name: 'E-book & Audio Only '
+- thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
+  name: 'E-book & Animated Video Lectures '
   cta_text: 'Buy E-book '
   checkout_code: BECE
-  price: "$179"
+  price: "$199"
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
   cta_text: Buy Test-bank
