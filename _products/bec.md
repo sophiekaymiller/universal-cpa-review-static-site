@@ -27,7 +27,7 @@ short_description: 'Enhance your Business Environmental Concepts (BEC) exam stud
   hours of animated video lectures, over 1,050 multiple choice practice questions
   that come with detailed answer rationales, and 45 task-based simulations to better
   prepare you for test day. '
-thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
+thumbnail: "/uploads/2019/07/17/Screenshot (620).png"
 features:
 - 1,050 Multiple choice BEC questions that replicate the CPA exam.
 - Over 10 Hours of Animated Video Lectures
