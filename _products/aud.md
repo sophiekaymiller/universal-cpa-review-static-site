@@ -20,15 +20,15 @@ name: AUD
 name_full: AUD Exam
 checkout_code: AUDEBUNDLE
 bundle_checkout_code: all
-old_price: ''
-price: "$225"
+old_price: "350"
+price: "$299"
 short_description: 'Enhance your Audit and Attestation exam study schedule with the
-  best online CPA exam study resource. The Universal CPA Review Online Test Bank is
-  a brand-new supplement in studying for the Uniform CPA Exam. Our Audit test bank
-  includes over 1,200 multiple choice practice questions that come with detailed answer
-  rationales, as well as 55 task-based simulations to better prepare you for test
+  best online CPA exam study resource. The Universal CPA Review Online review course
+  offers candidates over 300 pages of e-book textbook materials, 10 hours of animated
+  video lectures, over 1,200 multiple choice practice questions that come with detailed
+  answer rationales, and 55 task-based simulations to better prepare you for test
   day. '
-thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
+thumbnail: "/uploads/2019/07/17/audit product.png"
 features:
 - 1,200 Multiple choice Audit questions that replicate the CPA exam.
 - In depth explanations that will give you a step-by-step, systematic way of solving
@@ -36,7 +36,7 @@ features:
 - 55 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 has_trial: false
-date: 2018-06-07 02:59:40 +0000
+date: 2018-06-07T02:59:40.000+00:00
 layout: product
 ebook:
   checkout_code: aude
@@ -44,8 +44,8 @@ ebook:
 featured_bundle:
   header: Great Things Come In Two's
   subheader: Maximize your learning with Audit test banks and task-based simulations,
-    guided by our comprehensive eBook and page-by-page supplement.
-  name: AUD Practice Tests + eBook
+    guided by our comprehensive eBook and animated video lectures.
+  name: AUD Full Course Package
   images:
   - image: "/uploads/2019/01/27/aud_ebook_cover.png"
   - image: "/assets/images/banners/mocks-combined@2x.png"
@@ -60,11 +60,11 @@ tags:
 - featured
 noun: Exam
 sub_products:
-- thumbnail: "/uploads/2019/03/03/AUD.png"
-  name: E-book & Audio Only
-  cta_text: Buy E-book
+- thumbnail: "/uploads/2019/07/17/aud e-book   video.png"
+  name: E-book & Video Lectures
+  cta_text: Buy E-book & Video
   checkout_code: AUDE
-  price: "$179"
+  price: "$199"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
   cta_text: Buy Test-bank
