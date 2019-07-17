@@ -60,7 +60,7 @@ sub_products:
 - thumbnail: "/uploads/2019/07/17/itemized deductions image.png"
   name: E-Book & Animated Video Lecture
   cta_text: Buy E-Book
-  checkout_code: REGE
+  checkout_code: REGEV
   price: "$199"
 section_video:
   header: ''
