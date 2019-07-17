@@ -20,7 +20,7 @@ name: BEC
 name_full: BEC Exam
 checkout_code: BECBUNDLE
 bundle_checkout_code: all
-price: "$225"
+price: "$299"
 short_description: 'Enhance your Business Environmental Concepts (BEC) exam study
   schedule with the best online CPA exam study resource. The Universal CPA Review
   Online review course offers candidates over 300 pages of textbook materials, 10
@@ -36,7 +36,7 @@ features:
 date: 2018-03-09T19:00:39.000+00:00
 has_trial: false
 layout: product
-old_price: ''
+old_price: "$350"
 tags:
 - practice
 - featured
