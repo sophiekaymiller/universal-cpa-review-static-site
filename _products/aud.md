@@ -62,7 +62,7 @@ sub_products:
 - thumbnail: "/uploads/2019/07/17/inventory cycle.png"
   name: E-book & Video Lectures
   cta_text: Buy E-book & Video
-  checkout_code: AUDE
+  checkout_code: AUDEV
   price: "$199"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
