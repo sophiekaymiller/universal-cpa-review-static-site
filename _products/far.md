@@ -29,8 +29,7 @@ short_description: 'Enhance your Financial Accounting & Reporting (FAR) exam stu
 thumbnail: "/uploads/2019/07/17/Screenshot (618).png"
 features:
 - '1,250 Multiple choice FAR questions that replicate the CPA exam. '
-- In depth explanations that will give you a step-by-step, systematic way of solving
-  problems.
+- Over 10 Hours of Animated Video Lectures
 - 65 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 date: 2018-06-07T02:59:40.000+00:00
