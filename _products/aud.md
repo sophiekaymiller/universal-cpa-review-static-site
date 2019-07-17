@@ -31,8 +31,7 @@ short_description: 'Enhance your Audit and Attestation exam study schedule with 
 thumbnail: "/uploads/2019/07/17/audit product.png"
 features:
 - 1,200 Multiple choice Audit questions that replicate the CPA exam.
-- In depth explanations that will give you a step-by-step, systematic way of solving
-  problems.
+- Over 10 Hours of Animated Video Lectures
 - 55 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
 has_trial: false
@@ -60,7 +59,7 @@ tags:
 - featured
 noun: Exam
 sub_products:
-- thumbnail: "/uploads/2019/07/17/aud e-book   video.png"
+- thumbnail: "/uploads/2019/07/17/inventory cycle.png"
   name: E-book & Video Lectures
   cta_text: Buy E-book & Video
   checkout_code: AUDE
