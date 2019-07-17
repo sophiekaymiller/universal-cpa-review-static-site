@@ -11,7 +11,7 @@ seo:
   - property: og:product:condition
     content: new
   - property: og:product:price:amount
-    content: 99
+    content: "99"
   - property: og:product:price:currency
     content: USD
   - property: og:product:retailer_item_id
@@ -19,18 +19,18 @@ seo:
 name: FAR E-Book + Audio Explanations
 name_full: FAR EBook
 checkout_code: FARE
-product_header: E-Book + Page-by-Page Audio Explanations
-old_price: 225
-price: 179
+product_header: E-Book + Animated Video Lectures
+old_price: "$225"
+price: "$179"
 short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/assets/images/icons/products/far.svg"
 features:
 - Interactive Adaptive Learning Technology
-- Page-by-Page Audio Explanations
-- 153 Pages of E-book Material
+- Over 10 Hours of Animated Video Lectures
+- Over 300 Pages of Textbook Material
 - Unlimited Instructor Support
 has_trial: false
-date: 2018-06-07 02:59:40 +0000
+date: 2018-06-07T02:59:40.000+00:00
 layout: product
 tags:
 - ebook
