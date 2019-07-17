@@ -20,12 +20,13 @@ section_about:
 section_video:
   header: See how it works
   subheader: ''
-  yt_id:
+  yt_id: 
 banner:
   headline: We're hiring! Join the Universal CPA Team
   cta_url: "/careers/"
   cta_text: I'm interested
 title: Who Is Universal CPA Review
+
 ---
 #### Our Story
 
@@ -35,4 +36,4 @@ We are CPAs that wanted to make an accessible, cost-effective and efficient CPA 
 
 The Uniform CPA exam is an extremely comprehensive, and detail oriented exam. If you are currently, or are planning on working in the industry of accounting, obtaining your CPA license is paramount to your career success. With Universal CPA Review, we are dedicated to offering you sufficient practice material, and testing you on aspects of the exam that you are guaranteed to see on test day. With Universal CPA Review not only are you able study smarter, but you do so without spending thousands of dollars on over-priced review courses.
 
-Seeking a tutor? Universal CPA Review has a partnership relationship with MyGuru CPA Tutoring: [**https://www.myguruedge.com/cpa-tutor**](https://www.myguruedge.com/cpa-tutor "MyGuru CPA Tutoring") to offer our students not only the best supplemental resources, but also one-on-one attention that they might desire.
+Seeking a tutor? Universal CPA Review has its own intensive one-on-one CPA tutoring program: [**https://www.**](https://www.myguruedge.com/cpa-tutor "MyGuru CPA Tutoring")**cpaexamtutors.com** to offer our students not only the best online study resources, but also one-on-one attention that they might desire.
