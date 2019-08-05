@@ -11,7 +11,7 @@ seo:
   - property: og:product:condition
     content: new
   - property: og:product:price:amount
-    content: 99
+    content: "99"
   - property: og:product:price:currency
     content: USD
   - property: og:product:retailer_item_id
@@ -20,8 +20,8 @@ name: REG E-Book + Audio Explanations
 name_full: REG EBook
 checkout_code: REGE
 product_header: EBook For The REG CPA Exam
-old_price: 225
-price: 179
+old_price: "$250"
+price: "$225"
 short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/assets/images/icons/products/reg.svg"
 features:
@@ -30,7 +30,7 @@ features:
 - Page-by-Page Audio Explanations
 - Unlimited Instructor Support
 has_trial: false
-date: 2018-06-06 22:59:40 -0400
+date: 2018-06-07T02:59:40.000+00:00
 layout: product
 tags:
 - ebook
