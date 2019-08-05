@@ -11,7 +11,7 @@ seo:
   - property: og:product:condition
     content: new
   - property: og:product:price:amount
-    content: 99
+    content: "99"
   - property: og:product:price:currency
     content: USD
   - property: og:product:retailer_item_id
@@ -19,18 +19,18 @@ seo:
 name: AUD E-Book + Audio Explanations
 name_full: AUD EBook
 checkout_code: AUDEBUNDLE
-product_header: 'E-Book + Page-by-Page Audio '
-old_price: ''
-price: 225
+product_header: E-Book + Animated Video Lectures
+old_price: "$250"
+price: "$225"
 short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
 features:
 - Interactive Adaptive Learning Technology
-- Page-by-Page Audio Explanations
-- 139 Pages of E-book Information
+- Step-by-step Explanations
+- 300 Pages of Textbook Material
 - 'Unlimited Instructor Support '
 has_trial: false
-date: 2018-06-07 02:59:40 +0000
+date: 2018-06-07T02:59:40.000+00:00
 layout: product
 tags:
 - ebook
