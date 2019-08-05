@@ -20,8 +20,8 @@ name: FAR E-Book + Audio Explanations
 name_full: FAR EBook
 checkout_code: FARE
 product_header: E-Book + Animated Video Lectures
-old_price: "$225"
-price: "$179"
+old_price: "$250"
+price: "$225"
 short_description: Cover Everything That You Need to Know in Under 5 Hours
 thumbnail: "/assets/images/icons/products/far.svg"
 features:
