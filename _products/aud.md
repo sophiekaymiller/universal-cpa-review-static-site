@@ -28,7 +28,7 @@ short_description: 'Enhance your Audit and Attestation exam study schedule with 
   video lectures, over 1,200 multiple choice practice questions that come with detailed
   answer rationales, and 55 task-based simulations to better prepare you for test
   day. '
-thumbnail: "/uploads/2019/07/17/audit product.png"
+thumbnail: "/uploads/2019/07/17/aud e-book   video.png"
 features:
 - 1,200 Multiple choice Audit questions that replicate the CPA exam.
 - Over 10 Hours of Animated Video Lectures
@@ -53,7 +53,7 @@ featured_bundle:
 section_video:
   header: See how it works
   subheader: ''
-  yt_id: ''
+  yt_id: GAnxJcyYpmY
 tags:
 - practice
 - featured
