@@ -51,9 +51,10 @@ featured_bundle:
   cta_text: Get Them Together
   checkout_code: AUDEBUNDLE
 section_video:
-  header: See how it works
-  subheader: ''
-  yt_id: GAnxJcyYpmY
+  header: Not Your Traditional CPA Review Course!
+  subheader: 'Our animated video lectures are specifically designed to help visual
+    learners. See if our method of teaching AUD is for you! '
+  yt_id: 35M17m1sWiY
 tags:
 - practice
 - featured
