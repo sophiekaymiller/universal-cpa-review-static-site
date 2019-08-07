@@ -63,8 +63,9 @@ sub_products:
   checkout_code: REGEV
   price: "$199"
 section_video:
-  header: ''
-  subheader: ''
-  yt_id: ''
+  header: Not Your Traditional CPA Review Course
+  subheader: Our animated video lectures are specifically designed to help visual
+    learners. See if our method of teaching REG is for you!
+  yt_id: haOoMA8sv8c
 
 ---
