@@ -46,7 +46,7 @@ section_bundles:
     thumbnail: "/uploads/2019/03/03/test banks .png"
     checkout_code: All Ebooks
     cta_text: Buy E-Books
-    price: "$550"
+    price: "$799"
   - name: All Test Banks
     description: 'Includes test bank access for all four sections as well as detailed
       answer solutions, and video walk through explanations. '
