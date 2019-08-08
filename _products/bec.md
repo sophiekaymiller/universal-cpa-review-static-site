@@ -63,9 +63,10 @@ sub_products:
   checkout_code: BEC
   price: "$99"
 section_video:
-  header: ''
-  subheader: ''
-  yt_id: ''
+  header: Not Your Traditional CPA Review Course!
+  subheader: 'Our animated video lectures are specifically designed to help visual
+    learners. See if our method of teaching BEC is for you! '
+  yt_id: vL9HZDDa97E
 
 ---
 ## You need this material
