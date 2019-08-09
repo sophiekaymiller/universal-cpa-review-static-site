@@ -36,7 +36,7 @@ features:
 date: 2018-03-09T19:00:39.000+00:00
 has_trial: false
 layout: product
-old_price: "$350"
+old_price: ''
 tags:
 - practice
 - featured
