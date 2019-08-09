@@ -36,7 +36,7 @@ date: 2018-06-07T02:59:40.000+00:00
 has_trial: false
 layout: product
 price: "$299"
-old_price: "$350"
+old_price: ''
 tags:
 - practice
 - featured
@@ -61,11 +61,11 @@ sub_products:
   name: E-Book & Animated Video Lecture
   cta_text: Buy E-Book
   checkout_code: REGEV
-  price: "$199"
+  price: "$249"
 section_video:
-  header: Not Your Traditional CPA Review Course
-  subheader: Our animated video lectures are specifically designed to help visual
-    learners. See if our method of teaching REG is for you!
+  header: 'Not Your Traditional CPA Review Course '
+  subheader: 'Our animated video lectures are specifically designed to help visual
+    learners. See if our method of teaching REG is for you! '
   yt_id: haOoMA8sv8c
 
 ---
