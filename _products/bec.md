@@ -56,7 +56,7 @@ sub_products:
   name: 'E-book & Animated Video Lectures '
   cta_text: 'Buy E-book '
   checkout_code: BECEV
-  price: "$199"
+  price: "$249"
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
   cta_text: Buy Test-bank
