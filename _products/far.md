@@ -59,7 +59,7 @@ section_video:
 sub_products:
 - thumbnail: "/uploads/2019/07/17/Screenshot (258).png"
   checkout_code: FAREV
-  price: "$199"
+  price: "$249"
   name: E-book & Animated Video Lectures
   cta_text: Buy E-book
 - thumbnail: "/uploads/2019/01/29/test bank.png"
