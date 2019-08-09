@@ -20,7 +20,7 @@ name: AUD
 name_full: AUD Exam
 checkout_code: AUDEBUNDLE
 bundle_checkout_code: all
-old_price: "350"
+old_price: ''
 price: "$299"
 short_description: 'Enhance your Audit and Attestation exam study schedule with the
   best online CPA exam study resource. The Universal CPA Review Online review course
