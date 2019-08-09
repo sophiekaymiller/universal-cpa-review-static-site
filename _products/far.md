@@ -38,8 +38,8 @@ layout: product
 ebook:
   checkout_code: fare
   price: "$99"
-price: "$350"
-old_price: "$299"
+price: "$299"
+old_price: ''
 tags:
 - practice
 - featured
