@@ -124,7 +124,7 @@ fields:
   name: thumbnail
   label: Thumbnail
 pages:
+- _products/bec.md
 - _products/reg.md
 - _products/far.md
-- _products/bec.md
 - _products/aud.md
