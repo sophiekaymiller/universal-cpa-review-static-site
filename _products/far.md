@@ -52,10 +52,11 @@ featured_bundle:
   cta_text: ''
   checkout_code: ''
 section_video:
-  header: Not Your Traditional CPA Review Course!
-  subheader: 'Our animated video lectures are specifically designed to help visual
-    learners. See if our method of teaching FAR is for you! '
-  yt_id: U4WVx9hLFcQ
+  header: 'Our Multiple-Choice Questions Come With Video Explanations! '
+  subheader: 'If you still are struggling to figure out how to find the correct answer,
+    our step-by-step video walk-through explanations will help you understand exactly
+    what to do. '
+  yt_id: GgAOmjggI9Y
 sub_products:
 - thumbnail: "/uploads/2019/07/17/Screenshot (258).png"
   checkout_code: FAREV
