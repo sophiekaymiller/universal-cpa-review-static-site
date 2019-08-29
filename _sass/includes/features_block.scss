@@ -1,5 +1,5 @@
 .ucr-section-features {
-  padding-top: 5px;
+  padding-top: 10px;
 
   ul {
     padding-left: 0;
@@ -10,7 +10,8 @@
     li {
       width:  200px;
 	  height: 100px;
-      background: url('/assets/images/icons/feature-check.svg') no-repeat center left;
+
+      /*background: url('/assets/images/icons/feature-check.svg') no-repeat center left;*/
     }
   }
 }
