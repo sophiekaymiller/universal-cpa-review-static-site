@@ -5,8 +5,8 @@ $cta-themes: (
 
 .ucr-product {
   .ucr-product-inner {
-    box-shadow: 1px 1px 6px 0 #00000040;
-    background: $white;
+    /*box-shadow: 1px 1px 6px 0 #00000040;*/
+    background: #F2EEF5;
 
     .ucr-product-header {
       text-align: center;
@@ -30,7 +30,7 @@ $cta-themes: (
     .ucr-product-footer {
       .ucr-product-cta {
         background: $light-teal;
-        color: $primary;
+        /*color: $primary;*/
         display: block;
         padding: 10px 0;
         text-align: center;
