@@ -1,7 +1,12 @@
 .ucr-banner {
   /*background: $secondary;*/
   padding: 20px 0;
+  top: 0px;
+  left: 0px;
+  width: 1564px;
+  height: 881px;
   text-align: center;
+  background: transparent url('/uploads/2019/08/29/texture.png') 0% 0% no-repeat padding-box;
 
   h5 {
     color: $primary;
@@ -11,4 +16,6 @@
   .btn {
     color: $secondary;
   }
+
+
 }
