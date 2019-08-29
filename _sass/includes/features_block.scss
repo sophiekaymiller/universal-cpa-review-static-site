@@ -4,9 +4,13 @@
   ul {
     padding-left: 0;
     list-style-type: none;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+	opacity: 1;
 
     li {
       padding: 15px 20px 15px 45px;
+      width: 275px;
+	  height: 286px;
       background: url('/assets/images/icons/feature-check.svg') no-repeat center left;
     }
   }
