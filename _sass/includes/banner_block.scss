@@ -1,14 +1,15 @@
 .ucr-banner {
   /*background: $secondary;*/
   padding: 20px 0;
-  top: 0px;
-  left: 0px;
-  width: 1564px;
-  height: 881px;
-  text-align: center;
-  background: transparent url('/uploads/2019/08/29/texture.png') 0% 0% no-repeat padding-box;
-  background-color: purple;
-  opacity: 0.7;
+
+text-align: center;
+background: transparent url('/assets/images/banners/Base_Product_Banner@2x.png') 0% 0% no-repeat padding-box;
+
+width: 1894px;
+height: 881px;
+background: #391572 0% 0% no-repeat padding-box;
+box-shadow: 0px 10px 60px #00000026;
+opacity: 0.7;
 
   h5 {
     color: #F2EEF5;
