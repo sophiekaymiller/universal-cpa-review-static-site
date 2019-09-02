@@ -11,12 +11,16 @@ section_hero:
     to providing quality Uniform CPA exam study resources at a more affordable price.
     Universal CPA Review adaptive learning technology is designed to offer you a more
     effective way of preparing you for test day.  '
+  cta_text: Learn More
+  cta_url: "/products/"
 section_about:
   header: 'Your Plan Of Attack '
   subheader: 'Starting April 1, 2017 the Uniform CPA Exam dramatically changed its
     test format adopting a larger emphasis on critical thinking and advanced order
     skills. Universal CPA Review offers supplemental support by testing your knowledge
     and preparing you for test day. '
+  cta_text: Learn More
+  cta_url: "/products/"
 section_video:
   header: See how it works
   subheader: ''
