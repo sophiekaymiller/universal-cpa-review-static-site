@@ -12,11 +12,11 @@
     }
 
     .new-price {
-      color: black;
+      color: $black;
     }
 
     .old-price {
-      color: red;
+      color: $red;
       text-decoration: line-through;
     }
   }
