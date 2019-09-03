@@ -1,18 +1,13 @@
 .ucr-section-features {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
 
   ul {
     padding-left: 0;
     list-style-type: none;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-	opacity: 1;
 
     li {
-      width:  250px;
-	  height: 200px;
-
-      /*background: url('/assets/images/icons/feature-check.svg') no-repeat center left;*/
+      padding: 15px 20px 15px 45px;
+      background: url('/assets/images/icons/feature-check.svg') no-repeat center left;
     }
   }
 }
