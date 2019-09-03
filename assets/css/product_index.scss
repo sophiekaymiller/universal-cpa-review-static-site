@@ -1,12 +1,10 @@
----
----
-@import 'site';
+@import '/_sass/site.scss';
 
 .ucr-section.ucr-section-hero {
   padding-top: 100px;
   padding-bottom: 0;
   background-color: transparent;
-  background-image: url("/assets/images/banners/Base - Banner@2x.png");
+  background-image: url("/assets/images/banners/Base_Product _Banner.png")
 
   .ucr-section-header {
     p {
