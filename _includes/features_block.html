@@ -7,28 +7,23 @@
     {% endif %}
 
     <div class="row">
-        <div>
+        <div class="col-sm-6">
             <ul>
-
                 {% for feature in features_list %}
                 {% assign mod = forloop.index0 | modulo:2 %}
                 {% if mod == 0  %}
-                <li class="col-12 col-md-4 py-4 py-md-0"> 
-                {{ feature }}
-                </li>
+                <li>{{ feature }}</li>
                 {% endif %}
                 {% endfor %}
             </ul>
         </div>
 
-        <div>
+        <div class="col-sm-6">
             <ul>
                 {% for feature in features_list %}
                 {% assign mod = forloop.index0 | modulo:2 %}
                 {% if mod == 1  %}
-                <li class="col-12 col-md-4 py-4 py-md-0"> 
-                {{ feature }}
-                </li>
+                <li>{{ feature }}</li>
                 {% endif %}
                 {% endfor %}
             </ul>
