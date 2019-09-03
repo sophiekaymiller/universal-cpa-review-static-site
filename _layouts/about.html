@@ -15,7 +15,7 @@
 
     <div class="row mt-3">
         <div class="col-12 text-center">
-            <a href="{% link product_index.md %}" class="btn btn-cta-light">Start Free Trial</a>
+            <a href="{{ page.section_hero.cta_url }}" class="btn btn-cta-light">{{ page.section_hero.cta_text }}</a>
         </div>
     </div>
     {% endcapture %}
@@ -37,7 +37,7 @@
 
     <div class="row mt-3">
         <div class="col-12 text-center">
-            <a href="{% link product_index.md %}" class="btn btn-cta-light">Try Us Out</a>
+            <a href="{{ page.section_about.cta_url }}" class="btn btn-cta-light">{{ page.section_about.cta_text }}</a>
         </div>
     </div>
     {% endcapture %}
