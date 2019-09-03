@@ -20,7 +20,7 @@ section_hero:
     you for exam day. Over 4,200 multiple choice questions with detailed answer descriptions
     as well as over 200 task-based simulations that will replicate your exam experience. '
   bundle:
-    image: "/uploads/2019/08/28/SectionHeroImage@2x.png"
+    image: "/uploads/2019/08/28/Section%20Hero%20Image@2x.png"
     title: Complete Bundle
     description: The complete bundle is the best possible deal
     cta_text: Buy Complete Bundle
