@@ -56,12 +56,37 @@
     {% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
     <!-- Features Section -->
-    {% capture section_content %}
+<!--     {% capture section_content %}
         <div class="py-4">
             {% include features_block.html features_header=page.section_features.header features=page.section_features.features %}
         </div>
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-features' %}
+    {% include content_block.html content=section_content section_name='ucr-section-features' %} -->
+
+    <!-- Features Cards  -->
+
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Additional</h5>
+        <p class="card-text">brand-new, unique practice questions created by CPA instructors and accounting professors.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Video and Audio</h5>
+        <p class="card-text">answer explanations for multiple-choice questions and task-based simulations.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Test -->
 
     <!-- Bundles Section -->
     {% capture section_content %}
@@ -103,6 +128,7 @@
     </div>
     {% endif %}
     {% endcapture %}
+
     {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
 
     {% assign review = featured_reviews[3] %}
