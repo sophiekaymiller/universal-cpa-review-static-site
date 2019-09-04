@@ -1,7 +1,12 @@
-$cta-themes: (
+$cta-themes:(
   primary: (background: $primary, color: #F8F5FA),
   secondary: (background: $light-teal, color: $primary),
 );
+
+
+.ucr-product-card {
+
+}
 
 .ucr-product {
   .ucr-product-inner {
