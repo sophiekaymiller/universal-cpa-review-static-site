@@ -123,6 +123,10 @@ fields:
 - type: file
   name: thumbnail
   label: Thumbnail
+- name: has_trial
+  type: boolean
+  label: Has Trial?
+  description: Does the product have trial functionality
 pages:
 - _products/far.md
 - _products/bec.md
