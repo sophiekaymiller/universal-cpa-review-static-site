@@ -4,11 +4,9 @@
 .jumbotron {
 
   padding-top: 150px;
-  background-image: url('/assets/images/base.png');
+  background: url('/assets/images/base.png') fixed center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-
-
+  
 }
 
 .ucr-section.ucr-section-hero {
