@@ -40,7 +40,7 @@
 
     <!-- <div class="ucr-section-header px-0 px-md-5"> -->
 <div class="jumbotron">
-  <h1 class="display-4">{{} page.section_hero.header }}</h1>
+  <h1 class="display-4">{{ page.section_hero.header }}</h1>
   <p class="lead">{{ page.section_hero.subheader }}</p>
   <div class="ucr-product-main-price d-flex justify-content-center">
     {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
@@ -75,7 +75,7 @@
 </div>
 
     {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+  <!--   {% include content_block.html content=section_content section_name='ucr-section-hero' %}  -->
 
  
 
