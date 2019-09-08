@@ -23,8 +23,6 @@
     });
 </script>
 {% endcapture %}
-
-
 {% include head.html data_layer=data_layer style_override="product_index" %}
 
 <body>
@@ -35,12 +33,12 @@
 
 <!-- End Nav -->
 
+
 <!-- Hero Section -->
 
     {% capture section_content %}
 
     <div class="ucr-section-header px-0 px-md-5">
-
         <div class="jumbotron">
           <h1 class="display-4">{{} page.section_hero.header }}</h1>
           <p class="lead">{{ page.section_hero.subheader }}</p>
@@ -48,12 +46,20 @@
             {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
             <h3 class="new-price">{{ page.price }}</h3>
         </div>
-            <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-5" id="">
+
+        <!-- Banner Section Body -->
+        
+        <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-5" id="">
+        
         {% if page.section_hero.bundle.image %}
         <div class="ucr-bundle">
-            <!-- <img class="ucr-bundle-image" src="https://universalcpareview.com/uploads/2019/08/28/Section%20Hero%20Image@2x.png" /> -->
-            <h4 class="ucr-bundle-title pt-3">{{ page.section_hero.bundle.title }}</h4>
+
+            <h4 class="ucr-bundle-title pt-3">
+                {{ page.section_hero.bundle.title }}
+            </h4>
+
             <p class="ucr-bundle-description">{{ page.section_hero.bundle.description }}</p>
+        
         </div>
         {% else %}
         {% include mocks_block.html %}
@@ -64,9 +70,8 @@
         <a class="btn btn-primary btn-lg" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
         </div>
 
-       
+       <p class="lead">{{ page.section_hero.subheader }}</p>
 
-        <p class="inverse">{{ page.section_hero.subheader }}</p>
     </div>
 
 
@@ -156,10 +161,6 @@
 
 </div>
 <!-- End Group -->
-
-
-
-<!-- End Test -->
 
     <!-- Bundles Section -->
     {% capture section_content %}
