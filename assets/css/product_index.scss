@@ -1,12 +1,11 @@
 @import 'site';
 
 
-.ucr-section {
-  &.ucr-section-hero {
+.ucr-section.ucr-section-hero {
     padding-top: 100px;
     padding-bottom: 0;
     background-color: white;
-    background: url('/assets/product_index/Background.png') no-repeat;
+    //background: url('/assets/product_index/Background.png') no-repeat;
 
   .ucr-section-header {
     p {
