@@ -67,5 +67,6 @@ section_video:
   subheader: 'Our animated video lectures are specifically designed to help visual
     learners. See if our method of teaching REG is for you! '
   yt_id: haOoMA8sv8c
+trial_checkout_code: REG
 
 ---

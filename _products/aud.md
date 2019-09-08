@@ -34,7 +34,7 @@ features:
 - Over 10 Hours of Animated Video Lectures
 - 55 Task-based simulations that will prepare you for test day.
 - Licensed AICPA questions that have been distributed in actual past Uniform CPA Exams.
-has_trial: false
+has_trial: true
 date: 2018-06-07T02:59:40.000+00:00
 layout: product
 ebook:
@@ -70,5 +70,6 @@ sub_products:
   cta_text: Buy Test-bank
   checkout_code: AUD
   price: "$99"
+trial_checkout_code: AUD
 
 ---

@@ -42,9 +42,9 @@
     </div>
 
     <div class="ucr-button-row py-2 py-sm-5">
-        {% if page.has_trial %}
+        {% if page.trial_checkout_code %}
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
-            <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Try for Free</a>
+            <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
         </div>
         {% endif %}
 
@@ -151,7 +151,7 @@
             {% endfor %}
         </div>
     </div>
-    
+
 
     <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
         <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.featured_bundle.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.featured_bundle.cta_text }}</a>
