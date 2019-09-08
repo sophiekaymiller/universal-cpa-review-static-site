@@ -87,28 +87,27 @@
 
 </div>
 
+
 {% else %}
 
 {% include mocks_block.html %}
 
 {% endif %}
 
-<a class="btn btn-primary btn-lg" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
-
-<img src="/assets/images/product-assets/bundle-hero.png" center >
+<a class="btn-outline-primary" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
 
 </div>
 
 
 </div>
 
-    {% endcapture %}
-  <!--   {% include content_block.html content=section_content section_name='ucr-section-hero' %}  -->
+{% endcapture %}
+
+{% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
  
-
-<!-- Features Cards -->
 <!-- Group 1 -->
+
 <div class="card-group">
 <!-- 1 -->
     <div class="card">
