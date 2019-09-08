@@ -1,0 +1,193 @@
+{% assign featured_reviews = site.reviews | where:"featured","true" %}
+
+<html>
+
+{% capture data_layer %}
+<script type="text/javascript">
+    dataLayer.push({
+        'ecommerce': {
+            'detail': {
+                'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
+                'products': [{
+                    'name': '{{ page.name }}',         // Name or ID is required.
+                    'id': '{{ page.name }}',
+                    'price': '{{ page.price | replace:"$", "" }}',
+                    'brand': 'Universal CPA Review',
+                    'category': 'CPA',
+                    'variant': 'CPA'
+                }]
+            }
+        }
+    });
+</script>
+{% endcapture %}
+{% include head.html data_layer=data_layer style_override="product_index" %}
+
+<body>
+    {% include nav.html %}
+
+    <!-- Hero Section -->
+    {% capture section_content %}
+    <div class="ucr-section-header px-0 px-md-5">
+        <h1 class="inverse">{{ page.section_hero.header }}</h1>
+
+        <div class="ucr-product-main-price d-flex justify-content-center">
+            {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
+            <h3 class="new-price">{{ page.price }}</h3>
+        </div>
+
+        <p class="inverse">{{ page.section_hero.subheader }}</p>
+    </div>
+
+    <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-5" id="">
+        {% if page.section_hero.bundle.image %}
+        <div class="ucr-bundle">
+            <!-- <img class="ucr-bundle-image" src="https://universalcpareview.com/uploads/2019/08/28/Section%20Hero%20Image@2x.png" /> -->
+            <h4 class="ucr-bundle-title pt-3">{{ page.section_hero.bundle.title }}</h4>
+            <p class="ucr-bundle-description">{{ page.section_hero.bundle.description }}</p>
+        </div>
+        {% else %}
+        {% include mocks_block.html %}
+        {% endif %}
+
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
+    </div>
+    {% endcapture %}
+    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
+
+ 
+
+<!-- Features Cards -->
+<!-- Group 1 -->
+<div class="card-group">
+<!-- 1 -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Additional</h5>
+        <p class="card-text">brand-new, unique practice questions created by CPA instructors and accounting professors.</p>
+      </div>
+    </div>
+
+<!-- 2 -->
+    <div class="card">
+    
+      <div class="card-body">
+        <h5 class="card-title">Video and Audio</h5>
+        <p class="card-text">answer explanations for multiple-choice questions and task-based simulations.</p>
+      </div>
+    </div>
+
+<!-- 3 -->
+    <div class="card">
+   
+      <div class="card-body">
+        <h5 class="card-title">Licensed</h5>
+        <p class="card-text">AICPA questions that have been distributed in actual past Uniform CPA Exams.</p>
+      </div>
+    </div>
+
+  <!-- 4 -->
+
+    <div class="card">
+   
+      <div class="card-body">
+        <h5 class="card-title">575</h5>
+        <p class="card-text">pages of e-book material covering all of the critical components of each section.</p>
+      </div>
+    </div>
+</div>
+<!-- Group 2 -->
+  <!-- 5 -->
+  <div class = "card-group">
+   
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">4,200+</h5>
+        <p class="card-text">Multiple Choice Questions on all section replicating the CPA exam.</p>
+      </div>
+    </div>
+
+  <!-- 6 -->
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">200+</h5>
+        <p class="card-text"> task-based simulations preparing you for test day.</p>
+      </div>
+    </div>
+
+  <!-- 7 -->
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">1</h5>
+        <p class="card-text"> One time purchase for access until you pass!</p>
+      </div>
+    </div>
+
+  <!-- 8 -->
+
+    <div class="card">
+
+      <div class="card-body">
+        <h5 class="card-title">Page by Page</h5>
+        <p class="card-text"> Audio Explanations</p>
+      </div>
+    </div>
+
+</div>
+<!-- End Group -->
+
+
+
+<!-- End Test -->
+
+    <!-- Bundles Section -->
+    {% capture section_content %}
+    <div class="ucr-section-header px-0 px-md-5">
+        <h2>{{ page.section_bundles.header }}</h2>
+        <span>{{ page.section_bundles.subheader }}</span>
+    </div>
+
+    <div class="pt-6">
+        <div class="d-md-flex justify-content-center equal-width">
+        {% for bundle in page.section_bundles.bundles %}
+            <div class="px-3 mx-4 pb-5 pb-md-0">
+                {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description checkout_code=bundle.checkout_code cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    {% endcapture %}
+    {% if page.section_bundles %}
+    {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
+    {% endif %}
+
+    <!-- Other Products Section -->
+    {% capture section_content %}
+    <div class="ucr-section-header px-0 px-md-5">
+        <h2>{{ page.section_products.header }}</h2>
+        <span>{{ page.section_products.subheader }}</span>
+    </div>
+
+    <div class="pt-6">
+    {% assign products = site.products %}
+    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
+    {% include products_block.html products=products %}
+    </div>
+
+    {% if page.checkout_code %}
+    <div class="ucr-section-footer pt-0 pt-sm-5">
+        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
+    </div>
+    {% endif %}
+    {% endcapture %}
+
+    {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
+
+    {% assign review = featured_reviews[3] %}
+    {% include testimonial_block.html review=review %}
+
+    {% include footer.html %}
+</body>
+</html>
