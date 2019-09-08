@@ -67,6 +67,7 @@ section_video:
   subheader: 'Our animated video lectures are specifically designed to help visual
     learners. See if our method of teaching BEC is for you! '
   yt_id: vL9HZDDa97E
+trial_checkout_code: BEC
 
 ---
 ## You need this material
