@@ -4,10 +4,25 @@
 .jumbotron {
 
   padding-top: 150px;
-  background: url('/assets/images/base.png') fixed center no-repeat;
   background-size: cover;
-  
+  background-color: $primary;
+
 }
+
+.outline-button 
+{
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 848px;
+  top: 437px;
+  width: 194px;
+  height: 59px;
+  z-index: 232;
+}
+
 
 .ucr-section.ucr-section-hero {
     padding-top: 100px;
