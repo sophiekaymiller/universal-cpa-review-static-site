@@ -44,19 +44,19 @@
   {% capture section_content %}
 
 
-  <h3 class="display-4" style="color: white;">
+  <h1 class="display-4" style="color: white;">
   {{ page.section_hero.header }}
-  </h3>
+  </h1>
 
-  <p class="lead">
+  <p class="lead" style="color: white;">
   {{ page.section_hero.subheader }}
   </p>
 
-  <div class="ucr-product-main-price d-flex justify-content-center">
+  <div class="d-flex justify-content-center">
 
   {% if page.old_price %}
   
-  <h3 class="old-price pr-2">
+  <h3 class="pr-2">
   
   {{ page.old_price }}
   
@@ -64,7 +64,7 @@
   
   {% endif %}
   
-  <h3 class="new-price">
+  <h3 class="text-sm-center">
   
   {{ page.price }}
   
@@ -74,7 +74,7 @@
 
 <!-- Banner Section Body -->
 
-<div class="ucr-section-body text-center pt-5 pt-sm-3 pb-5" id="">
+<div class="text-center pt-5 pt-sm-3 pb-5" id="">
 
 {% if page.section_hero.bundle.image %}
 
