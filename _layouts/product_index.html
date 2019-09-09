@@ -69,24 +69,18 @@
   {{ page.price }}
   
   </h3>
+<p class="lead">
 
-  <a class="btn" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
-  {{ page.section_hero.bundle.cta_text }}
-</a>
+  <a class="btn btn-primary btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
+  {{ page.section_hero.bundle.cta_text }}</a>
+
+</p>
 
 </div>
-
-<!-- Banner Section Body -->
-
-<div class="text-center pt-5 pt-sm-3 pb-5" >
 
 {% if page.section_hero.bundle.image %}
 
- <div class="ucr-bundle">
-
-
-
-</div>
+ <div class="ucr-bundle"> 
 
 {% else %}
 
@@ -94,14 +88,14 @@
 
 {% endif %}
 
-
-
-</div>
-
-
-</div>
-
 {% endcapture %}
+
+
+</div>
+
+
+</div>
+
 
 {% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
