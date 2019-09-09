@@ -39,7 +39,7 @@
 
 <!-- Hero Section -->
 
-<div class="jumbotron">
+<div class="jumbotron text-center" style="background-color: #391A70">
 
 <h1 class="ucr-section-header" style="color: white">
 
@@ -50,7 +50,7 @@
   {{ page.section_hero.subheader }}
   </p>
 
-  <div class="d-flex justify-content-center">
+  <div class="justify-content-center">
 
   {% if page.old_price %}
   
@@ -69,7 +69,8 @@
   </h3>
 
 <p class="lead">
-  <a class="btn btn-primary btn-sm btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
+
+  <a class="btn btn-primary btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
 
   {{ page.section_hero.bundle.cta_text }}
 
