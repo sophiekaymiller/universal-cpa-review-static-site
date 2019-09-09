@@ -40,7 +40,7 @@
 <!-- Hero Section -->
 
 
-<div class="jumbotron text-center" style="background-color: #330066; ">
+<div class="jumbotron text-center" style="background-color:#330066">
 
 {% capture section_content %}
 
@@ -69,32 +69,28 @@
   {{ page.price }}
   
   </h3>
+</div>
 <p class="lead">
-
   <a class="btn btn-primary btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
-  {{ page.section_hero.bundle.cta_text }}</a>
+  {{ page.section_hero.bundle.cta_text }}
+</a>
 
 </p>
 
-</div>
 
 {% if page.section_hero.bundle.image %}
 
- <div class="ucr-bundle"> 
+<div class="ucr-bundle"> 
+<img class="ucr-bundle-image" src={{ page.section_hero.bundle.image }} />
 
 {% else %}
-
 {% include mocks_block.html %}
-
 {% endif %}
 
-{% endcapture %}
-
-
-</div>
-
+</div> 
 
 </div>
+
 
 
 {% include content_block.html content=section_content section_name='ucr-section-hero' %}
