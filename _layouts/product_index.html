@@ -5,6 +5,7 @@
 <!-- meta data and products -->
 
 {% capture data_layer %}
+
 <script type="text/javascript">
     dataLayer.push({
         'ecommerce': {
@@ -40,7 +41,7 @@
 
 {% capture section_content %}
 
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" style="background-color: #330066;">
 
   <h2>
   {{ page.section_hero.header }}
@@ -87,6 +88,7 @@
     </p>
 
 </div>
+
 
 <a class="btn-outline-dark" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
 
