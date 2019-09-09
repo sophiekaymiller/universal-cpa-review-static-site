@@ -88,12 +88,11 @@
         {{ page.section_hero.bundle.description }}
     </p>
 
+<a class="btn" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
+  {{ page.section_hero.bundle.cta_text }}
+</a>
+
 </div>
-
-
-<a class="btn-outline-secondary" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
-
-<img class="ucr-bundle-image" src="{{ page.section_hero.bundle.image }}" />
 
 {% else %}
 
