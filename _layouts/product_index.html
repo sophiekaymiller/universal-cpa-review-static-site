@@ -78,20 +78,18 @@
 
 {% if page.section_hero.bundle.image %}
 
-<div class="ucr-bundle">
-
-    <h4 class="ucr-bundle-title pt-3">
+    <h4 class="pt-1">
         {{ page.section_hero.bundle.title }}
     </h4>
 
-    <p class="ucr-bundle-description">
+    <p>
         {{ page.section_hero.bundle.description }}
     </p>
 
 </div>
 
 
-<a class="btn-outline-dark" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
+<a class="btn-outline-secondary" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
 
 
 {% else %}
