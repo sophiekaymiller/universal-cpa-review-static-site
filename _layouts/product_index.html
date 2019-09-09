@@ -70,6 +70,10 @@
   
   </h3>
 
+  <a class="btn" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
+  {{ page.section_hero.bundle.cta_text }}
+</a>
+
 </div>
 
 <!-- Banner Section Body -->
@@ -77,20 +81,10 @@
 <div class="text-center pt-5 pt-sm-3 pb-5" >
 
 {% if page.section_hero.bundle.image %}
+
  <div class="ucr-bundle">
-  <img class="ucr-bundle-image" src="{{ page.section_hero.bundle.image }}" />
 
-    <h4 class="pt-1">
-        {{ page.section_hero.bundle.title }}
-    </h4>
 
-    <p>
-        {{ page.section_hero.bundle.description }}
-    </p>
-
-<a class="btn" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
-  {{ page.section_hero.bundle.cta_text }}
-</a>
 
 </div>
 
