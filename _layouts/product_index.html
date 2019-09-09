@@ -41,8 +41,8 @@
 
 
 <div class="jumbotron text-center" style="background-color: #330066; ">
-  {% capture section_content %}
 
+{% capture section_content %}
 
   <h1 class="display-4" style="color: white;">
   {{ page.section_hero.header }}
@@ -91,6 +91,7 @@
 
 <a class="btn-outline-secondary" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">{{ page.section_hero.bundle.cta_text }}</a>
 
+<img class="ucr-bundle-image" src="{{ page.section_hero.bundle.image }}" />
 
 {% else %}
 
