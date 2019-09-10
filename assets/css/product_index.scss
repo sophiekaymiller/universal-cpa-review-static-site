@@ -51,6 +51,8 @@
     }
   }
 
+
+
   .ucr-bundle-image {
     width: 300px;
 
@@ -66,6 +68,59 @@
       height: auto;
     }
   }
+}
+
+.ucr-product-features{
+  .head {
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 43.2px;
+    text-align: center;
+    color: #343434;
+}
+
+.icons {
+  width: 1169px;
+  height: 601px;
+  background: transparent;
+
+}
+
+.icon {
+  width: 275.15px;
+  height: 286px;
+  background: #fff;
+
+}
+
+.feature-text {
+  width: 199.83px;
+  height: 141.41px;
+  font-family: Lato-Black;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22.29px;
+  text-align: center;
+  color: #555556;
+
+}
+
+.feature-icon {
+  width: 40.86px;
+  height: 40.88px;
+  background: rgba(57, 21, 114, 0.1);
+  
+}
+
+.feature-img {
+  width: 47px;
+  height: 40px;
+/* background: url(...); */
+
+}
+
 }
 
 .ucr-section-footer {
