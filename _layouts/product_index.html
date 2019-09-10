@@ -1,164 +1,120 @@
 {% assign featured_reviews = site.reviews | where:"featured","true" %}
-
 <html>
-
-<!-- meta data and products -->
-
-{% capture data_layer %}
-
-<script type="text/javascript">
-    dataLayer.push({
-        'ecommerce': {
-            'detail': {
-                'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
-                'products': [{
-                    'name': '{{ page.name }}',         // Name or ID is required.
-                    'id': '{{ page.name }}',
-                    'price': '{{ page.price | replace:"$", "" }}',
-                    'brand': 'Universal CPA Review',
-                    'category': 'CPA',
-                    'variant': 'CPA'
-                }]
-            }
-        }
-    });
-</script>
-
+  <!-- meta data and products -->
+  {% capture data_layer %}
+  <script type="text/javascript">
+  dataLayer.push({
+  'ecommerce': {
+  'detail': {
+  'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
+  'products': [{
+  'name': '{{ page.name }}',         // Name or ID is required.
+  'id': '{{ page.name }}',
+  'price': '{{ page.price | replace:"$", "" }}',
+  'brand': 'Universal CPA Review',
+  'category': 'CPA',
+  'variant': 'CPA'
+  }]
+  }
+  }
+  });
+  </script>
 {% endcapture %}
-
 {% include head.html data_layer=data_layer style_override="product_index" %}
-
 <body>
-
-<!-- Start Nav -->
-
-{% include nav.html %}
-
-<!-- End Nav -->
-
-
-<!-- Hero Section -->
-
-<div class="jumbotron text-center" style="background-color: #391A70; padding-top: 100px">
-
-<h1 class="ucr-section-header" style="color: white">
-
-  {{ page.section_hero.header }}
-  </h1>
-
-  <p class="lead" style="color: white;">
-
-  {{ page.section_hero.subheader }}
-  
-  </p>
-
-  <div class="justify-content-center">
-
-  {% if page.old_price %}
-  
-  <h3 class="text-center" style="color:white; font-weight: 500;">
-
-  {{ page.old_price }}
-
-  </h3>
-  
-  {% endif %}
-  
-  <h3 class="text-center" style="color: white;">
-  
-  {{ page.price }}
-  
-  </h3>
-
-<p class="lead">
-
-  <a class="btn btn-primary btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
-
-  {{ page.section_hero.bundle.cta_text }}
-
-</a>
-
-</p>
-
-</div>
-
-
-{% if page.section_hero.bundle.image %}
-
-<div class="ucr-bundle"> 
-
-<img class="ucr-bundle-image" width="500px" height="auto" src={{ page.section_hero.bundle.image }} />
-
-{% else %}
-{% include mocks_block.html %}
-{% endif %}
-
-
-</div> 
-
-</div>
-
- 
-<!-- Features  -->
-
-<!-- Feature Header -->
-
-<div class="container">
-  <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
-<div class="row">
-  {% for feature in page.section_features.features %}
-<!-- four columns in a row -->
-  <div class="col-sm-3 feature"> 
-    <h6 class="feature-style"> {{ feature }} </h6>
+  <!-- Start Nav -->
+  {% include nav.html %}
+  <!-- End Nav -->
+  <!-- Hero Section -->
+  <div class="jumbotron text-center" style="background-color: #391A70; padding-top: 100px">
+    <h1 class="ucr-section-header" style="color: white">
+    {{ page.section_hero.header }}
+    </h1>
+    <p class="lead" style="color: white;">
+      {{ page.section_hero.subheader }}
+      
+    </p>
+    <div class="justify-content-center">
+      {% if page.old_price %}
+        
+        <h3 class="text-center" style="color:white; font-weight: 500;">
+        {{ page.old_price }}
+        </h3>
+        
+      {% endif %}
+      
+      <h3 class="text-center" style="color: white;">
+      
+      {{ page.price }}
+      
+      </h3>
+      <p class="lead">
+        <a class="btn btn-primary btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
+          {{ page.section_hero.bundle.cta_text }}
+        </a>
+      </p>
+    </div>
+    {% if page.section_hero.bundle.image %}
+      <div class="ucr-bundle">
+        <img class="ucr-bundle-image" width="500px" height="auto" src={{ page.section_hero.bundle.image }} />
+      {% else %}
+        {% include mocks_block.html %}
+      {% endif %}
+    </div>
   </div>
-  {% endfor %}
-</div>
-</div>
-
-
-
-    <!-- Bundles Section -->
-    {% capture section_content %}
-    <div class="ucr-section-header px-0 px-md-5">
-        <h2>{{ page.section_bundles.header }}</h2>
-        <span>{{ page.section_bundles.subheader }}</span>
-    </div>
-
-    <div class="pt-6">
-        <div class="d-md-flex justify-content-center equal-width">
-        {% for bundle in page.section_bundles.bundles %}
-            <div class="px-3 mx-4 pb-5 pb-md-0">
-                {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description checkout_code=bundle.checkout_code cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
-            </div>
-        {% endfor %}
+  
+  <!-- Features  -->
+  <!-- Feature Header -->
+  <div class="container">
+    <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
+    <div class="row">
+      {% for feature in page.section_features.features %}
+        
+        <!-- four columns in a row -->
+        
+        <div class="col-sm-3 feature">
+          <h6 class="feature-style"> {{ feature }} </h6>
         </div>
+        
+      {% endfor %}
     </div>
-    {% endcapture %}
-    {% if page.section_bundles %}
-    {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
-    {% endif %}
-
-    <!-- Other Products Section -->
-
-    <!-- Pricing Table -->
-
-  <table id="prices">
+  </div>
+  <!-- Bundles Section -->
+  {% capture section_content %}
+  <div class="ucr-section-header px-0 px-md-5">
+    <h2>{{ page.section_bundles.header }}</h2>
+    <span>{{ page.section_bundles.subheader }}</span>
+  </div>
+  <div class="pt-6">
+    <div class="d-md-flex justify-content-center equal-width">
+      {% for bundle in page.section_bundles.bundles %}
+        <div class="px-3 mx-4 pb-5 pb-md-0">
+          {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description checkout_code=bundle.checkout_code cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endcapture %}
+{% if page.section_bundles %}
+  {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
+{% endif %}
+<!-- Other Products Section -->
+<!-- Pricing Table -->
+<table id="prices">
   <tbody>
     <tr>
       <td>
         <h2>All E-Books</h2>
         <h3> Includes e-book access for all test sections </h3>
         <h4>$499</h4>
-    
+        
         <p>Feature List</p>
         <p>Feature List</p>
         <p>Feature List</p>
         <p>Feature List</p>
         <p>Feature List</p>
-
         <a href="#">Click Here</a>
       </td>
-
       <td class="popular">
         <h2>Complete Bundle</h2>
         <h3>The complete bundle is thebest possible deal</h3>
@@ -170,7 +126,6 @@
         <p>Feature List</p>
         <a href="#">Click Here</a>
       </td>
-
       <td>
         <h2>All Test Banks</h2>
         <h3> Includes test bank access forall test sections </h3>
@@ -185,35 +140,26 @@
     </tr>
   </tbody>
 </table>
-
 <!-- End Pricing Table -->
-
-
-
-    {% capture section_content %}
-    <div class="ucr-section-header px-0 px-md-5">
-        <h2>{{ page.section_products.header }}</h2>
-        <span>{{ page.section_products.subheader }}</span>
-    </div>
-
-    <div class="pt-6">
-    {% assign products = site.products %}
-    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
-    {% include products_block.html products=products %}
-    </div>
-
-    {% if page.checkout_code %}
-    <div class="ucr-section-footer pt-0 pt-sm-5">
-        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
-    </div>
-    {% endif %}
-    {% endcapture %}
-
-    {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
-
-    {% assign review = featured_reviews[3] %}
-    {% include testimonial_block.html review=review %}
-
-    {% include footer.html %}
+{% capture section_content %}
+<div class="ucr-section-header px-0 px-md-5">
+  <h2>{{ page.section_products.header }}</h2>
+  <span>{{ page.section_products.subheader }}</span>
+</div>
+<div class="pt-6">
+  {% assign products = site.products %}
+  {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
+  {% include products_block.html products=products %}
+</div>
+{% if page.checkout_code %}
+  <div class="ucr-section-footer pt-0 pt-sm-5">
+    <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
+  </div>
+{% endif %}
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
+{% assign review = featured_reviews[3] %}
+{% include testimonial_block.html review=review %}
+{% include footer.html %}
 </body>
 </html>
