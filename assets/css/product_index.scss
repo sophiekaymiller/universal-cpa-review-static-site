@@ -1,9 +1,5 @@
 @import 'site';
 
-body{
-  background-image: url('/assets/images/banners/Background@2x.png');
-  background-size: cover;
-}
 
 .jumbotron {
   background-color: #391A70;
@@ -134,7 +130,15 @@ color: #555556;
 
 }
 
+#prices {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  font-family: 'Lato';
+  font-weight: normal;
 }
+
+
 
 .ucr-section-footer {
   text-align: center;
