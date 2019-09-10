@@ -108,7 +108,7 @@
 <div class="row">
   {% for feature in page.section_features.features %}
 <!-- four columns in a row -->
-  <div class="col-sm-3"> 
+  <div class="col-sm-3 feature"> 
     <h6 class="feature-style"> {{ feature }} </h6>
   </div>
   {% endfor %}
@@ -139,6 +139,57 @@
     {% endif %}
 
     <!-- Other Products Section -->
+
+    <!-- Pricing Table -->
+
+  <table id="prices">
+  <tbody>
+    <tr>
+      <td>
+        <h2>All E-Books</h2>
+        <h3> Includes e-book access for all test sections </h3>
+        <h4>$499</h4>
+    
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+
+        <a href="#">Click Here</a>
+      </td>
+
+      <td class="popular">
+        <h2>Complete Bundle</h2>
+        <h3>The complete bundle is thebest possible deal</h3>
+        <h4>$699.99</h4>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <a href="#">Click Here</a>
+      </td>
+
+      <td>
+        <h2>All Test Banks</h2>
+        <h3> Includes test bank access forall test sections </h3>
+        <h4>$299.99</h4>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <p>Feature List</p>
+        <a href="#">Click Here</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- End Pricing Table -->
+
+
+
     {% capture section_content %}
     <div class="ucr-section-header px-0 px-md-5">
         <h2>{{ page.section_products.header }}</h2>
