@@ -79,25 +79,7 @@
       {% endfor %}
     </div>
   </div>
-  <!-- Bundles Section -->
-  {% capture section_content %}
-  <div class="ucr-section-header px-0 px-md-5">
-    <h2>{{ page.section_bundles.header }}</h2>
-    <span>{{ page.section_bundles.subheader }}</span>
-  </div>
-  <div class="pt-6">
-    <div class="d-md-flex justify-content-center equal-width">
-      {% for bundle in page.section_bundles.bundles %}
-        <div class="px-3 mx-4 pb-5 pb-md-0">
-          {% include product_block.html thumbnail=bundle.thumbnail name=bundle.name description=bundle.description checkout_code=bundle.checkout_code cta_text=bundle.cta_text cta_theme="primary" price=bundle.price %}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-{% endcapture %}
-{% if page.section_bundles %}
-  {% include content_block.html content=section_content section_name='ucr-section-bundles gray pt-4' %}
-{% endif %}
+
 <!-- Other Products Section -->
 <!-- Pricing Table -->
 <table id="prices">
