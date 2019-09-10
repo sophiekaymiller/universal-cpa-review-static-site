@@ -47,7 +47,9 @@
   </h1>
 
   <p class="lead" style="color: white;">
+
   {{ page.section_hero.subheader }}
+  
   </p>
 
   <div class="justify-content-center">
@@ -97,12 +99,26 @@
 </div>
 
  
-<!-- Group 1 -->
+<!-- Features  -->
 
-<div class="ucr-product-features align-content-md-center">
-<h5>CHECKOUT FEATURES</h5>
-<h3>Universal AUD Exam Supplementary Material</h3>
+
+
+<!-- Feature Header -->
+
+<div class="container">
+  <h5 class="text-md-center"> { % page.section_features.header %} </h5>
+<div class="row">
+  {% for feature in page.section_features.features %}
+  <div class="col-sm-4"> 
+    <h6> {{ feature }} </h6>
+  </div>
+  {% endfor %}
 </div>
+</div>
+
+
+
+
 
 <div class="card-group">
 <!-- 1 -->
@@ -183,6 +199,9 @@
 
 </div>
 <!-- End Group -->
+
+
+
 
     <!-- Bundles Section -->
     {% capture section_content %}
