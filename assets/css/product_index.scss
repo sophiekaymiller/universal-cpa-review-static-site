@@ -4,10 +4,20 @@ body{
   background-image: url('/assets/images/banners/Background@2x.png');
   background-size: cover;
 }
+
 .jumbotron {
   background-color: #391A70;
   width: 100%;
   background: url('/assets/images/banners/base.png') no-repeat; 
+}
+
+.feature-style{
+font-family: Lato-Black;
+font-weight: normal;
+font-size: 18px;
+line-height: 22.29px;
+text-align: center;
+color: #555556;
 }
 
 
