@@ -130,7 +130,7 @@ fields:
   label: Trial Checkout Code
   description: Checkout code for starting a trial
 pages:
+- _products/aud.md
 - _products/far.md
 - _products/reg.md
 - _products/bec.md
-- _products/aud.md
