@@ -1,187 +1,172 @@
 {% assign featured_reviews = site.reviews | where:"featured","true" %}
 <!DOCTYPE html>
 <html>
-
-{% capture data_layer %}
-<script type="text/javascript">
+    {% capture data_layer %}
+    <script type="text/javascript">
     window.UCR.PageProduct = {
-        'name': '{{ page.name }}',         // Name or ID is required.
-        'id': '{{ page.name }}',
-        'price': '{{ page.price | replace:"$", "" }}',
-        'brand': 'Universal CPA Review',
-        'category': 'CPA',
-        'variant': 'CPA'
+    'name': '{{ page.name }}',         // Name or ID is required.
+    'id': '{{ page.name }}',
+    'price': '{{ page.price | replace:"$", "" }}',
+    'brand': 'Universal CPA Review',
+    'category': 'CPA',
+    'variant': 'CPA'
     };
-
     dataLayer.push({
-        'ecommerce': {
-            'detail': {
-                'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
-                'products': [window.UCR.PageProduct]
-            }
-        }
+    'ecommerce': {
+    'detail': {
+    'actionField': {'list': 'CPA Products'},    // 'detail' actions have an optional list property.
+    'products': [window.UCR.PageProduct]
+    }
+    }
     });
-</script>
+    </script>
 {% endcapture %}
 {% include head.html style_override='product' data_layer=data_layer %}
-
 <body>
     {% include nav.html %}
-
     <!-- Header Section -->
     {% capture section_content %}
     <div class="ucr-section-header px-3 px-md-5">
         <h1 class="inverse">{{ page.name }}</h1>
-
         <div class="ucr-product-main-price d-flex justify-content-center">
             {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
             <h3 class="new-price">{{ page.price }}</h3>
         </div>
-
         <p class="inverse">{{ page.short_description }}</p>
     </div>
-
     <div class="ucr-button-row py-2 py-sm-5">
         {% if page.trial_checkout_code %}
-        <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
-            <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
-        </div>
+            <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
+                <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
+            </div>
         {% endif %}
-
         <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
             <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-buy">Buy Now</a>
         </div>
     </div>
-
     <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-3">
-    {% if page.thumbnail %}
-    <img class="ucr-product-thumbnail" src="{{ page.thumbnail }}" />
-    {% else %}
-    {% include mocks_block.html %}
-    {% endif %}
+        {% if page.thumbnail %}
+            <img class="ucr-product-thumbnail" src="{{ page.thumbnail }}" />
+        {% else %}
+            {% include mocks_block.html %}
+        {% endif %}
     </div>
-    {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-hero' %}
-
-    <!-- Features Section -->
-    {% capture section_content %}
-
-    {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
-    {% assign product_header = page.product_header | default:default_product_header %}
-
-    {% assign all_features = "" | split: "" %}
-    {% for feature in page.features %}
-    {% assign all_features = all_features | push:feature %}
-    {% endfor %}
-    {% for feature in site.data.shared_features %}
-    {% assign all_features = all_features | push:feature %}
-    {% endfor %}
-
-    {% include features_block.html features_header=product_header features=all_features %}
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-hero' %}
 
 
-
-    <div class="text-center mt-3 mt-sm-5">
-        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
-    </div>
-    {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-features' %}
-
-    <!-- Sub-Products Section -->
-    {% if page.sub_products %}
-    {% capture section_content %}
-    <div class="ucr-section-header pt-3 px-3 px-md-5 pb-4">
-        <h2>Choose a Study Option</h2>
-    </div>
-
-    <div class="d-block d-md-flex justify-content-center equal-width pt-5">
-        {% for product in page.sub_products %}
-        <div class="px-3 mx-3 mb-5 mb-md-0">
-            {% include product_block.html thumbnail=product.thumbnail name=product.name cta_theme="primary" cta_text=product.cta_text checkout_code=product.checkout_code price=product.price %}
-        </div>
+<!-- Features Section -->
+{% capture section_content %}
+<!-- Features  -->
+<div class="container">
+    <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
+    <div class="row">
+        {% for feature in page.features %}
+            
+            <!-- four columns in a row -->
+            
+            <div class="col-sm-3 feature card-outline-primary">
+                <p class="feature-style card-text"> {{ feature }} </p>
+            </div>
+            
         {% endfor %}
     </div>
-    {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-subproducts gray pt-3' %}
-    {% endif %}
+</div>
 
-    <!-- Testimonials -->
-    {% assign review = featured_reviews[3] %}
-    {% include testimonial_block.html review=review %}
+{% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
+{% assign product_header = page.product_header | default:default_product_header %}
+{% assign all_features = "" | split: "" %}
+{% for feature in page.features %}
+{% assign all_features = all_features | push:feature %}
+{% endfor %}
+{% for feature in site.data.shared_features %}
+{% assign all_features = all_features | push:feature %}
+{% endfor %}
+{% include features_block.html features_header=product_header features=all_features %}
 
-    <!-- Video Section -->
-    {% if page.section_video and page.section_video.yt_id %}
-    {% capture section_content %}
-    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
-        <h2>{{ page.section_video.header }}</h2>
-        <span>{{ page.section_video.subheader }}</span>
+<div class="text-center mt-3 mt-sm-5">
+<a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
+</div>
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-features' %}
+<!-- Sub-Products Section -->
+{% if page.sub_products %}
+{% capture section_content %}
+<div class="ucr-section-header pt-3 px-3 px-md-5 pb-4">
+<h2>Choose a Study Option</h2>
+</div>
+<div class="d-block d-md-flex justify-content-center equal-width pt-5">
+{% for product in page.sub_products %}
+    <div class="px-3 mx-3 mb-5 mb-md-0">
+        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_theme="primary" cta_text=product.cta_text checkout_code=product.checkout_code price=product.price %}
     </div>
-
-    <div class="ucr-video pt-4">
-        {% include yt_video.html yt_id=page.section_video.yt_id %}
-    </div>
-    {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-video gray pt-3' %}
-    {% endif %}
-
-    {% if page.featured_bundle and page.featured_bundle.checkout_code != '' %}
-    {% capture section_content %}
-    <!-- Featured Bundle -->
-    {% include ribbon.html text="Featured Bundle" %}
-
-    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
-        <h2>{{ page.featured_bundle.header }}</h2>
-        <span>{{ page.featured_bundle.subheader }}</span>
-    </div>
-
-    {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
-    {% assign other_products = other_products | where_exp:"item", "item.tags == page.tags" %}
-    <div class="py-5">
-        <h4 class="text-center pb-3">{{ page.featured_bundle.name }}</h4>
-
-        <div class="ucr-images-list d-flex justify-content-center align-items-center">
-            {% for i in page.featured_bundle.images %}
-            <div class="ucr-images-list__image">
-                <img src="{{ i.image }}" />
-            </div>
-
-            {% if forloop.last != true %}
-            <span class="plus px-5">+</span>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-
-
-    <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
-        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.featured_bundle.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.featured_bundle.cta_text }}</a>
-    </div>
-    {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-featured-bundle pt-0 pt-sm-2 gray' %}
-    {% endif %}
-
-    {% capture section_content %}
-    <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
-        <h2>Check out our other supplementary materials</h2>
-        <span>All products come with a free trial</span>
-    </div>
-
-    {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
-    {% assign other_products = other_products | where_exp:"item", "item.tags == page.tags" %}
-    <div class="pt-6">
-    {% include products_block.html products=other_products %}
-    </div>
-
-    {% if page.bundle_checkout_code %}
-    <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
-        <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.bundle_checkout_code }}&trial=0" class="btn btn-cta-light">Get All {{ page.noun }}s</a>
-    </div>
-    {% endif %}
-    {% endcapture %}
-    {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
-
-
-
-    {% include footer.html js='/assets/dist/product.min.js' %}
+{% endfor %}
+</div>
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-subproducts gray pt-3' %}
+{% endif %}
+<!-- Testimonials -->
+{% assign review = featured_reviews[3] %}
+{% include testimonial_block.html review=review %}
+<!-- Video Section -->
+{% if page.section_video and page.section_video.yt_id %}
+{% capture section_content %}
+<div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
+<h2>{{ page.section_video.header }}</h2>
+<span>{{ page.section_video.subheader }}</span>
+</div>
+<div class="ucr-video pt-4">
+{% include yt_video.html yt_id=page.section_video.yt_id %}
+</div>
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-video gray pt-3' %}
+{% endif %}
+{% if page.featured_bundle and page.featured_bundle.checkout_code != '' %}
+{% capture section_content %}
+<!-- Featured Bundle -->
+{% include ribbon.html text="Featured Bundle" %}
+<div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
+<h2>{{ page.featured_bundle.header }}</h2>
+<span>{{ page.featured_bundle.subheader }}</span>
+</div>
+{% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
+{% assign other_products = other_products | where_exp:"item", "item.tags == page.tags" %}
+<div class="py-5">
+<h4 class="text-center pb-3">{{ page.featured_bundle.name }}</h4>
+<div class="ucr-images-list d-flex justify-content-center align-items-center">
+{% for i in page.featured_bundle.images %}
+<div class="ucr-images-list__image">
+    <img src="{{ i.image }}" />
+</div>
+{% if forloop.last != true %}
+    <span class="plus px-5">+</span>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+<div class="ucr-section-footer pt-0 pt-sm-5 text-center">
+<a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.featured_bundle.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.featured_bundle.cta_text }}</a>
+</div>
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-featured-bundle pt-0 pt-sm-2 gray' %}
+{% endif %}
+{% capture section_content %}
+<div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
+<h2>Check out our other supplementary materials</h2>
+<span>All products come with a free trial</span>
+</div>
+{% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
+{% assign other_products = other_products | where_exp:"item", "item.tags == page.tags" %}
+<div class="pt-6">
+{% include products_block.html products=other_products %}
+</div>
+{% if page.bundle_checkout_code %}
+<div class="ucr-section-footer pt-0 pt-sm-5 text-center">
+<a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.bundle_checkout_code }}&trial=0" class="btn btn-cta-light">Get All {{ page.noun }}s</a>
+</div>
+{% endif %}
+{% endcapture %}
+{% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
+{% include footer.html js='/assets/dist/product.min.js' %}
 </body>
 </html>
