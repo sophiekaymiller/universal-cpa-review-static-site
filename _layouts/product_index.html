@@ -1,4 +1,5 @@
 {% assign featured_reviews = site.reviews | where:"featured","true" %}
+
 <html>
   <!-- meta data and products -->
   {% capture data_layer %}
@@ -65,49 +66,45 @@
   
   <!-- Features  -->
   <div class="container">
-
     <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
-
     <div class="row">
       {% for feature in page.section_features.features %}
         
         <!-- four columns in a row -->
         
         <div class="col-sm-3 feature card-outline-primary">
-
           <p class="feature-style card-text"> {{ feature }} </p>
         </div>
         
       {% endfor %}
-
     </div>
   </div>
+  <!-- Other Products Section -->
+ 
+  
+  {% assign cta_type = include.cta_type | default:"detail" %}
+  <ul class="row ucr-products">
+    {% for product in include.products %}
+      <li class="col-md mb-6 mb-md-0">
+        {% if cta_type == "detail" %}
+          {% assign cta_url = product.url %}
+        {% endif %}
+        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_url=cta_url cta_text="Learn More" checkout_code=product.checkout_code %}
+      </li>
+    {% endfor %}
+  </ul>
 
-<!-- Other Products Section -->
-<!-- Pricing Table -->
 
-
-<!-- End Pricing Table -->
-
-
-{% capture section_content %}
-
-<div class="ucr-section-header px-0 px-md-5">
-  <h2>{{ page.section_products.header }}</h2>
-  <span>{{ page.section_products.subheader }}</span>
-</div>
-
-<div class="pt-6">
-  {% assign products = site.products %}
-  {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
-  {% include products_block.html products=products %}
-</div>
-
-{% if page.checkout_code %}
-  <div class="ucr-section-footer pt-0 pt-sm-5">
-    <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.section_hero.bundle.cta_text }}</a>
+  <div class="pt-6">
+    {% assign products = site.products %}
+    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
+    {% include products_block.html products=products %}
   </div>
-{% endif %}
+  {% if page.checkout_code %}
+    <div class="ucr-section-footer pt-0 pt-sm-5">
+      <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn grad-btn">{{ page.section_hero.bundle.cta_text }}</a>
+    </div>
+  {% endif %}
 {% endcapture %}
 {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
 {% assign review = featured_reviews[3] %}

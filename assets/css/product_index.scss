@@ -7,6 +7,19 @@
   background: url('/assets/images/banners/base.png') no-repeat; 
 }
 
+.header-background{
+// Layout
+top: 0px;
+left: 0px;
+width: 1894px;
+height: 881px;
+
+// UI
+background: #391572 0% 0% no-repeat padding-box;
+box-shadow: 0px 10px 60px #00000026;
+opacity: 1;
+}
+
 .feature-style{
 font-family: Lato-Black;
 font-weight: normal;
@@ -16,6 +29,11 @@ text-align: center;
 color: #555556;
 }
 
+.grad-btn {
+  background: transparent linear-gradient(90deg, #4C1DA2 0%, #BC5F9D 100%) 0% 0% no-repeat padding-box;
+  border-radius: 32px;
+  opacity: 1;
+}
 
 .outline-button 
 {
