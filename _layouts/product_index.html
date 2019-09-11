@@ -65,7 +65,9 @@
   
   <!-- Features  -->
   <div class="container">
-    <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
+
+    <h5 class="card-header"> {{ page.section_features.header }} </h5>
+
     <div class="row">
       {% for feature in page.section_features.features %}
         
@@ -86,6 +88,8 @@
 
 
 <!-- End Pricing Table -->
+
+
 {% capture section_content %}
 <div class="ucr-section-header px-0 px-md-5">
   <h2>{{ page.section_products.header }}</h2>
