@@ -26,7 +26,7 @@ short_description: 'Enhance your Financial Accounting & Reporting (FAR) exam stu
   hours of animated video lectures, over 1,250 multiple choice practice questions
   that come with detailed answer rationales, and 65 task-based simulations to better
   prepare you for test day. '
-thumbnail: "/uploads/2019/07/17/Screenshot (618).png"
+thumbnail: "/uploads/2019/03/05/far combo.png"
 features:
 - '1,250 Multiple choice FAR questions that replicate the CPA exam. '
 - 'Over 250 video explanations on multiple-choice questions to help you better understand
