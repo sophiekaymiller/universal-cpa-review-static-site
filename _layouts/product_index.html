@@ -65,20 +65,22 @@
   </div>
   
   <!-- Features  -->
-  <div class="container">
+  <div class="container" style="background-color: transparent;">
     <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
     <div class="row">
       {% for feature in page.section_features.features %}
         
         <!-- four columns in a row -->
         
-        <div class="col-sm-3 feature card-outline-primary">
-          <p class="feature-style card-text"> {{ feature }} </p>
+        <div class="col-sm-3 feature card-outline-primary" style="background-color: white;">
+          <p class="feature-style card-text m-2"> {{ feature }} </p>
         </div>
         
       {% endfor %}
     </div>
   </div>
+
+
   <!-- Other Products Section -->
  
   
