@@ -1,7 +1,7 @@
 {% assign cta_type = include.cta_type | default:"detail" %}
 <ul class="row ucr-products">
     {% for product in include.products %}
-    <li class="col-sm-3 mb-6">
+    <li class="col-md mb-6 mb-md-0">
         {% if cta_type == "detail" %}
         {% assign cta_url = product.url %}
         {% endif %}
