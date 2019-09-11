@@ -10,15 +10,15 @@
         <div class="col-sm-3">
             <ul>
                 {% for feature in features_list %}
-                {% assign mod = forloop.index0 | modulo:2 %}
-                {% if mod == 0  %}
+                <!-- {% assign mod = forloop.index0 | modulo:2 %} -->
+                <!-- {% if mod == 0  %} -->
                 <li>{{ feature }}</li>
                 {% endif %}
                 {% endfor %}
             </ul>
         </div>
 
-        <div class="col-sm-3">
+<!--         <div class="col-sm-3">
             <ul>
                 {% for feature in features_list %}
                 {% assign mod = forloop.index0 | modulo:2 %}
@@ -29,4 +29,4 @@
             </ul>
         </div>
     </div>
-</div>
+</div> -->
