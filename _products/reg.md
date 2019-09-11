@@ -26,7 +26,7 @@ short_description: 'Enhance your Regulation (REG) exam study schedule with the b
   lectures, over 1,100 multiple choice practice questions that come with detailed
   answer rationales, and 65 task-based simulations to better prepare you for test
   day. '
-thumbnail: "/uploads/2019/07/17/REG product.png"
+thumbnail: "/uploads/2019/03/05/REG COMBO.png"
 features:
 - 1,100 Multiple choice REG questions that replicate the CPA exam.
 - Over 10 Hours of Animated Video Lectures
