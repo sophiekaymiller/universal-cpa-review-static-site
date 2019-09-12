@@ -70,6 +70,7 @@
         {% endfor %}
     </div>
 </div>
+
 {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
 
 
@@ -77,7 +78,7 @@
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
 </div>
 {% endcapture %}
-{% include content_block.html content=section_content section_name='ucr-section-features' %}
+
 
 <!-- Sub-Products Section -->
 {% if page.sub_products %}
