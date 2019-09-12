@@ -1,0 +1,34 @@
+ <!-- Pricing Table -->
+  {% capture section_content %}
+  <div class="pricingTable ucr-section-header px-0 px-md-5">
+    <h2>{{ page.section_products.header }}</h2>
+    <span>{{ page.section_products.subheader }}</span>
+    {% assign products = site.products %}
+    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
+    
+    <ul class="pricingTable-firstTable">
+      {% for product in include.products %}
+        {% assign name = include.name %}
+        {% assign description = include.description %}
+        {% assign price = include.price %}
+        {% assign cta_theme = include.cta_theme | default:"secondary" %}
+        {% assign cta_url = include.cta_url | default:nil %}
+        {% if cta_url == nil %}
+        {% capture cta_url %}{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ include.checkout_code }}{% endcapture %}
+      {% endif %}
+      {% assign cta_text = include.cta_text %}
+      <li class="pricingTable-firstTable_table">
+        <h1 class="pricingTable-firstTable_table__header">{{ name }}</h1>
+        {% if price %}
+          <p class="pricingTable-firstTable_table__pricing"> {{ price }}</p>
+        {% endif %}
+        <ul class="pricingTable-firstTable_table__options">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="pricingTable-firstTable_table__getstart">{{ cta.text }}</div>
+      </li>
+    </ul>
+  </div>
+  <!-- End Pricing Table -->
