@@ -58,20 +58,7 @@
 <!-- Features Section -->
 {% capture section_content %}
 <!-- Features  -->
-<div class="container">
-    <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
-    <div class="row">
-        {% for feature in page.features %}
-            
-            <!-- four columns in a row -->
-            
-            <div class="card border-secondary">
-                <p class="feature-style card-text"> {{ feature }} </p>
-            </div>
-            
-        {% endfor %}
-    </div>
-</div>
+
 {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
 <div class="text-center mt-3 mt-sm-5">
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
