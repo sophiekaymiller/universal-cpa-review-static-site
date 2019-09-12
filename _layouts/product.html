@@ -56,14 +56,14 @@
 <!-- Features Section -->
 {% capture section_content %}
 <!-- Features  -->
-<div class="container">
+<div class="container" style="background-color: #f2eef5">
     <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
     <div class="row">
         {% for feature in page.features %}
             
             <!-- four columns in a row -->
             
-            <div class="col-sm-3 feature card-outline-primary">
+            <div class="card border-primary">
                 <p class="feature-style card-text"> {{ feature }} </p>
             </div>
             
@@ -72,21 +72,13 @@
 </div>
 {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
 
-{% assign product_header = page.product_header | default:default_product_header %}
-{% assign all_features = "" | split: "" %}
-{% for feature in page.features %}
-{% assign all_features = all_features | push:feature %}
-{% endfor %}
-{% for feature in site.data.shared_features %}
-{% assign all_features = all_features | push:feature %}
-{% endfor %}
-<!-- {% include features_block.html features_header=product_header features=all_features %} -->
 
 <div class="text-center mt-3 mt-sm-5">
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
 </div>
 {% endcapture %}
 {% include content_block.html content=section_content section_name='ucr-section-features' %}
+
 <!-- Sub-Products Section -->
 {% if page.sub_products %}
 {% capture section_content %}
