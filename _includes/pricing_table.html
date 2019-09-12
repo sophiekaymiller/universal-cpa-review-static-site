@@ -1,34 +1,86 @@
- <!-- Pricing Table -->
-  {% capture section_content %}
-  <div class="pricingTable ucr-section-header px-0 px-md-5">
-    <h2>{{ page.section_products.header }}</h2>
-    <span>{{ page.section_products.subheader }}</span>
-    {% assign products = site.products %}
-    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
-    
-    <ul class="pricingTable-firstTable">
-      {% for product in include.products %}
-        {% assign name = include.name %}
-        {% assign description = include.description %}
-        {% assign price = include.price %}
-        {% assign cta_theme = include.cta_theme | default:"secondary" %}
-        {% assign cta_url = include.cta_url | default:nil %}
-        {% if cta_url == nil %}
-        {% capture cta_url %}{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ include.checkout_code }}{% endcapture %}
-      {% endif %}
-      {% assign cta_text = include.cta_text %}
-      <li class="pricingTable-firstTable_table">
-        <h1 class="pricingTable-firstTable_table__header">{{ name }}</h1>
-        {% if price %}
-          <p class="pricingTable-firstTable_table__pricing"> {{ price }}</p>
-        {% endif %}
-        <ul class="pricingTable-firstTable_table__options">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div class="pricingTable-firstTable_table__getstart">{{ cta.text }}</div>
-      </li>
-    </ul>
-  </div>
-  <!-- End Pricing Table -->
+<div class="container py-sm-4">
+          <div class="row">
+            <div class="col-md-10 my-4 mx-auto">
+              <h6 class="text-center text-purple">OUR OFFERINGS </h6>
+              <h3 class="text-center">We understand that everyone studies in different ways</h3>
+              <hr>
+              <div class="row no-gutters my-3">
+                <div class="col-md-4 pr-2">
+                  <div class="list-group text-center my-3">
+                    <div class="list-group-item text-white">
+                      <h4 class="text-center my-1 text-purple">All E-Books</h4>
+                    </div>
+                    <div class="list-group-item text-uppercase price-subtext font-weight-bold">includes e-book access for all test sections</div>
+                    <a href="#" class="list-group-item bg-alt">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item">Feature                 
+          </a>
+                    <a href="#" class="list-group-item bg-alt">Feature
+                    
+                    </a>
+                    <a href="#" class="list-group-item">Feature
+                    
+                    </a>
+                    <div class="list-group-item">
+                      <button class="btn btn-block text-white pricing-btn" style="background-color: #330066; font: Dosis;"> Buy E-Books </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="list-group text-center">
+                    <div class="list-group-item text-white bg-light text-purple">
+                      <h4 class="text-center my-1 text-purple">Complete Bundle</h4>
+                    </div>
+                    <div class="list-group-item text-uppercase price-subtext font-weight-bold"> The complete bundle is thebest possible deal </div>
+                    <a href="#" class="list-group-item bg-alt">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item bg-alt">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item bg-alt">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item">
+                    Feature
+                    </a>
+                    <div class="list-group-item">
+                      <button class="btn btn-block pricing-btn text-white"> Buy Complete Bundle </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 pl-2">
+                  <div class="list-group text-center my-3">
+                    <div class="list-group-item text-purple">
+                      <h4 class="text-center my-1">All Test Banks</h4>
+          </div>
+                    <div class="list-group-item text-uppercase font-weight-bold price-subtext bg-light"> Includes test bank access for all test sections </div>
+                    <a href="#" class="list-group-item bg-alt">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item bg-alt">
+                    Feature
+                    </a>
+                    <a href="#" class="list-group-item">
+                    Feature
+                    </a>
+                    <div class="list-group-item">
+                      <button class="btn btn-block text-white pricing-btn">Buy Test Banks
+            </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
