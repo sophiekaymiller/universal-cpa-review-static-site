@@ -1,5 +1,4 @@
 {% assign featured_reviews = site.reviews | where:"featured","true" %}
-
 <html>
   <!-- meta data and products -->
   {% capture data_layer %}
@@ -20,17 +19,12 @@
   }
   });
   </script>
-
-
 {% endcapture %}
 {% include head.html data_layer=data_layer style_override="product_index" %}
-
 <body>
   <!-- Start Nav -->
   {% include nav.html %}
   <!-- End Nav -->
-
-
   <!-- Hero Section -->
   <div class="jumbotron text-center" style="background-image: url('/assets/images/product-assets/base.png');">
     <h1 class="ucr-section-header" style="color: white">
@@ -84,10 +78,12 @@
       {% endfor %}
     </div>
   </div>
-
+  
+  <!-- Pricing Table -->
+ {% include pricing_table.html %}
 
   <!-- Other Products Section -->
- 
+  
   
   {% assign cta_type = include.cta_type | default:"detail" %}
   <ul class="row ucr-products">
@@ -100,8 +96,6 @@
       </li>
     {% endfor %}
   </ul>
-
-
   <div class="pt-6">
     {% assign products = site.products %}
     {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
@@ -116,9 +110,7 @@
 {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
 {% assign review = featured_reviews[3] %}
 {% include testimonial_block.html review=review %}
-
 <!-- Footer -->
-
 {% include footer.html %}
 </body>
 </html>
