@@ -106,7 +106,7 @@
       <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn grad-btn">{{ page.section_hero.bundle.cta_text }}</a>
     </div>
   {% endif %}
-{% endcapture %}
+
 {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
 {% assign review = featured_reviews[3] %}
 {% include testimonial_block.html review=review %}
