@@ -61,7 +61,7 @@ section_bundles:
     - Feature 3
     checkout_code: ''
     cta_text: Buy Now
-    price: "999"
+    price: "$999"
   - name: All Textbooks & Animated Video Lectures
     description: Includes Textbook Materials & Animated Video Lectures for All Sections
     thumbnail: "/uploads/2019/03/03/test banks .png"
