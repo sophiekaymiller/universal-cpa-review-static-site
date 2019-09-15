@@ -6,10 +6,10 @@
       We understand that everyone studies in different ways
       </h3>
       <hr>
-      
+      <div class="container-fluid"></div>
       <div class="row no-gutters my-3">
         {% for bundle in page.section_bundles.bundles %}
-          <div class="col-md-4 pr-2">
+          <div class="col-md-5 pr-2">
             <div class="list-group text-center my-3">
               <div class="list-group-item text-white">
                 <h4 class="text-center my-1 text-purple">
@@ -17,17 +17,19 @@
                 </h4>
               </div>
               <div class="list-group-item text-uppercase price-subtext font-weight-bold">
-                {{ bundle.description }}
+              {{ bundle.description }}
               </div>
               {% for bfeature in bundle.features %}
-                <a href="#" class="list-group-item">{{ bfeature }}</a>  
+              <a href="#" class="list-group-item">{{ bfeature }}</a>  
               {% endfor %}
               <div class="list-group-item">
                 <h3>{{ bundle.price }}</h3>
-                <button class="btn btn-primary pricing-btn">
+                
+                <button class="btn btn-primary text-white pricing-btn">
                 {{ bundles.cta_text }}
                 </button>
               </div>
+
             </div>
           </div>
         {% endfor %}
