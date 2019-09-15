@@ -19,9 +19,8 @@
               <div class="list-group-item text-uppercase price-subtext font-weight-bold">
                 {{ bundle.description }}
               </div>
-              {% for feature in page.section_features %}
-                <a href="#" class="list-group-item">{{ feature }}</a>
-                
+              {% for bfeature in bundle.features %}
+                <a href="#" class="list-group-item">{{ bfeature }}</a>  
               {% endfor %}
               <div class="list-group-item">
                 <h3>{{ bundle.price }}</h3>
