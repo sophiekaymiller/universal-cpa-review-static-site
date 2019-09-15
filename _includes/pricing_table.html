@@ -9,8 +9,7 @@
       <hr>
       
       <div class="row no-gutters my-3">
-
-      {% for bundles in include.section_bundles %}
+      {% for bundles in section_bundles %}
 
         <div class="col-md-4 pr-2">
           <div class="list-group text-center my-3">
@@ -24,12 +23,12 @@
             </div>
 
             {% for feature in page.section_features %}
-            <a href="#" class="list-group-item">{feature}</a>
+            <a href="#" class="list-group-item">{{feature}}</a>
             {% endfor %}
 
             <div class="list-group-item">
             <button class="btn btn-primary pricing-btn">
-            Call to Action
+            {{ bundles.cta_text }}
             </button>
             </div>
           </div>
