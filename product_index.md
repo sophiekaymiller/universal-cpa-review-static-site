@@ -44,6 +44,7 @@ section_bundles:
   - name: All Textbooks & Animated Video Lectures
     description: Includes Textbook Materials & Animated Video Lectures for All Sections
     thumbnail: "/uploads/2019/03/03/test banks .png"
+    features: 
     checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$799"
@@ -51,6 +52,7 @@ section_bundles:
     description: 'Includes test bank access for all four sections as well as detailed
       answer solutions, and video walk through explanations. '
     thumbnail: "/uploads/2019/01/29/test bank.png"
+    features: 
     checkout_code: ALLT
     cta_text: Buy Test Banks
     price: "$299"
