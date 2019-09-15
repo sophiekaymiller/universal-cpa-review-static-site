@@ -41,6 +41,17 @@ section_bundles:
   header: Get The Best Deal With A Bundle
   subheader: Our bundles are the best bang for your buck.
   bundles:
+  - name: All Test Banks
+    description: 'Includes test bank access for all four sections as well as detailed
+      answer solutions, and video walk through explanations. '
+    thumbnail: "/uploads/2019/01/29/test bank.png"
+    features:
+    - Test bank access for all four sections
+    - Detailed answer solutions
+    - Video walk through explanations
+    checkout_code: ALLT
+    cta_text: Buy Test Banks
+    price: "$299"
   - name: All Textbooks & Animated Video Lectures
     description: Includes Textbook Materials & Animated Video Lectures for All Sections
     thumbnail: "/uploads/2019/03/03/test banks .png"
@@ -50,17 +61,6 @@ section_bundles:
     checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$799"
-  - name: All Test Banks
-    description: 'Includes test bank access for all four sections as well as detailed
-      answer solutions, and video walk through explanations. '
-    thumbnail: "/uploads/2019/01/29/test bank.png"
-    features:
-    - test bank access for all four sections
-    - detailed answer solutions
-    - video walk through explanations
-    checkout_code: ALLT
-    cta_text: Buy Test Banks
-    price: "$299"
 section_products:
   header: Choose Your CPA Exam
   subheader: Select test section to begin your practice questions
