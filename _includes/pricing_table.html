@@ -10,7 +10,7 @@
       
       <div class="row no-gutters my-3">
 
-      {% for bundles in page.section_bundles %}
+      {% for bundles in include.section_bundles %}
 
         <div class="col-md-4 pr-2">
           <div class="list-group text-center my-3">
@@ -23,14 +23,13 @@
             {{ bundles.description }}
             </div>
 
-            <a href="#" class="list-group-item bg-alt">
             {% for feature in page.section_features %}
-            </a>
             <a href="#" class="list-group-item">{feature}</a>
             {% endfor %}
+
             <div class="list-group-item">
-              <button class="btn btn-sm btn-primary text-white pricing-btn">
-              {% bundles.cta_text %}
+            <button class="btn btn-primary pricing-btn">
+            {% bundles.cta_text %}
             </button>
             </div>
           </div>
