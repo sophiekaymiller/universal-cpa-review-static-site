@@ -9,7 +9,7 @@
       <div class="container-fluid"></div>
       <div class="row no-gutters my-3">
         {% for bundle in page.section_bundles.bundles %}
-          <div class="col-md-5 pr-2">
+          <div class="col-md-6 pr-2">
             <div class="list-group text-center my-3">
               <div class="list-group-item text-white">
                 <h4 class="text-center my-1 text-purple">
@@ -20,7 +20,8 @@
               {{ bundle.description }}
               </div>
               {% for bfeature in bundle.features %}
-              <a href="#" class="list-group-item">{{ bfeature }}</a>  
+              <li class="list-group-item list-group-item-text">{{ bfeature }}</li>  
+              
               {% endfor %}
               <div class="list-group-item">
                 <h3>{{ bundle.price }}</h3>
