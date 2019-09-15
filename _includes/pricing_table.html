@@ -23,8 +23,9 @@
               {% endfor %}
               <div class="list-group-item">
                 <h3>{{ bundle.price }}</h3>
+                
+                <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-buy btn-block ">{{ bundle.cta_text }}</a>
               </div>
-              <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-buy btn-block ">{{ bundle.cta_text }}</a>
             </div>
           </div>
         {% endfor %}
