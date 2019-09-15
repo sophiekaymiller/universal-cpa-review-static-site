@@ -5,36 +5,34 @@
       <h3 class="text-center">
       We understand that everyone studies in different ways
       </h3>
-
       <hr>
       
       <div class="row no-gutters my-3">
-      {% for bundles in section_bundles %}
-
-        <div class="col-md-4 pr-2">
-          <div class="list-group text-center my-3">
-            <div class="list-group-item text-white">
-              <h4 class="text-center my-1 text-purple">
-              {{ bundles.name }}
-            </h4>
-            </div>
-            <div class="list-group-item text-uppercase price-subtext font-weight-bold">
-            {{ bundles.description }}
-            </div>
-
-            {% for feature in page.section_features %}
-            <a href="#" class="list-group-item">{{feature}}</a>
-            {% endfor %}
-
-            <div class="list-group-item">
-            <button class="btn btn-primary pricing-btn">
-            {{ bundles.cta_text }}
-            </button>
+        {% for bundle in page.section_bundles.bundles %}
+          <div class="col-md-4 pr-2">
+            <div class="list-group text-center my-3">
+              <div class="list-group-item text-white">
+                <h4 class="text-center my-1 text-purple">
+                {{ bundle.name }}
+                </h4>
+              </div>
+              <div class="list-group-item text-uppercase price-subtext font-weight-bold">
+                {{ bundle.description }}
+              </div>
+              {% for feature in page.section_features %}
+                <a href="#" class="list-group-item">{{ feature }}</a>
+                
+              {% endfor %}
+              <div class="list-group-item">
+                <h3>{{ bundle.price }}</h3>
+                <button class="btn btn-primary pricing-btn">
+                {{ bundles.cta_text }}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
         {% endfor %}
       </div>
-    </div> 
-  </div> 
+    </div>
+  </div>
 </div>
