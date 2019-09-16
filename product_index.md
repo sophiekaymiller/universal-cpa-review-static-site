@@ -42,8 +42,7 @@ section_bundles:
   subheader: Our bundles are the best bang for your buck.
   bundles:
   - name: All Test Banks
-    description: 'Includes test bank access for all four sections as well as detailed
-      answer solutions, and video walk through explanations. '
+    description: " Includes test bank access for\x03all test sections "
     thumbnail: "/uploads/2019/01/29/test bank.png"
     features:
     - Test bank access for all four sections
@@ -53,7 +52,7 @@ section_bundles:
     cta_text: Buy Test Banks
     price: "$299"
   - name: Total CPA Exam Package
-    description: ''
+    description: "The complete bundle is the\x03best possible deal"
     thumbnail: ''
     features:
     - Feature 1
@@ -63,11 +62,12 @@ section_bundles:
     cta_text: Buy Now
     price: "$999"
   - name: All Textbooks & Animated Video Lectures
-    description: Includes Textbook Materials & Animated Video Lectures for All Sections
+    description: " Includes e-book access for\x03all test sections"
     thumbnail: "/uploads/2019/03/03/test banks .png"
     features:
-    - Textbook Materials
-    - Animated Video Lectures for All Sections
+    - Feature 1
+    - Feature 2
+    - Feature 3
     checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$799"
