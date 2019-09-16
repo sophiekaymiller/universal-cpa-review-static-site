@@ -42,8 +42,7 @@ section_bundles:
   subheader: Our bundles are the best bang for your buck.
   bundles:
   - name: All Test Banks
-    description: 'Includes test bank access for all four sections as well as detailed
-      answer solutions, and video walk through explanations. '
+    description: " Includes test bank access for\x03all test sections "
     thumbnail: "/uploads/2019/01/29/test bank.png"
     features:
     - Test bank access for all four sections
