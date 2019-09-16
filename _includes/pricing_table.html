@@ -21,7 +21,7 @@
               {% for bfeature in bundle.features %}
                 <li class="list-group-item list-group-item-text">{{ bfeature }}</li>
               {% endfor %}
-              <div class="list-group-item ">
+              <div class="list-group-item col-md-offset-4">
                 
                 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-buy">{{ bundle.cta_text }}</a>
               </div>
