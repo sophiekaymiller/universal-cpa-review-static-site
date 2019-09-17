@@ -69,10 +69,11 @@
     </h5>
     <div class="container">
       <div class="row bg-transparent">
+        <div class="col-sm-3">
         {% for feature in page.section_features.features %}
           
           <!-- four columns in a row -->
-          <div class="col-sm-3">
+          
             <div class="card" >
               <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
               {% assign first_word = feature | | truncatewords: 1, "" %}
