@@ -26,14 +26,16 @@
     {% include nav.html %}
     <!-- Header Section -->
     {% capture section_content %}
-    <div class="ucr-section-header px-3 px-md-5">
-        <h1 class="inverse">{{ page.name }}</h1>
+
+    <div class="ucr-section-header px-3 px-md-5 bg-primary">
+        <h1 class="ucr-section-header text-white">{{ page.name }}</h1>
         <div class="ucr-product-main-price d-flex justify-content-center">
             {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
             <h3 class="new-price">{{ page.price }}</h3>
         </div>
-        <p class="inverse">{{ page.short_description }}</p>
+        <p class="lead">{{ page.short_description }}</p>
     </div>
+    
     <div class="ucr-button-row py-2 py-sm-5">
         {% if page.trial_checkout_code %}
             <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
