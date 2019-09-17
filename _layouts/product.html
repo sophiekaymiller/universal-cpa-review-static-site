@@ -26,7 +26,7 @@
     {% include nav.html %}
     <!-- Header Section -->
     {% capture section_content %}
-    <div class="jumbotron text-center mt-5 bg-primary">
+    <div class="jumbotron text-center bg-primary">
         <div class="ucr-section-header px-3 px-md-5">
             <h1 class="ucr-section-header text-white">{{ page.name }}</h1>
             <div class="ucr-product-main-price d-flex justify-content-center">
@@ -98,6 +98,7 @@
 {% if page.featured_bundle and page.featured_bundle.checkout_code != '' %}
 {% capture section_content %}
 <!-- Featured Bundle -->
+{% include pricing_table.html %}
 {% include ribbon.html text="Featured Bundle" %}
 <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
 <h2>{{ page.featured_bundle.header }}</h2>
