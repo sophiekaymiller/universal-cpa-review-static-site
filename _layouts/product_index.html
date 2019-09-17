@@ -74,7 +74,7 @@
         <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
         {% assign first_word = feature | | truncatewords: 1, "" %}
         <h5 class="card-title text-center"> {{ first_word }} </h5>
-        <p class="card-text align-bottom"> {{ feature | remove: first_word}}  </p>
+        <p class="card-text text-center align-text-bottom"> {{ feature | remove: first_word}}  </p>
         
       </div>
     {% endtablerow %}
