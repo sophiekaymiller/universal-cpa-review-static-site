@@ -73,7 +73,7 @@
 </div>
 <div class="d-block d-md-flex justify-content-center equal-width pt-5">
 {% for product in page.sub_products %}
-    <div class="col-md px-3 mx-3 mb-5 mb-md-0">
+    <div class="col-md-6 px-3 mx-3 mb-5 mb-md-0">
         {% include product_block.html thumbnail=product.thumbnail name=product.name cta_theme="primary" cta_text=product.cta_text checkout_code=product.checkout_code price=product.price %}
     </div>
 {% endfor %}
