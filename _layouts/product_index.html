@@ -74,10 +74,12 @@
         <div class="col-md-3 mx-md-auto d-block bg-white" >
           <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
 
-          <p class="card-title align-middle"> {{ feature | truncatewords: 1}} </p>
+          {% assign first_word = feature | | truncatewords: 1, "" %}
+
+          <p class="card-title align-middle"> {{ first_word }} </p>
 
 
-          <p class="card-text align-bottom"> {{ feature }}  </p>
+          <p class="card-text align-bottom"> {{ feature | remove: first_word}}  </p>
         
         </div>
         
