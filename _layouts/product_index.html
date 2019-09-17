@@ -73,11 +73,8 @@
         
         <div class="col-md-3 mx-md-auto d-block bg-white" >
           <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
-          {% assign full_string = {{ feature }} | split: ' ' %}
 
-          {% for first_word in full_string %}
-
-          <p class="card-title align-middle"> {{ first_word }} </p>
+          <p class="card-title align-middle"> {{ feature | truncatewords: 1}} </p>
           {% endfor %}
 
           <p class="card-text align-bottom"> {{ feature }}  </p>
