@@ -69,7 +69,7 @@
     {{ page.section_features.header }}
     </h5>
     <div class="row">
-    {% tablerow feature in page.section_features.features cols:4 %}
+      {% tablerow feature in page.section_features.features cols:4 %}
       
       <div class="col-sm-3 bg-white" >
         <img class="img-circle mx-auto d-block py-3" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
@@ -81,18 +81,11 @@
     {% endtablerow %}
   </div>
 </div>
-
-
 {% include pricing_table.html %}
 {% assign cta_type = include.cta_type | default:"detail" %}
-
-
-
-
-
+<h5 class="text-center">CHOOSE YOUR CPA EXAM</h5>
+<h3 class="text-center">Select test section to begin your practice questions </h3>
 <ul class="row ucr-products">
-  <h5 class="text-center">CHOOSE YOUR CPA EXAM</h5>
-  <h3 class="text-center">Select test section to begin your practice questions </h3>
   {% for product in include.products %}
     <li class="col-md mb-6 mb-md-0">
       {% if cta_type == "detail" %}
@@ -102,26 +95,19 @@
     </li>
   {% endfor %}
 </ul>
-
 <div class="pt-6">
   {% assign products = site.products %}
   {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
   {% include products_block.html products=products %}
 </div>
-
 {% if page.checkout_code %}
   <div class="ucr-section-footer pt-0 pt-sm-5">
     <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-block btn-lg btn-primary">{{ page.section_hero.bundle.cta_text }}</a>
   </div>
 {% endif %}
-
-
 {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
-
 {% assign review = featured_reviews[3] %}
-
 {% include testimonial_block.html review=review %}
-
 <!-- Footer -->
 {% include footer.html %}
 </body>
