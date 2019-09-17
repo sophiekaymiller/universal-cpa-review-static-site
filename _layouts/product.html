@@ -26,41 +26,38 @@
     {% include nav.html %}
     <!-- Header Section -->
     {% capture section_content %}
-
-    <div class="ucr-section-header px-3 px-md-5 bg-primary">
-        <h1 class="ucr-section-header text-white">{{ page.name }}</h1>
-        <div class="ucr-product-main-price d-flex justify-content-center">
-            {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
-            <h3 class="new-price">{{ page.price }}</h3>
-        </div>
-        <p class="lead">{{ page.short_description }}</p>
-    </div>
-    
-    <div class="ucr-button-row py-2 py-sm-5">
-        {% if page.trial_checkout_code %}
-            <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
-                <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
+    <div class="jumbotron text-center mt-5 bg-primary">
+        <div class="ucr-section-header px-3 px-md-5">
+            <h1 class="ucr-section-header text-white">{{ page.name }}</h1>
+            <div class="ucr-product-main-price d-flex justify-content-center">
+                {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
+                <h3 class="new-price">{{ page.price }}</h3>
             </div>
-        {% endif %}
-        <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
-            <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-buy">Buy Now</a>
+            <p class="lead text-white">{{ page.short_description }}</p>
         </div>
-    </div>
-    <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-3">
-        {% if page.thumbnail %}
-            <img class="ucr-product-thumbnail" src="{{ page.thumbnail }}" />
-        {% else %}
-            {% include mocks_block.html %}
-        {% endif %}
+        <div class="ucr-button-row py-2 py-sm-5">
+            {% if page.trial_checkout_code %}
+                <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
+                    <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
+                </div>
+            {% endif %}
+            <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
+                <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-outline-light btn-buy">Buy Now</a>
+            </div>
+        </div>
+        <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-3">
+            {% if page.thumbnail %}
+                <img class="ucr-product-thumbnail" src="{{ page.thumbnail }}" />
+            {% else %}
+                {% include mocks_block.html %}
+            {% endif %}
+        </div>
     </div>
 {% endcapture %}
-
 {% include content_block.html content=section_content section_name='ucr-section-hero' %}
-
 <!-- Features Section -->
 {% capture section_content %}
 <!-- Features  -->
-
 {% capture default_product_header %}Universal {{ page.name }} Exam Supplementary Material{% endcapture %}
 <div class="text-center mt-3 mt-sm-5">
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
