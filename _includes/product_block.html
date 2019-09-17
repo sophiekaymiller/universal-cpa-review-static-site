@@ -12,19 +12,20 @@
 <div class="ucr-product">
     <div class="ucr-product-inner">
         <div class="ucr-product-header px-3">
+            <div class="list-group text-center my-3">
             <img src="{{ thumbnail }}" class="rounded-circle" alt="{{ name }}"/>
-            <h4 class="spaced">{{ name }}</h4>
+            <h4 class="text-center my-1 text-purple">{{ name }}</h4>
 
             {% if description %}
-            <p class="ucr-product-description">
+            <div class="list-group-item text-uppercase price-subtext font-weight-bold">
                 {{ description }}
-            </p>
+            </div>
             {% endif %}
 
             {% if price %}
-            <strong class="ucr-product-price d-block pb-3">
+            <h5 class="ucr-product-price d-block pb-3">
             {{ price }}
-            </strong>
+            </h5>
             {% endif %}
         </div>
 
