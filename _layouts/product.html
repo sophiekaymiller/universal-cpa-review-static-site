@@ -63,7 +63,9 @@
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light">Get Started Today</a>
 </div>
 {% endcapture %}
+
 <!-- Sub-Products Section -->
+
 {% if page.sub_products %}
 {% capture section_content %}
 <div class="ucr-section-header pt-3 px-3 px-md-5 pb-4">
@@ -71,7 +73,7 @@
 </div>
 <div class="d-block d-md-flex justify-content-center equal-width pt-5">
 {% for product in page.sub_products %}
-    <div class="px-3 mx-3 mb-5 mb-md-0">
+    <div class="col-md px-3 mx-3 mb-5 mb-md-0">
         {% include product_block.html thumbnail=product.thumbnail name=product.name cta_theme="primary" cta_text=product.cta_text checkout_code=product.checkout_code price=product.price %}
     </div>
 {% endfor %}
@@ -79,6 +81,7 @@
 {% endcapture %}
 {% include content_block.html content=section_content section_name='ucr-section-subproducts gray pt-3' %}
 {% endif %}
+
 <!-- Testimonials -->
 {% assign review = featured_reviews[3] %}
 {% include testimonial_block.html review=review %}
@@ -98,7 +101,6 @@
 {% if page.featured_bundle and page.featured_bundle.checkout_code != '' %}
 {% capture section_content %}
 <!-- Featured Bundle -->
-{% include pricing_table.html %}
 {% include ribbon.html text="Featured Bundle" %}
 <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
 <h2>{{ page.featured_bundle.header }}</h2>
