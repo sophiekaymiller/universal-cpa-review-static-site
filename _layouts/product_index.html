@@ -64,56 +64,54 @@
   
   <!-- Features  -->
   <div class="container" style="background-color: transparent;">
-    <h5 class="text-md-center"> {{ page.section_features.header }} </h5>
-    
+    <h5 class="text-md-center"> 
+    {{ page.section_features.header }} 
+    </h5>
     <div class="container">
       <div class="row bg-transparent">
         {% for feature in page.section_features.features %}
           
           <!-- four columns in a row -->
-          
-          <div class="card col-sm-3 d-block bg-white ml-2 mt-2 sp" >
-            <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
-            {% assign first_word = feature | | truncatewords: 1, "" %}
-            <h5 class="card-title text-center"> {{ first_word }} </h5>
-            <p class="card-text align-bottom"> {{ feature | remove: first_word}}  </p>
+          <div class="col-sm-3">
+            <div class="card" >
+              <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
+              {% assign first_word = feature | | truncatewords: 1, "" %}
+              <h5 class="card-title text-center"> {{ first_word }} </h5>
+              <p class="card-text align-bottom"> {{ feature | remove: first_word}}  </p>
+              
+            </div>
             
-          </div>
-          
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
-
-
-{% include pricing_table.html %}
-
-
-{% assign cta_type = include.cta_type | default:"detail" %}
-<ul class="row ucr-products">
-  {% for product in include.products %}
-    <li class="col-md mb-6 mb-md-0">
-      {% if cta_type == "detail" %}
-        {% assign cta_url = product.url %}
-      {% endif %}
-      {% include product_block.html thumbnail=product.thumbnail name=product.name cta_url=cta_url cta_text="Learn More" checkout_code=product.checkout_code %}
-    </li>
-  {% endfor %}
-</ul>
-<div class="pt-6">
-  {% assign products = site.products %}
-  {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
-  {% include products_block.html products=products %}
-</div>
-{% if page.checkout_code %}
-  <div class="ucr-section-footer pt-0 pt-sm-5">
-    <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn grad-btn">{{ page.section_hero.bundle.cta_text }}</a>
+  {% include pricing_table.html %}
+  {% assign cta_type = include.cta_type | default:"detail" %}
+  <ul class="row ucr-products">
+    {% for product in include.products %}
+      <li class="col-md mb-6 mb-md-0">
+        {% if cta_type == "detail" %}
+          {% assign cta_url = product.url %}
+        {% endif %}
+        {% include product_block.html thumbnail=product.thumbnail name=product.name cta_url=cta_url cta_text="Learn More" checkout_code=product.checkout_code %}
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="pt-6">
+    {% assign products = site.products %}
+    {% assign products = products | where_exp:"item", "item.tags contains page.section_products.tag" %}
+    {% include products_block.html products=products %}
   </div>
-{% endif %}
-{% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
-{% assign review = featured_reviews[3] %}
-{% include testimonial_block.html review=review %}
-<!-- Footer -->
-{% include footer.html %}
+  {% if page.checkout_code %}
+    <div class="ucr-section-footer pt-0 pt-sm-5">
+      <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn grad-btn">{{ page.section_hero.bundle.cta_text }}</a>
+    </div>
+  {% endif %}
+  {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
+  {% assign review = featured_reviews[3] %}
+  {% include testimonial_block.html review=review %}
+  <!-- Footer -->
+  {% include footer.html %}
 </body>
 </html>
