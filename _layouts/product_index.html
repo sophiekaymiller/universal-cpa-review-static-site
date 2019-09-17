@@ -68,7 +68,7 @@
     {{ page.section_features.header }}
     </h5>
     <div class="container">
-      {% tablerow feature in page.section_features.features cols:4 %}
+    {% tablerow feature in page.section_features.features cols:4 %}
       
       <div class="card col-sm-3 p-1 m-sm-1" >
         <img class="img-circle mx-auto d-block my-2" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
@@ -77,7 +77,7 @@
         <p class="card-text align-bottom"> {{ feature | remove: first_word}}  </p>
         
       </div>
-    {% endfor %}
+    {% endtablerow %}
   </div>
 </div>
 
