@@ -72,11 +72,14 @@
       {% tablerow feature in page.section_features.features cols:4 %}
       
       <div class="col-sm-3 bg-white feature-block mx-2" >
-        <img class="img-circle mx-auto d-block py-3" src="/assets/images/product-assets /feature-icon.png" width="40px" height="auto" />
+        <div class="card">
+        <img class="d-block mx-auto mt-4" src="/assets/images/product-assets /feature-icon.png" width="56" height="41" alt=""/>
         {% assign first_word = feature | | truncatewords: 1, "" %}
+        <div class="card-body">
         <h5 class="card-title text-center pb-2 "> {{ first_word }} </h5>
         <p class="card-text text-center align-text-bottom pb-2"> {{ feature | remove: first_word}}  </p>
-        
+        </div>
+        </div>
       </div>
     {% endtablerow %}
   </div>
