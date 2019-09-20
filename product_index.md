@@ -42,12 +42,15 @@ section_bundles:
   subheader: Our bundles are the best bang for your buck.
   bundles:
   - name: All Test Banks
-    description: " Includes test bank access for\x03all test sections "
+    description: " Includes test bank access for all four exam sections "
     thumbnail: "/uploads/2019/01/29/test bank.png"
     features:
-    - Test bank access for all four sections
-    - Detailed answer solutions
-    - Video walk through explanations
+    - Unlimited Access Until You Pass
+    - Over 4,200 Multiple-Choice Practice Questions
+    - Over 200 Task-Based Simulations That Emulate the CPA Exam
+    - Hundreds of Video Explanations for the Most Challenging Practice Questions
+    - 'Licensed Practice Questions from the AICPA '
+    - Real-time Adaptive Learning Technology
     checkout_code: ALLT
     cta_text: Buy Test Banks
     price: "$299"
