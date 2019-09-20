@@ -70,12 +70,16 @@ section_bundles:
     cta_text: Buy Now
     price: "$999"
   - name: All Textbooks & Animated Video Lectures
-    description: " Includes e-book access for\x03all test sections"
+    description: " Includes e-book access and animated video lectures for all four
+      exam sections"
     thumbnail: "/uploads/2019/03/03/test banks .png"
     features:
-    - Feature 1
-    - Feature 2
-    - Feature 3
+    - Unlimited Access Until You Pass
+    - Full Course E-Books for all Four Exam Sections
+    - Over 40 Hours of Animated Video Lectures
+    - Real-Time Adaptive Learning Technology
+    - Optimized Study Approach that only Targets Key Exam Concepts
+    - Unlimited Free Updates
     checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$799"
