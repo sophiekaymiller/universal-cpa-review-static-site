@@ -52,12 +52,17 @@ section_bundles:
     cta_text: Buy Test Banks
     price: "$299"
   - name: Total CPA Exam Package
-    description: "The complete bundle is the\x03best possible deal"
+    description: The complete bundle is the best possible deal
     thumbnail: ''
     features:
-    - Feature 1
-    - Feature 2
-    - Feature 3
+    - Unlimited Access Until You Pass
+    - Full Course E-books
+    - Over 40 Hours of Highly Engaging Animated Video Lectures
+    - Over 4,200 Multiple-Choice Practice Questions with Detailed Explanations
+    - Over 200 Task-Based Simulations that Replicate the CPA Exam
+    - Hundreds of Video Explanations for Most Challenging Concepts
+    - Over 4,200 Multiple-Choice Practice Questions With Detailed Explanations
+    - Unlimited Progress Tests
     checkout_code: ''
     cta_text: Buy Now
     price: "$999"
