@@ -59,7 +59,7 @@ section_bundles:
     thumbnail: ''
     features:
     - Unlimited Access Until You Pass
-    - Full Course E-books
+    - Full Course E-books for all Four Exam Sections
     - Over 40 Hours of Highly Engaging Animated Video Lectures
     - Over 4,200 Multiple-Choice Practice Questions with Detailed Explanations
     - Over 200 Task-Based Simulations that Replicate the CPA Exam
