@@ -10,9 +10,8 @@
         {% for bundle in page.section_bundles.bundles %}
           <div class="col-md-4">
             <div class="list-group text-center my-3">
-              <div class="list-group-item text-white">
                 <h4 class="text-center list-group-item-heading my-1 text-purple">{{ bundle.name }}</h4>
-                <p class="list-group-item-text">{{ bundle.description }}</p>
+                <p class="list-group-item-text pricing-subheader">{{ bundle.description }}</p>
               </div>
               {% for bfeature in bundle.features %}
               <li class="list-group-item list-group-item-text">{{ bfeature }}</li>
