@@ -100,8 +100,9 @@
 {% endif %}
 {% if page.featured_bundle and page.featured_bundle.checkout_code != '' %}
 {% capture section_content %}
+
 <!-- Featured Bundle -->
-{% include ribbon.html text="Featured Bundle" %}
+<!-- {% include ribbon.html text="Featured Bundle" %}
 <div class="ucr-section-header pt-3 pt-sm-4 px-3 px-md-5">
 <h2>{{ page.featured_bundle.header }}</h2>
 <span>{{ page.featured_bundle.subheader }}</span>
@@ -120,7 +121,8 @@
 {% endif %}
 {% endfor %}
 </div>
-</div>
+</div> -->
+
 <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.featured_bundle.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.featured_bundle.cta_text }}</a>
 </div>
