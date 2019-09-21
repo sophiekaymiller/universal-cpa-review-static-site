@@ -42,32 +42,44 @@ section_bundles:
   subheader: Our bundles are the best bang for your buck.
   bundles:
   - name: All Test Banks
-    description: " Includes test bank access for\x03all test sections "
+    description: " Includes test bank access for all four exam sections "
     thumbnail: "/uploads/2019/01/29/test bank.png"
     features:
-    - Test bank access for all four sections
-    - Detailed answer solutions
-    - Video walk through explanations
+    - Unlimited Access Until You Pass
+    - Over 4,200 Multiple-Choice Practice Questions
+    - Over 200 Task-Based Simulations That Emulate the CPA Exam
+    - Hundreds of Video Explanations for the Most Challenging Practice Questions
+    - 'Licensed Practice Questions from the AICPA '
+    - Real-time Adaptive Learning Technology
     checkout_code: ALLT
     cta_text: Buy Test Banks
     price: "$299"
   - name: Total CPA Exam Package
-    description: "The complete bundle is the\x03best possible deal"
+    description: The complete bundle is the best possible deal
     thumbnail: ''
     features:
-    - Feature 1
-    - Feature 2
-    - Feature 3
+    - Unlimited Access Until You Pass
+    - Full Course E-books for all Four Exam Sections
+    - Over 40 Hours of Highly Engaging Animated Video Lectures
+    - Over 4,200 Multiple-Choice Practice Questions with Detailed Explanations
+    - Over 200 Task-Based Simulations that Replicate the CPA Exam
+    - Hundreds of Video Explanations for Most Challenging Concepts
+    - Over 4,200 Multiple-Choice Practice Questions With Detailed Explanations
+    - Unlimited Progress Tests
     checkout_code: ''
     cta_text: Buy Now
     price: "$999"
   - name: All Textbooks & Animated Video Lectures
-    description: " Includes e-book access for\x03all test sections"
+    description: " Includes e-book access and animated video lectures for all four
+      exam sections"
     thumbnail: "/uploads/2019/03/03/test banks .png"
     features:
-    - Feature 1
-    - Feature 2
-    - Feature 3
+    - Unlimited Access Until You Pass
+    - Full Course E-Books for all Four Exam Sections
+    - Over 40 Hours of Animated Video Lectures
+    - Real-Time Adaptive Learning Technology
+    - Optimized Study Approach that only Targets Key Exam Concepts
+    - Unlimited Free Updates
     checkout_code: All Ebooks
     cta_text: Buy E-Books
     price: "$799"
