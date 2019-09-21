@@ -8,8 +8,17 @@ $cta-themes:(
 
 }
 
-.ucr-product.ucr-product-inner {
-  background-color: #ffffff!important;
+.ucr-product-inner {
+  background: #ffffff!important;
+}
+
+.ucr-product-thumbnail {
+  width: auto;
+  height: auto;
+  background: #ffffff!important;
+  margin: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .ucr-product {
