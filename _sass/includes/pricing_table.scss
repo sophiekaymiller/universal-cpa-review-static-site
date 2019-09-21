@@ -1,42 +1,47 @@
 @charset "UTF-8";
-
 .text-purple {
-	color: #391572;
+color: #391572;
 }
-
 .price-subtext {
-	color: #343434;
+color: #343434;
 }
-
 .bg-alt {
-	background-color: #F8F5FA;
+background-color: #F8F5FA;
 }
-
 .buy_e_books {
-  font-size: 12px;
-  font-family: "Lato";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: left;
-  z-index: 69;
+font-size: 12px;
+font-family: "Lato";
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-transform: uppercase;
+line-height: 1.2;
+text-align: left;
+z-index: 69;
 }
-
+.pricing-cta {
+padding: 5px 15px;
+background-color: #86e4ce;
+border-color: #86e4ce;
+font-size: 12px;
+font-family: "Lato";
+color: rgb(255, 255, 255);
+font-weight: bold;
+text-transform: uppercase;
+line-height: 1.2;
+text-align: left;
+}
 .pricing-header {
-  font-size: 24px;
-  font-family: "Lato";
-  color: rgb(57, 21, 114);
-  line-height: 1.2;
-  text-align: center;
+font-size: 24px;
+font-family: "Lato";
+color: rgb(57, 21, 114);
+line-height: 1.2;
+text-align: center;
+display: inline-block;
 }
-
-}
-
 .pricing-subheader {
-  font-size: 16px;
-  font-family: "Lato";
-  color: rgb(52, 52, 52);
-  line-height: 1.2;
-  text-align: center;
+font-size: 16px;
+font-family: "Lato";
+color: rgb(52, 52, 52);
+line-height: 1.2;
+text-align: center;
 }
