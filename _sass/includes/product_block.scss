@@ -9,7 +9,7 @@ $cta-themes:(
 }
 
 .ucr-product.ucr-product-inner {
-  background-color: white;
+  background-color: #ffffff!important;
 }
 
 .ucr-product {
@@ -23,11 +23,10 @@ $cta-themes:(
       img {
         width: auto;
         height: auto;
-        background: transparent;
+        background: #ffffff!important;
         margin: 10px;
         position: relative;
         top: 10px;
-        display: inline-block;
       }
 
       h4 {
