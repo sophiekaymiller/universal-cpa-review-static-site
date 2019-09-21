@@ -27,9 +27,7 @@ $cta-themes:(
       text-align: center;
 
       img {
-        width: auto;
-        height: auto;
-        background: #ffffff!important;
+        background-color: $white!important;
         margin: 10px;
         position: relative;
         top: 10px;
