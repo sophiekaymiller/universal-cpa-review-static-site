@@ -15,12 +15,12 @@
                 <p class="list-group-item-text">{{ bundle.description }}</p>
               </div>
               {% for bfeature in bundle.features %}
-                <li class="list-group-item list-group-item-text">{{ bfeature }}</li>
+              <li class="list-group-item list-group-item-text">{{ bfeature }}</li>
               {% endfor %}
-              <div class="list-group-item col-md-offset-4">
+              <li class="list-group-item col-md-offset-4">
                 
                 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light buy_e_books">{{ bundle.cta_text }}</a>
-              </div>
+              </li>
             </div>
           </div>
         {% endfor %}
