@@ -12,12 +12,6 @@ $cta-themes:(
   background: #ffffff!important;
 }
 
-.ucr-product-thumbnail {
-  margin: 10px;
-  position: relative;
-  top: 10px;
-}
-
 .ucr-product {
   .ucr-product-inner {
     box-shadow: 1px 1px 6px 0 #00000040;
@@ -25,13 +19,6 @@ $cta-themes:(
 
     .ucr-product-header {
       text-align: center;
-
-      img {
-        background-color: $white!important;
-        margin: 10px;
-        position: relative;
-        top: 10px;
-      }
 
       h4 {
         padding: 0 0 20px 0;

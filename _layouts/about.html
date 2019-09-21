@@ -61,7 +61,16 @@
     {% include content_block.html content=section_content section_name='ucr-section-video pt-4' %}
     {% endif %}
 
-    {% include banner_block.html headline=page.banner.headline cta_url=page.banner.cta_url cta_text=page.banner.cta_text %}
+    {% assign headline=page.banner.headline %}
+    {% assign cta_url=page.banner.cta_url %}
+    {% assign cta_text=page.banner.cta_text %}
+
+    <div class="ucr-banner bg-secondary">
+        <div class="container">
+            <h5 class="d-inline-block align-middle mr-3 mr-md-5">{{ include.headline }}</h5>
+            <a class="btn btn-cta-dark mt-3 mt-lg-0" href="{{ include.cta_url }}">{{ include.cta_text }}</a>
+        </div>
+    </div>
 
     {% include footer.html %}
 </body>
