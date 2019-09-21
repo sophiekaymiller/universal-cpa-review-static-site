@@ -1,0 +1,80 @@
+---
+label: home
+hide_body: true
+fields:
+- type: field_group
+  name: seo
+  label: seo
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
+- type: text
+  name: layout
+  label: layout
+- type: field_group
+  name: section_hero
+  label: section_hero
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: subheader
+    label: subheader
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: section_benefits
+  label: section_benefits
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: subheader
+    label: subheader
+- type: field_group
+  name: section_products
+  label: section_products
+  fields:
+  - type: text
+    name: header
+    label: header
+  - type: textarea
+    name: subheader
+    label: subheader
+  - type: text
+    name: yt_id
+    label: yt_id
+- type: field_group
+  name: section_featured
+  label: section_featured
+  fields:
+  - type: field_group_list
+    name: slides
+    label: slides
+    fields:
+    - type: file
+      name: icon
+      label: icon
+    - type: text
+      name: headline
+      label: headline
+    - type: field_group
+      name: cta
+      label: cta
+      fields:
+      - type: text
+        name: text
+        label: text
+      - type: text
+        name: url
+        label: url
+- type: list
+  name: js
+  label: js
