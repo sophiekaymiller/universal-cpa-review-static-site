@@ -11,12 +11,8 @@
           <div class="col-md-4">
             <div class="list-group text-center my-3">
               <div class="list-group-item text-white">
-                <h4 class="text-center my-1 text-purple">
-                {{ bundle.name }}
-                </h4>
-              </div>
-              <div class="list-group-item text-uppercase price-subtext font-weight-bold">
-                {{ bundle.description }}
+                <h4 class="text-center list-group-item-heading my-1 text-purple">{{ bundle.name }}</h4>
+                <p class="list-group-item-text">{{ bundle.description }}</p>
               </div>
               {% for bfeature in bundle.features %}
                 <li class="list-group-item list-group-item-text">{{ bfeature }}</li>
