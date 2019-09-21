@@ -106,7 +106,7 @@
 </div>
 {% if page.checkout_code %}
   <div class="ucr-section-footer pt-0 pt-sm-5">
-    <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-block btn-lg btn-primary">{{ page.section_hero.bundle.cta_text }}</a>
+    <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" class="btn btn-primary">{{ page.section_hero.bundle.cta_text }}</a>
   </div>
 {% endif %}
 {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
