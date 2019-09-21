@@ -17,12 +17,12 @@ $cta-themes:(
       text-align: center;
 
       img {
-        width: 140px;
-        height: 140px;
-        background: $primary;
-        margin: auto;
+        width: auto;
+        height: auto;
+        background: transparent;
+        margin: 10px;
         position: relative;
-        top: -35px;
+        top: 10px;
         display: inline-block;
       }
 
