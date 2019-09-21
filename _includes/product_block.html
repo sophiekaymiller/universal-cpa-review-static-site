@@ -12,8 +12,8 @@
 <div class="ucr-product">
     <div class="ucr-product-inner bg-white">
         <div class="ucr-product-header px-3 py-3">
-            <img class="d-block mx-auto mt-4" src="/assets/images/product-assets /feature-icon.png" width="56" height="41" alt=""/>
-            <h4 class="spaced">{{ name }}</h4>
+            <img class="d-block mx-auto mt-4 mb-4" src="/assets/images/product-assets /feature-icon.png" width="56" height="41" alt=""/>
+            <h3 class="spaced">{{ name }}</h3>
             {% if description %}
             <p class="ucr-product-description">
                 {{ description }}
@@ -27,7 +27,7 @@
             {% endif %}
         </div>
 
-        <div class="ucr-product-footer">
+        <div class="ucr-product-footer p-3">
             <a class="ucr-product-cta bg-{{ cta_theme }} btn mx-3 my-3" href="{{ cta_url }}">{{ cta_text }}</a>
         </div>
     </div>
