@@ -10,6 +10,7 @@ section_hero:
   subheader: "By integrating the AICPA blueprint, Universal CPA Review will save you
     time and money. Study with Universal CPA Review and pass the CPA exam on your
     first try. \n"
+  image: /assets/images/banners/home-hero-banner-alternate.jpg
 section_benefits:
   header: 'Universal CPA Review Courses '
   subheader: 'Universal CPA Review offers all of the study resources that you need
