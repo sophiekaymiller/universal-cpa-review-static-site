@@ -6,9 +6,9 @@ color: #391572;
 color: #343434;
 }
 
-#pricing_table{
-  li:nth-child(2n+2){
-  background-color: rgb(248, 245, 250)!important;
+.pricing_table{
+  li:nth-child(odd){
+  background-color: #f8f5fa!important;
   }
 }
 
