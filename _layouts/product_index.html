@@ -72,9 +72,7 @@
     <div class="row">
       <div class="card-deck">
       {% tablerow feature in page.section_features.features cols:4 %}
-
-      <div class="col-sm-3 bg-white mx-1 my-1 feature-block shadow-lg">
-        <div class="card bg-white">
+        <div class="card col-3 bg-white mx-1 shadow">
         <img class="d-block mx-auto mt-4" src="/assets/images/product-assets /feature-icon.png" width="56" height="41" alt=""/>
         {% assign first_word = feature | | truncatewords: 1, "" %}
         <div class="card-body">
@@ -82,7 +80,6 @@
         <p class="card-text text-center align-bottom pb-1"> {{ feature | remove: first_word}}  </p>
         </div>
         </div>
-      </div>
     {% endtablerow %}
   </div>
 </div>
