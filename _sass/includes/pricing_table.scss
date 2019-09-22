@@ -6,7 +6,7 @@ color: #391572;
 
 .pricing-header {
 font-size: 30px;
-font-family: "Lato";
+font-family: "Lato"!important;
 font-weight: 800;
 color: rgb(57, 21, 114);
 line-height: 1.2;
@@ -15,7 +15,7 @@ display: inline-block;
 }
 .pricing-subheader {
 font-size: 16px;
-font-family: "Lato";
+font-family: "Lato"!important;
 font-weight: 400;
 color: #333333;
 line-height: 1.2;
@@ -27,7 +27,7 @@ color: #343434;
 }
 
 li.pricing-feature-text{
-  font-family: "Dosis";
+  font-family: "Dosis"!important;
   font-size: 18.56pt;
   font-weight: 200;
   color: 555556;
@@ -40,7 +40,7 @@ padding: 5px 15px;
 background-color: #86e4ce;
 border-color: #86e4ce;
 font-size: 12px;
-font-family: "Lato";
+font-family: "Lato"!important;
 color: rgb(255, 255, 255);
 font-weight: bold;
 text-transform: uppercase;
