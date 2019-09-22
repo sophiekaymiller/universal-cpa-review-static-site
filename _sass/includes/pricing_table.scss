@@ -6,10 +6,9 @@ color: #391572;
 color: #343434;
 }
 
-.pricing_table{
-  li:nth-child(odd){
+
+list-group-item:nth-child(odd)
   background-color: #f8f5fa!important;
-  }
 }
 
 .buy_e_books {
