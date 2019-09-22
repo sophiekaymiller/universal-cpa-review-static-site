@@ -5,9 +5,13 @@ color: #391572;
 .price-subtext {
 color: #343434;
 }
-.bg-alt {
-background-color: #F8F5FA;
+
+#pricing_table{
+  li:nth-child(2n+2){
+  background-color: rgb(248, 245, 250)!important;
+  }
 }
+
 .buy_e_books {
 font-size: 12px;
 font-family: "Lato";
