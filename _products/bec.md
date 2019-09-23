@@ -53,20 +53,26 @@ featured_bundle:
   checkout_code: BECBUNDLE
 sub_products:
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
-  name: 'E-book & Animated Video Lectures '
+  name: BEC Practice Tests + eBook
   cta_text: Buy E-book
   checkout_code: BECEV
   price: "$249"
-- thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
+  subfeature:
+  - Feature 1
+  - Feature 2
+  - Feature 3
+- thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
-  checkout_code: BECEV
-  price: "$249"
+  checkout_code: BECBUNDLE
+  price: "$299"
+  subfeature: []
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
   cta_text: Buy Test-bank
   checkout_code: BEC
   price: "$99"
+  subfeature: []
 section_video:
   header: Not Your Traditional CPA Review Course!
   subheader: 'Our animated video lectures are specifically designed to help visual
