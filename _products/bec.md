@@ -57,16 +57,22 @@ sub_products:
   cta_text: Buy E-book
   checkout_code: BECEV
   price: "$249"
+  subfeature:
+  - Feature 1
+  - Feature 2
+  - Feature 3
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
   checkout_code: BECEV
   price: "$249"
+  subfeature: []
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
   cta_text: Buy Test-bank
   checkout_code: BEC
   price: "$99"
+  subfeature: []
 section_video:
   header: Not Your Traditional CPA Review Course!
   subheader: 'Our animated video lectures are specifically designed to help visual
