@@ -60,10 +60,6 @@ sub_products:
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
-  subfeature:
-  -''
-  -''
-  -''
   checkout_code: BECEV
   price: "$249"
 - thumbnail: "/uploads/2019/01/29/test bank.png"
