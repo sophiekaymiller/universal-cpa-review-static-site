@@ -77,7 +77,10 @@ sub_products:
   cta_text: Buy Test-bank
   checkout_code: BEC
   price: "$99"
-  subfeature: []
+  subfeature:
+  - Feature 1
+  - Feature 2
+  - Feature 3
 section_video:
   header: Not Your Traditional CPA Review Course!
   subheader: 'Our animated video lectures are specifically designed to help visual
