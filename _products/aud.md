@@ -72,7 +72,7 @@ sub_products:
   name: AUD Full Course Package
   subfeature: []
   cta_text: 'Buy AUD Full Course Package '
-  checkout_code: ''
+  checkout_code: AUDEBUNDLE
   price: "$299"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
