@@ -112,7 +112,7 @@ fields:
       use_select: false
       source:
         type: datafiles
-        description: 'Features of the Subproduct'
+        description: ''
   - type: text
     name: cta_text
     label: CTA Text
