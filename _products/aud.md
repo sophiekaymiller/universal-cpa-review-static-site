@@ -73,7 +73,8 @@ sub_products:
   cta_text: Buy Test-bank
   checkout_code: AUD
   price: "$99"
-  subfeature: []
+  subfeature:
+  - Test Bank
 trial_checkout_code: AUD
 
 ---
