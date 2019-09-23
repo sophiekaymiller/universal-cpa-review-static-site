@@ -100,16 +100,16 @@
               </div>
 
               <div class="pricing_table d-flex flex-column">
-              {% for subfeature in product.sub-features %}
+              {% for sfeature in product.subfeature %}
                 {% assign mod = forloop.index | modulo: 2 %}
 
               <li class="list-group-item border-0 text-center" style="padding-top: 0px; padding-bottom:0px;">
                 {% if mod == 0 %}
                 <div class="py-2" style="font-family: Dosis; font-size: 14px; font-weight: 200; color: #555556; background-color:#ffffff; text-align: center;">
-                {{ subfeature }}</div>
+                {{ sfeature }}</div>
                 {% else %}
                 <div class="py-2" style="font-family: Dosis; font-size: 14px; font-weight: 200; color: #555556; background-color:#f8f5fa; text-align: center;">
-                {{ subfeature }}</div>
+                {{ sfeature }}</div>
                 {% endif %}
             </li>
               {% endfor %}
