@@ -75,7 +75,7 @@
 <div class="row">
   <div class="card-deck">
   {% for feature in page.features %}
-  <div class="col-sm-3 feature-block" >
+  <div class="col-sm-3 feature-block align-items-stretch d-flex mb-3" >
     <div class="ucr-product card bg-white" style="box-shadow: 1px 1px 6px 0 #00000040;">
     <img class="d-block mx-auto mt-4" src="/assets/images/product-assets /feature-icon.png" width="56" height="41" alt=""/>
     {% assign first_word = feature | | truncatewords: 1, "" %}
