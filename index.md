@@ -10,7 +10,7 @@ section_hero:
   subheader: "By integrating the AICPA blueprint, Universal CPA Review will save you
     time and money. Study with Universal CPA Review and pass the CPA exam on your
     first try. \n"
-  image: /assets/images/banners/home-hero-banner-alternate.jpg
+  image: "/uploads/2019/09/23/universal_product_bg.png"
 section_benefits:
   header: 'Universal CPA Review Courses '
   subheader: 'Universal CPA Review offers all of the study resources that you need
@@ -28,7 +28,7 @@ section_products:
     a new look at exam multiple choice questions, and practice simulations that you
     haven’t yet seen. In addition, Universal CPA Review offers over 550 pages of E-book
     text materials that come with page-by-page audio explanations. \n"
-  yt_id:
+  yt_id: 
 section_featured:
   slides:
   - icon: "/assets/images/icons/featured-1.svg"
