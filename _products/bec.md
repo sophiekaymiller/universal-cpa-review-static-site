@@ -61,7 +61,7 @@ sub_products:
   - Feature 1
   - Feature 2
   - Feature 3
-- thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
+- thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
   checkout_code: BECBUNDLE
