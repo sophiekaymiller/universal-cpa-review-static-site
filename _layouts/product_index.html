@@ -57,13 +57,13 @@
       </p>
     </div>
   </div>
-    {% if page.section_hero.bundle.image %}
-      <div class="ucr-bundle">
-        <img class="ucr-bundle-image" width="500px" height="auto" src={{ page.section_hero.bundle.image }} />
-      {% else %}
-        {% include mocks_block.html %}
-      {% endif %}
-    </div>
+  </div>
+  {% if page.section_hero.bundle.image %}
+    <div class="ucr-bundle">
+      <img style="margin-top:-45px;" class="ucr-bundle-image" width="600px" height="auto" src={{ page.section_hero.bundle.image }} />
+    {% else %}
+      {% include mocks_block.html %}
+    {% endif %}
   </div>
 
   <!-- Features  -->
