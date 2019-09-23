@@ -65,11 +65,22 @@ sub_products:
   cta_text: Buy E-book & Video
   checkout_code: AUDEV
   price: "$249"
+  subfeature:
+  - E-Book
+  - Video Lectures
+- thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
+  name: AUD Full Course Package
+  subfeature: []
+  cta_text: 'Buy AUD Full Course Package '
+  checkout_code: AUDEBUNDLE
+  price: "$299"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
   cta_text: Buy Test-bank
   checkout_code: AUD
   price: "$99"
+  subfeature:
+  - Test Bank
 trial_checkout_code: AUD
 
 ---
