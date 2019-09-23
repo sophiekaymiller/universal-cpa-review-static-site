@@ -23,7 +23,7 @@ section_hero:
     image: "/uploads/2019/08/28/Section%20Hero%20Image@2x.png"
     title: Complete Bundle
     description: The complete bundle is the best possible deal
-    cta_text: Buy Complete Bundle
+    cta_text: Buy Now
 section_features:
   header: Universal CPA Full Review Course
   features:
