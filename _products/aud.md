@@ -68,6 +68,12 @@ sub_products:
   subfeature:
   - E-Book
   - Video Lectures
+- thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
+  name: AUD Full Course Package
+  subfeature: []
+  cta_text: 'Buy AUD Full Course Package '
+  checkout_code: ''
+  price: "$299"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
   cta_text: Buy Test-bank
