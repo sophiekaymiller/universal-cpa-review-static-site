@@ -217,7 +217,7 @@
 </div>
 {% assign other_products = site.products | where_exp:"item", "item.name != page.name" %}
 {% assign other_products = other_products | where_exp:"item", "item.tags == page.tags" %}
-<div class="pt-6">
+<div class="pt-6 px-4">
 {% include products_block.html products=other_products %}
 </div>
 {% if page.bundle_checkout_code %}
