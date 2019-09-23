@@ -155,9 +155,7 @@
 </div>
 
 
-<!-- Testimonials -->
-{% assign review = featured_reviews[3] %}
-{% include testimonial_block.html review=review %}
+
 
 
 <!-- Video Section -->
@@ -226,6 +224,9 @@
 {% endif %}
 {% endcapture %}
 {% include content_block.html content=section_content section_name='ucr-section-products pt-0 pt-sm-2' %}
+<!-- Testimonials -->
+{% assign review = featured_reviews[3] %}
+{% include testimonial_block.html review=review %}
 {% include footer.html js='/assets/dist/product.min.js' %}
 </body>
 </html>
