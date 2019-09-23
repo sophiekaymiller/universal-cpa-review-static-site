@@ -107,6 +107,7 @@ fields:
   - type: text
     name: cta_text
     label: CTA Text
+    description: The text of the buy button (like "Buy Test Bank")
   - type: list
     default: []
     label: subproduct_features
@@ -116,7 +117,6 @@ fields:
       source:
         type: datafiles
         description: ''
-    description: The text of the buy button (like "Buy Test Bank")
   - type: text
     label: Checkout Code
     name: checkout_code
