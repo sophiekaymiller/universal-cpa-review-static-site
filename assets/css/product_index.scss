@@ -2,24 +2,15 @@
 ---
 @import 'site';
 
-
-.base {
-  background-image: -moz-linear-gradient( 0deg, rgb(76,29,162) 0%, rgb(188,95,157) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(76,29,162) 0%, rgb(188,95,157) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(76,29,162) 0%, rgb(188,95,157) 100%);
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.15);
-  position: relative;
-  left: -1px;
-  top: 0px;
-  width: 80vw;
-  height: 60vh;
-  z-index: 208;
-}
-
-
 .jumbotron {
-  background-color: #391A70;
-  width: 100%;
+  color: $white;
+  //hero image
+  background-image: url("/assets/images/product-assets /base.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100vh;
+  width: auto;
 }
 
 .header-background{
