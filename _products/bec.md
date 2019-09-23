@@ -66,7 +66,12 @@ sub_products:
   cta_text: Buy E-book
   checkout_code: BECBUNDLE
   price: "$299"
-  subfeature: []
+  subfeature:
+  - Feature 1
+  - Feature 2
+  - Feature 3
+  - Feature 4
+  - Feature 5
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
   cta_text: Buy Test-bank
