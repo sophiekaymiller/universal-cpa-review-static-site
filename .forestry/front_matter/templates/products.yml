@@ -104,19 +104,19 @@ fields:
     name: name
     label: Name
     description: The name of the sub product (like "Test Bank")
-  - type: text
-    name: cta_text
-    label: CTA Text
-    description: The text of the buy button (like "Buy Test Bank")
   - type: list
     default: []
-    label: subproduct_features
+    label: Subproduct Features
     name: sub-features
     config:
       use_select: false
       source:
         type: datafiles
-        description: ''
+        description: 'Features of the Subproduct'
+  - type: text
+    name: cta_text
+    label: CTA Text
+    description: The text of the buy button (like "Buy Test Bank")
   - type: text
     label: Checkout Code
     name: checkout_code
