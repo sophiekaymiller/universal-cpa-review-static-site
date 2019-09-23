@@ -53,7 +53,7 @@ featured_bundle:
   checkout_code: BECBUNDLE
 sub_products:
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
-  name: 'E-book & Animated Video Lectures '
+  name: BEC Practice Tests + eBook
   cta_text: Buy E-book
   checkout_code: BECEV
   price: "$249"
@@ -64,8 +64,8 @@ sub_products:
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
-  checkout_code: BECEV
-  price: "$249"
+  checkout_code: BECBUNDLE
+  price: "$299"
   subfeature: []
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
