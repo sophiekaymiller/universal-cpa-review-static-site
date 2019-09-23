@@ -27,15 +27,13 @@
   <!-- End Nav -->
 
   <!-- Hero Section -->
-  <div class="jumbotron text-center mt-5 bg-primary">
-    <div class="container-fluid" style="background-image: url('assets/images/product-assets /base.png');">
-
-    <h1 class="ucr-section-header" style="color: white">
-    {{ page.section_hero.header }} </h1>
-    <p class="lead" style="color: white;">
-      {{ page.section_hero.subheader }}
-
-    </p>
+  <div class="jumbotron jumbotron-fluid text-center bg-transparent">
+    <div class="container">
+      <h1 class="ucr-section-header" style="color: white">
+      {{ page.section_hero.header }} </h1>
+      <p class="lead" style="color: white;">
+        {{ page.section_hero.subheader }}
+      </p>
     <div class="justify-content-center pb-4">
       {% if page.old_price %}
 
