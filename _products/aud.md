@@ -70,7 +70,12 @@ sub_products:
   - Video Lectures
 - thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
   name: AUD Full Course Package
-  subfeature: []
+  subfeature:
+  - Licensed AICPA questions that have been distributed in actual past Uniform CPA
+    Exams.
+  - 55 Task-based simulations that will prepare you for test day.
+  - 10+ Hours of Animated Video Lectures
+  - 1,200 Multiple choice Audit questions that replicate the CPA exam.
   cta_text: 'Buy AUD Full Course Package '
   checkout_code: AUDEBUNDLE
   price: "$299"
