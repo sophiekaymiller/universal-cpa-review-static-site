@@ -65,11 +65,15 @@ sub_products:
   cta_text: Buy E-book & Video
   checkout_code: AUDEV
   price: "$249"
+  subfeature:
+  - E-Book
+  - Video Lectures
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
   name: Test-bank Only
   cta_text: Buy Test-bank
   checkout_code: AUD
   price: "$99"
+  subfeature: []
 trial_checkout_code: AUD
 
 ---
