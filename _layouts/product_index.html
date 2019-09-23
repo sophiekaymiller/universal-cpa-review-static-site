@@ -36,7 +36,7 @@
       {{ page.section_hero.subheader }}
 
     </p>
-    <div class="justify-content-center">
+    <div class="justify-content-center pb-4">
       {% if page.old_price %}
 
         <h3 class="text-center" style="color:white; font-weight: 500;">
@@ -50,7 +50,7 @@
       {{ page.price }}
 
       </h3>
-      <p class="lead mx-auto w-75">
+      <p class="lead mx-auto d-block w-75">
         <a class="btn btn-primary btn-outline-light" href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}&trial=0" role="button">
           {{ page.section_hero.bundle.cta_text }}
         </a>
@@ -60,7 +60,7 @@
   </div>
   {% if page.section_hero.bundle.image %}
     <div class="ucr-bundle">
-      <img style="margin-top:-45px;" class="ucr-bundle-image" width="600px" height="auto" src={{ page.section_hero.bundle.image }} />
+      <img style="margin-top:-300px;" class="ucr-bundle-image mx-auto d-block" width="550px" height="auto" src={{ page.section_hero.bundle.image }} />
     {% else %}
       {% include mocks_block.html %}
     {% endif %}
