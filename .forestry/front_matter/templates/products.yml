@@ -107,7 +107,7 @@ fields:
   - type: list
     default: []
     label: Subproduct Features
-    name: sub-features
+    name: subfeature
     config:
       use_select: false
       source:
