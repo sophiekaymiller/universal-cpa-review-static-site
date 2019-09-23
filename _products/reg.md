@@ -55,11 +55,19 @@ sub_products:
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: Test Bank Only
   cta_text: Buy Test Bank
+  sub-features:
+  - feature 1
+  - feature 2
+  - feature 3
   checkout_code: reg
   price: "$99"
 - thumbnail: "/uploads/2019/07/17/itemized deductions image.png"
   name: E-Book & Animated Video Lecture
   cta_text: Buy E-Book
+  sub-features:
+  - feature 1
+  - feature 2
+  - feature 3
   checkout_code: REGEV
   price: "$249"
 section_video:
