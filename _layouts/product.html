@@ -45,7 +45,7 @@
                 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-outline-light btn-buy">Buy Now</a>
             </div>
         </div>
-        <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-3">
+        <!-- <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-3"> -->
             {% if page.thumbnail %}
                 <img class="ucr-product-thumbnail" src="{{ page.thumbnail }}" />
             {% else %}
@@ -82,9 +82,57 @@
 {% include content_block.html content=section_content section_name='ucr-section-subproducts gray pt-3' %}
 {% endif %}
 
+<div class="container py-sm-4">
+  <div class="row" style="background-color: #F2EEF5">
+    <div class="col-md-10 my-4 mx-auto">
+      <h6 class="text-center text-purple">OUR OFFERINGS </h6>
+      <h3 class="text-center">
+      We understand that everyone studies in different ways
+      </h3>
+      <hr>
+      <div class="row my-3 bg-transparent">
+        {% for product in page.sub_products %}
+          <div class="col-md-4 px-0 mx-0">
+            <div class="list-group text-center my-3 bg-white">
+              <div class="list-group-item border-0">
+                <h4 class="text-center list-group-item-heading my-1 pricing-header text-purple" style="font-family:Lato; font-weight:bold;">{{ bundle.name }}</h4>
+                <p class="list-group-item-text pricing-subheader" style="font-family:Lato; font-size: .75rem; font-weight:200;">{{ bundle.description }}</p>
+              </div>
+
+              <div class="pricing_table d-flex flex-column">
+              {% for subfeature in product.sub-features %}
+                {% assign mod = forloop.index | modulo: 2 %}
+
+              <li class="list-group-item border-0 text-center" style="padding-top: 0px; padding-bottom:0px;">
+                {% if mod == 0 %}
+                <div class="py-2" style="font-family: Dosis; font-size: 14px; font-weight: 200; color: #555556; background-color:#ffffff; text-align: center;">
+                {{ bfeature }}</div>
+                {% else %}
+                <div class="py-2" style="font-family: Dosis; font-size: 14px; font-weight: 200; color: #555556; background-color:#f8f5fa; text-align: center;">
+                {{ bfeature }}</div>
+                {% endif %}
+            </li>
+              {% endfor %}
+              <li class="list-group-item col-md-offset-4 border-0">
+                <h1 class="price">{{ bundle.price }}</h1>
+                <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn-sm btn-cta-light px-5 py-2 text-white" style="border-radius: 1.2rem; font-family: Dosis; font-weight: bold; font-variant-caps: all-small-caps; vertical-align:middle;">
+                {{ bundle.cta_text }}</a>
+              </li>
+            </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- Testimonials -->
 {% assign review = featured_reviews[3] %}
 {% include testimonial_block.html review=review %}
+
+
 <!-- Video Section -->
 <!-- {% if page.section_video and page.section_video.yt_id %}
 {% capture section_content %}
@@ -124,9 +172,13 @@
 </div>
 </div> -->
 
-<div class="ucr-section-footer pt-0 pt-sm-5 text-center">
+<!-- NOTE: CTA  -->
+
+<!-- <div class="ucr-section-footer pt-0 pt-sm-5 text-center">
 <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.featured_bundle.checkout_code }}&trial=0" class="btn btn-cta-light">{{ page.featured_bundle.cta_text }}</a>
-</div>
+</div> -->
+
+
 {% endcapture %}
 {% include content_block.html content=section_content section_name='ucr-section-featured-bundle pt-0 pt-sm-2 gray' %}
 {% endif %}

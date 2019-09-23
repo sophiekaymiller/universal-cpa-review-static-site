@@ -52,13 +52,29 @@ featured_bundle:
   cta_text: Get Them Together
   checkout_code: BECBUNDLE
 sub_products:
+- thumbnail: "/uploads/2019/01/29/download (1).png"
+name: 'BEC Practice Tests + eBook'
+cta_text: 'Get Them Together'
+sub-features: 'Feature 1'
+- 'Feature 2'
+- 'Feature 3'
+checkout_code: BECBUNDLE
+price: "$299"
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
+  sub-features:
+  - 'Feature 1'
+  - 'Feature 2'
+  - 'Feature 3'
   checkout_code: BECEV
   price: "$249"
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
+  sub-features:
+  - 'Feature 1'
+  - 'Feature 2'
+  - 'Feature 3'
   cta_text: Buy Test-bank
   checkout_code: BEC
   price: "$99"
