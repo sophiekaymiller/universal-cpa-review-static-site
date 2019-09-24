@@ -9,6 +9,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 4rem 0rem;
+}
+
+@media (min-width: 576px)
+.jumbotron {
+    padding: 4rem 0rem;
 }
 
 .header-background{
