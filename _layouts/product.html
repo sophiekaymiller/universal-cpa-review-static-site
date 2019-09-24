@@ -27,13 +27,14 @@
     <!-- Header Section -->
     {% capture section_content %}
     <div class="jumbotron text-center mt-5 bg-transparent" style="background-image: url('/assets/images/product-assets /base.png'); background-size:cover;">
-        <div class="ucr-section-header mt-5 px-3 px-md-5">
+        <div class="ucr-section-header col-sm-6 mt-5 px-3 px-md-5 ">
             <h1 class="ucr-section-header text-white text-white">{{ page.name }}</h1>
+
+            <p class="lead text-white">{{ page.short_description }}</p>
             <div class="ucr-product-main-price d-flex justify-content-center">
                 {% if page.old_price %}<h3 class="old-price pr-2">{{ page.old_price }}</h3>{% endif %}
                 <h3 class="new-price text-white">{{ page.price }}</h3>
             </div>
-            <p class="lead text-white">{{ page.short_description }}</p>
         </div>
         <div class="ucr-button-row py-2 py-sm-5">
             {% if page.trial_checkout_code %}
