@@ -27,7 +27,7 @@
   <!-- End Nav -->
   <!-- Hero Section -->
   <div class="jumbotron text-center bg-transparent">
-    <div class="container text-center col-sm-6 mx-auto my-5 d-block">
+    <div class="container text-center col-sm-7 mx-auto my-5 d-block">
       <h1 class="ucr-section-header text-white">
       {{ page.section_hero.header }} </h1>
       <p class="lead" style="color: white;">
@@ -54,8 +54,8 @@
   </div>
   </div>
   {% if page.section_hero.bundle.image %}
-    <div class="ucr-bundle mt-n5">
-      <img style="margin-top:-230px;" class="ucr-bundle-image mx-auto d-block" width="550px" height="auto" src={{ page.section_hero.bundle.image }} />
+    <div class="ucr-bundle mt-n6">
+      <img style="margin-top:-18rem;" class="ucr-bundle-image mx-auto d-block" width="550px" height="auto" src={{ page.section_hero.bundle.image }} />
     {% else %}
       {% include mocks_block.html %}
     {% endif %}
