@@ -66,8 +66,10 @@
     <h6 class="text-center">CHECKOUT FEATURES</h6>
     <h3 class="text-md-center">
     {{ page.section_features.header }}
-    </h5>
+    </h3>
+
     <div class="row">
+      <div class="container col-sm-10">
       <div class="card-deck">
       {% tablerow feature in page.section_features.features cols:4 %}
       <div class="col-sm-3 feature-block align-items-stretch d-flex mb-2">
@@ -82,6 +84,7 @@
       </div>
     {% endtablerow %}
   </div>
+</div>
 </div>
 {% include pricing_table.html %}
 {% assign cta_type = include.cta_type | default:"detail" %}
