@@ -8,10 +8,7 @@
 // september 2019
 
 #product_banner{
-  @include vendor('align-items', 'center');
-	@include vendor('background-image', 'url("/assets/images/product-assets /1600x500.jpg")');
-	@include vendor('display', 'flex');
-  @include padding(4em, 0, (2em, 0, 0, 0));
+    background-image: url('/assets/images/product-assets /1600x500.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -26,10 +23,6 @@
 		top: -3.25em;
 
     &:after {
-			@include vendor('transition', 'opacity #{_duration(banner)} ease');
-			@include vendor('transition-delay', '0.75s');
-			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
 			content: '';
 			display: block;
 			height: 100%;
