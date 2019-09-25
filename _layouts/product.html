@@ -36,7 +36,7 @@
                 <h3 class="new-price text-white">{{ page.price }}</h3>
             </div>
 
-        <div class="ucr-button-row py-2 py-sm-5">
+        <div class="ucr-button-row d-flex flex-row py-2 py-sm-5">
             {% if page.trial_checkout_code %}
                 <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
                     <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
