@@ -19,7 +19,8 @@
 
     @include media-breakpoint-down(lg) {
       min-height: 500px;
-      background-position-x: 0;
+      background-image:url('/assets/images/product-assets /1600x500.jpg');
+      background-position-x: -30vw;
 
       .ucr-section-hero-inner {
         padding-top: 130px;
@@ -28,7 +29,8 @@
 
     @include media-breakpoint-down(sm) {
       background-position-x: 0;
-      background-image: linear-gradient(to bottom, $gradient-primary, $white);
+      background-image: linear-gradient(to bottom, $gradient-primary, $white, url('/assets/images/product-assets /1600x500.jpg'));
+
     }
   }
 
