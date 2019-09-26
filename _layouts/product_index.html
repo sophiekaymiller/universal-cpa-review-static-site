@@ -59,8 +59,8 @@
   </div>
   </section>
   {% if page.section_hero.bundle.image %}
-    <div class="ucr-bundle overlay-img mt-n6 d-sm-none d-md-block">
-      <img class="ucr-bundle-image mx-auto d-block" width="550px" height="auto" src={{ page.section_hero.bundle.image }} />
+    <div class="ucr-bundle overlay-img mt-n6">
+      <img class="ucr-bundle-image mx-auto d-sm-none d-md-block" width="550px" height="auto" src={{ page.section_hero.bundle.image }} />
     {% else %}
       {% include mocks_block.html %}
     {% endif %}
