@@ -26,7 +26,7 @@
     {% include nav.html %}
     <!-- Header Section -->
     {% capture section_content %}
-    <div class="jumbotron text-center mt-5 bg-transparent" style="background-image:url('/assets/images/product-assets /1600x500.jpg'); background-size:cover; background-position-x:center;">
+    <div class="jumbotron text-center mt-5 bg-transparent" style="background-image:url('/assets/images/product-assets /1600x500.jpg'); background-size:cover; background-position:center center;">
         <div class="ucr-section-header col-sm-6 mt-5 px-3 px-md-5 d-flex flex-column mx-auto">
             <h1 class="ucr-section-header">{{ page.name }}</h1>
 
@@ -36,14 +36,14 @@
                 <h3 class="new-price">{{ page.price }}</h3>
             </div>
 
-        <div class="ucr-button-row d-flex flex-row py-2 py-sm-5">
+        <div class="ucr-button-row d-flex justify-content-center py-2 py-sm-5">
             {% if page.trial_checkout_code %}
                 <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-3 mb-sm-0">
                     <a href="{{ site.portal.url }}{{ site.portal.paths.trial }}?product={{ page.trial_checkout_code }}" class="btn btn-cta-light">Try for Free</a>
                 </div>
             {% endif %}
             <div class="d-block d-sm-inline-block mx-0 mx-sm-4 mb-4 mb-sm-0">
-                <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-dark btn-outline-light btn-buy">Buy Now</a>
+                <a href="{{ site.portal.url }}{{ site.portal.paths.cart }}?product={{ page.checkout_code }}" class="btn btn-cta-light bg-white btn-buy">Buy Now</a>
             </div>
         </div>
         <!-- <div class="ucr-section-body text-center pt-5 pt-sm-3 pb-3">
