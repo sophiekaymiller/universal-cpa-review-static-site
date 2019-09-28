@@ -4,13 +4,12 @@
 
 /**-- Section Blocks --**/
 .ucr-section {
+  box-sizing: inherit;
   /**-- Hero Section --**/
   &.ucr-section-hero {
-    min-height: 750px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: left;
-    background-position-y: center;
+    background-size: auto;
+    background-position: center center;
     padding-top: 0;
 
     .ucr-section-hero-inner {
