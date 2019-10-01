@@ -53,7 +53,7 @@ featured_bundle:
   checkout_code: REGBUNDLE
 sub_products:
 - thumbnail: ''
-  name: ''
+  name: REG eBook + Animated Video Lectures
   subfeature:
   - Unlimited Access Until You Pass
   - 'Full REG eBook '
