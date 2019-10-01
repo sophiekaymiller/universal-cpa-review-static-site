@@ -53,14 +53,17 @@ featured_bundle:
   checkout_code: BECBUNDLE
 sub_products:
 - thumbnail: "/uploads/2019/07/17/projections and forecasts.png"
-  name: BEC Practice Tests + eBook
+  name: BEC eBook + Animated Video Lectures
   cta_text: Buy E-book
   checkout_code: BECEV
   price: "$249"
   subfeature:
-  - Feature 1
-  - Feature 2
-  - Feature 3
+  - Unlimited Access Until You Pass
+  - 'Full BEC e-Book '
+  - Over 10 Hours of Animated Video Lectures
+  - Real-Time Adaptive Learning Technology
+  - Optimized Study Approach that only Targets Key Concepts
+  - Unlimited Free Updates
 - thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
   name: 'E-book & Animated Video Lectures '
   cta_text: Buy E-book
