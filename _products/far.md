@@ -61,7 +61,7 @@ section_video:
   yt_id: GgAOmjggI9Y
 sub_products:
 - thumbnail: ''
-  name: ''
+  name: Full FAR Course Package
   subfeature:
   - Unlimited Access Until You Pass
   - Over 20 Hours of Animated Video Lectures
