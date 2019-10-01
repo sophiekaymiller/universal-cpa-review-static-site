@@ -73,13 +73,14 @@ sub_products:
   - Real-time Adaptive Learning Technology
   - Optimized Study Approach That Only Targets Key Concepts
 - thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
-  name: AUD Full Course Package
+  name: Audit Full Course Package
   subfeature:
-  - Licensed AICPA questions that have been distributed in actual past Uniform CPA
-    Exams.
-  - 55 Task-based simulations that will prepare you for test day.
+  - Unlimited Access Until You Pass
+  - Full Audit eBook
+  - Over 1,200 Multiple-Choice Practice Questions that Replicate the CPA Exam
   - 10+ Hours of Animated Video Lectures
-  - 1,200 Multiple choice Audit questions that replicate the CPA exam.
+  - Over 55 Task-Based Simulations that Replicate the CPA Exam
+  - Licensed Questions from the AICPA
   cta_text: 'Buy AUD Full Course Package '
   checkout_code: AUDEBUNDLE
   price: "$299"
