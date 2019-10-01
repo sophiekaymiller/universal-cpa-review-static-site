@@ -26,6 +26,16 @@
       }
     }
 
+    @include media-breakpoint-down(xl) {
+      min-height: 500px;
+      background-image:url('/assets/images/product-assets /1600x500.jpg');
+      background-position-x: -30vw;
+
+      .ucr-section-hero-inner {
+        padding-top: 130px;
+      }
+    }
+
     @include media-breakpoint-down(sm) {
       background-position-x: 0;
       background:
