@@ -22,14 +22,14 @@ checkout_code: FARBUNDLE
 bundle_checkout_code: all
 short_description: 'Enhance your Financial Accounting & Reporting (FAR) exam study
   schedule with the best online CPA exam study resource. The Universal CPA Review
-  Online review course offers candidates over 350 pages of textbook materials, 10
-  hours of animated video lectures, over 1,250 multiple choice practice questions
-  that come with detailed answer rationales, and 65 task-based simulations to better
-  prepare you for test day. '
+  Online review course offers candidates our full course FAR ebook, over 20 hours
+  of animated video lectures, over 1,250 multiple choice practice questions that come
+  with detailed answer rationales, and step-by-step video explanations, and 65 task-based
+  simulations to better prepare you for test day. '
 thumbnail: "/uploads/2019/03/05/far combo.png"
 features:
 - Unlimited Access Until You Pass
-- Over 10 Hours of Animated Video Lectures
+- Over 20 Hours of Animated Video Lectures
 - 1,250 Multiple-Choice Practice Questions That Replicate the CPA Exam
 - Over 500 Video Explanations on Most Challenging Practice Questions
 - 65 Task-based simulations that will prepare you for test day.
