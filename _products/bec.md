@@ -70,11 +70,12 @@ sub_products:
   checkout_code: BECBUNDLE
   price: "$299"
   subfeature:
-  - Feature 1
-  - Feature 2
-  - Feature 3
-  - Feature 4
-  - Feature 5
+  - Unlimited Access Until You Pass
+  - Full Course eBook for BEC Section
+  - Over 10 Hours of Highly Engaging Animated Video Lectures
+  - Over 1.100 Multiple-Choice Practice Questions with Detailed Solution Explanations
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Unlimited Progress Tests
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-Bank Only '
   cta_text: Buy Test-bank
