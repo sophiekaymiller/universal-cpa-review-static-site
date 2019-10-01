@@ -60,16 +60,31 @@ section_video:
     what to do. '
   yt_id: GgAOmjggI9Y
 sub_products:
+- thumbnail: ''
+  name: ''
+  subfeature:
+  - Unlimited Access Until You Pass
+  - Over 20 Hours of Animated Video Lectures
+  - Over 1,500 Multiple-Choice Questions
+  - Hundreds of Video Explanations on Most Challenging Multiple-Choice Questions
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - 'Full FAR eBook '
+  - Unlimited Progress Tests
+  cta_text: Buy Full Course
+  checkout_code: FARBUNDLE
+  price: ''
 - thumbnail: "/uploads/2019/07/17/Screenshot (258).png"
   checkout_code: FAREV
   price: "$249"
   name: E-book & Animated Video Lectures
   cta_text: Buy E-book
+  subfeature: []
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-bank Only '
   checkout_code: FAR
   price: "$99"
   cta_text: Buy Test-bank
+  subfeature: []
 trial_checkout_code: FAR
 
 ---
