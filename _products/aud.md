@@ -61,13 +61,17 @@ tags:
 noun: Exam
 sub_products:
 - thumbnail: "/uploads/2019/07/17/inventory cycle.png"
-  name: E-book & Video Lectures
+  name: AUD eBook & Animated Video Lectures
   cta_text: Buy E-book & Video
   checkout_code: AUDEV
   price: "$249"
   subfeature:
-  - E-Book
+  - Unlimited Access Until You Pass
+  - 'Full Audit Course eBook '
+  - Over 10 Hours of Animated Video Lectures
   - Video Lectures
+  - Real-time Adaptive Learning Technology
+  - Optimized Study Approach That Only Targets Key Concepts
 - thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
   name: AUD Full Course Package
   subfeature:
