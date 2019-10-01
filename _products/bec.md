@@ -65,7 +65,7 @@ sub_products:
   - Optimized Study Approach that only Targets Key Concepts
   - Unlimited Free Updates
 - thumbnail: "/uploads/2019/03/03/BEC COMBO.png"
-  name: 'E-book & Animated Video Lectures '
+  name: BEC Full Course Package
   cta_text: Buy E-book
   checkout_code: BECBUNDLE
   price: "$299"
