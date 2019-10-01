@@ -77,7 +77,7 @@ sub_products:
   - Over 50 Task-Based Simulations that Replicate the CPA Exam
   - Unlimited Progress Tests
 - thumbnail: "/uploads/2019/01/29/test bank.png"
-  name: 'Test-Bank Only '
+  name: BEC Test Bank
   cta_text: Buy Test-bank
   checkout_code: BEC
   price: "$99"
