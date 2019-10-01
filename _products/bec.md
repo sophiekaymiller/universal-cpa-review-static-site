@@ -86,7 +86,7 @@ sub_products:
   - Over 1,100 Multiple-Choice Practice Questions
   - Over 50 Task-Based Simulations that Replicate the CPA exam
   - Licensed Practice Questions from the AICPA
-  - Real-Time Adaptive Learning Technology
+  - Unlimited Progress Tests
 section_video:
   header: Not Your Traditional CPA Review Course!
   subheader: 'Our animated video lectures are specifically designed to help visual
