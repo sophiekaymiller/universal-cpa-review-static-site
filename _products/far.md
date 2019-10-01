@@ -61,18 +61,17 @@ section_video:
   yt_id: GgAOmjggI9Y
 sub_products:
 - thumbnail: ''
-  name: Full FAR Course Package
+  name: FAR eBook + Animated Video Lectures
   subfeature:
   - Unlimited Access Until You Pass
+  - Full FAR eBook
   - Over 20 Hours of Animated Video Lectures
-  - Over 1,500 Multiple-Choice Questions
-  - Hundreds of Video Explanations on Most Challenging Multiple-Choice Questions
-  - Over 50 Task-Based Simulations that Replicate the CPA Exam
-  - 'Full FAR eBook '
-  - Unlimited Progress Tests
+  - Real-Time Adaptive Learning Technology
+  - Optimized Study Approach That Targets Key Concepts
+  - Unlimited Free Updates
   cta_text: Buy Full Course
-  checkout_code: FARBUNDLE
-  price: "$299"
+  checkout_code: FAREV
+  price: "$249"
 - thumbnail: "/uploads/2019/07/17/Screenshot (258).png"
   checkout_code: FAREV
   price: "$249"
