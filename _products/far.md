@@ -73,10 +73,10 @@ sub_products:
   checkout_code: FAREV
   price: "$249"
 - thumbnail: "/uploads/2019/07/17/Screenshot (258).png"
-  checkout_code: FAREV
-  price: "$249"
-  name: E-book & Animated Video Lectures
-  cta_text: Buy E-book
+  checkout_code: FARBUNDLE
+  price: "$299"
+  name: FAR Full Course Package
+  cta_text: Buy Full Course
   subfeature: []
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-bank Only '
