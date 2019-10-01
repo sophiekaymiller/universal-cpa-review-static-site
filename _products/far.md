@@ -77,7 +77,14 @@ sub_products:
   price: "$299"
   name: FAR Full Course Package
   cta_text: Buy Full Course
-  subfeature: []
+  subfeature:
+  - Unlimited Access Until You Pass
+  - Full Course eBook for FAR Section
+  - Over 10 Hours of Highly Engaging Animated Video Lectures
+  - Over 1,500 Multiple-Choice Practice Questions with Detailed Solution Explanations
+  - Over 500 Video Explanations that Will Walk You Through the Question
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Unlimited Progress Tests
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: 'Test-bank Only '
   checkout_code: FAR
