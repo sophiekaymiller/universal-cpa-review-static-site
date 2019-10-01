@@ -92,7 +92,7 @@ sub_products:
   subfeature:
   - Unlimited Access Until You Pass
   - Over 1,200 Multiple-Choice Practice Questions
-  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Over 55 Task-Based Simulations that Replicate the CPA Exam
   - Licensed Practice Questions from the AICPA
   - Real-Time Adaptive Learning Technology
 trial_checkout_code: AUD
