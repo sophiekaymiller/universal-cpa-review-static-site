@@ -22,10 +22,9 @@ checkout_code: REGBUNDLE
 bundle_checkout_code: all
 short_description: 'Enhance your Regulation (REG) exam study schedule with the best
   online CPA exam study resource. The Universal CPA Review Online review course offers
-  candidates over 300 pages of e-book textbook materials, 10 hours of animated video
-  lectures, over 1,100 multiple choice practice questions that come with detailed
-  answer rationales, and 65 task-based simulations to better prepare you for test
-  day. '
+  candidates over our full course textbook materials, 10 hours of animated video lectures,
+  over 1,100 multiple choice practice questions that come with detailed answer rationales,
+  and 65 task-based simulations to better prepare you for test day. '
 thumbnail: "/uploads/2019/03/05/REG COMBO.png"
 features:
 - 1,100 Multiple choice REG questions that replicate the CPA exam.
@@ -65,15 +64,21 @@ sub_products:
   checkout_code: REGEV
   price: "$249"
 - thumbnail: "/uploads/2019/01/29/test bank.png"
-  name: Test Bank Only
+  name: REG Full Course Package
   cta_text: Buy Test Bank
   sub-features:
   - feature 1
   - feature 2
   - feature 3
-  checkout_code: reg
-  price: "$99"
-  subfeature: []
+  checkout_code: REGBUNDLE
+  price: "$299"
+  subfeature:
+  - Unlimited Access Until You Pass
+  - Full Course eBook for REG Section
+  - Over 10 Hours of Highly Engaging Animated Video Lectures
+  - Over 1,250 Multiple-Choice Questions with Detailed Solution Explanations
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Unlimited Progress Tests
 - thumbnail: "/uploads/2019/07/17/itemized deductions image.png"
   name: E-Book & Animated Video Lecture
   cta_text: Buy E-Book
