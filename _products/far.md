@@ -86,11 +86,17 @@ sub_products:
   - Over 50 Task-Based Simulations that Replicate the CPA Exam
   - Unlimited Progress Tests
 - thumbnail: "/uploads/2019/01/29/test bank.png"
-  name: 'Test-bank Only '
+  name: Far Test Bank
   checkout_code: FAR
   price: "$99"
   cta_text: Buy Test-bank
-  subfeature: []
+  subfeature:
+  - Unlimited Access Until You Pass
+  - Over 1,500 Multiple-Choice Practice Questions With Detailed Answer Solutions
+  - Over 500 Video Explanations that Walk You Through the Question
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Licensed Practice Questions from the AICPA
+  - Unlimited Progress Tests
 trial_checkout_code: FAR
 
 ---
