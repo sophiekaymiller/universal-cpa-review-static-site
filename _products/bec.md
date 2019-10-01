@@ -59,8 +59,8 @@ sub_products:
   price: "$249"
   subfeature:
   - Unlimited Access Until You Pass
-  - 'Full BEC e-Book '
-  - Over 10 Hours of Animated Video Lectures
+  - 'Full Course eBook '
+  - Over 10 Hours of Highly Engaging Animated Video Lectures
   - Real-Time Adaptive Learning Technology
   - Optimized Study Approach that only Targets Key Concepts
   - Unlimited Free Updates
