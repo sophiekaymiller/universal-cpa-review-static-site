@@ -85,12 +85,16 @@ sub_products:
   checkout_code: AUDEBUNDLE
   price: "$299"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
-  name: Test-bank Only
+  name: Audit Test Bank
   cta_text: Buy Test-bank
   checkout_code: AUD
   price: "$99"
   subfeature:
-  - Test Bank
+  - Unlimited Access Until You Pass
+  - Over 1,200 Multiple-Choice Practice Questions
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Licensed Practice Questions from the AICPA
+  - Real-Time Adaptive Learning Technology
 trial_checkout_code: AUD
 
 ---
