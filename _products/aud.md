@@ -76,7 +76,7 @@ sub_products:
   name: Audit Full Course Package
   subfeature:
   - Unlimited Access Until You Pass
-  - Full Audit eBook
+  - Full Course eBook for Audit Section
   - Over 1,200 Multiple-Choice Practice Questions that Replicate the CPA Exam
   - 10+ Hours of Animated Video Lectures
   - Over 55 Task-Based Simulations that Replicate the CPA Exam
