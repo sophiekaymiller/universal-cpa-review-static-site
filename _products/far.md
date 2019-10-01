@@ -72,7 +72,7 @@ sub_products:
   - Unlimited Progress Tests
   cta_text: Buy Full Course
   checkout_code: FARBUNDLE
-  price: ''
+  price: "$299"
 - thumbnail: "/uploads/2019/07/17/Screenshot (258).png"
   checkout_code: FAREV
   price: "$249"
