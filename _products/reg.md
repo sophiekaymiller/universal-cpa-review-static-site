@@ -80,15 +80,21 @@ sub_products:
   - Over 50 Task-Based Simulations that Replicate the CPA Exam
   - Unlimited Progress Tests
 - thumbnail: "/uploads/2019/07/17/itemized deductions image.png"
-  name: E-Book & Animated Video Lecture
-  cta_text: Buy E-Book
+  name: REG Test Bank
+  cta_text: 'Buy Test Bank '
   sub-features:
   - feature 1
   - feature 2
   - feature 3
-  checkout_code: REGEV
-  price: "$249"
-  subfeature: []
+  checkout_code: reg
+  price: "$99"
+  subfeature:
+  - Unlimited Access Until You Pass
+  - Over 1,250 Multiple-Choice Practice Questions
+  - Over 50 Task-Based Simulations that Replicate the CPA Exam
+  - Licensed Practice Questions from the AICPA
+  - Real-Time Adaptive Learning Technology
+  - Unlimited Progress Tests
 section_video:
   header: 'Not Your Traditional CPA Review Course '
   subheader: 'Our animated video lectures are specifically designed to help visual
