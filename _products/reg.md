@@ -53,7 +53,7 @@ featured_bundle:
   checkout_code: REGBUNDLE
 sub_products:
 - thumbnail: ''
-  name: REGEV
+  name: ''
   subfeature:
   - Unlimited Access Until You Pass
   - 'Full REG eBook '
@@ -61,9 +61,9 @@ sub_products:
   - Real-Time Adaptive Learning Technology
   - Optimized Study Approach that Targets Key Concepts
   - Unlimited Free Updates
-  cta_text: ''
-  checkout_code: ''
-  price: ''
+  cta_text: Buy eBook
+  checkout_code: REGEV
+  price: "$249"
 - thumbnail: "/uploads/2019/01/29/test bank.png"
   name: Test Bank Only
   cta_text: Buy Test Bank
