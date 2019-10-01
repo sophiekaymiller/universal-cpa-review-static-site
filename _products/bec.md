@@ -82,9 +82,11 @@ sub_products:
   checkout_code: BEC
   price: "$99"
   subfeature:
-  - Feature 1
-  - Feature 2
-  - Feature 3
+  - Unlimited Access Until You Pass
+  - Over 1,100 Multiple-Choice Practice Questions
+  - Over 50 Task-Based Simulations that Replicate the CPA exam
+  - Licensed Practice Questions from the AICPA
+  - Real-time Adaptive Learning Technology
 section_video:
   header: Not Your Traditional CPA Review Course!
   subheader: 'Our animated video lectures are specifically designed to help visual
