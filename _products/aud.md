@@ -61,22 +61,22 @@ tags:
 noun: Exam
 sub_products:
 - thumbnail: "/uploads/2019/07/17/inventory cycle.png"
-  name: AUD eBook & Animated Video Lectures
+  name: AUD eBook + Animated Video Lectures
   cta_text: Buy E-book & Video
   checkout_code: AUDEV
   price: "$249"
   subfeature:
   - Unlimited Access Until You Pass
   - 'Full Audit Course eBook '
-  - Over 10 Hours of Animated Video Lectures
-  - Video Lectures
-  - Real-time Adaptive Learning Technology
+  - Over 10 Hours of Highly Engaging Animated Video Lectures
+  - Real-Time Adaptive Learning Technology
   - Optimized Study Approach That Only Targets Key Concepts
+  - Unlimited Free Updates
 - thumbnail: "/uploads/2019/03/03/AUD COMBO.png"
   name: Audit Full Course Package
   subfeature:
   - Unlimited Access Until You Pass
-  - Full Audit eBook
+  - Full Course eBook for Audit Section
   - Over 1,200 Multiple-Choice Practice Questions that Replicate the CPA Exam
   - 10+ Hours of Animated Video Lectures
   - Over 55 Task-Based Simulations that Replicate the CPA Exam
@@ -85,12 +85,16 @@ sub_products:
   checkout_code: AUDEBUNDLE
   price: "$299"
 - thumbnail: "/uploads/2019/01/29/joey link manager200x125.jpg"
-  name: Test-bank Only
+  name: Audit Test Bank
   cta_text: Buy Test-bank
   checkout_code: AUD
   price: "$99"
   subfeature:
-  - Test Bank
+  - Unlimited Access Until You Pass
+  - Over 1,200 Multiple-Choice Practice Questions
+  - Over 55 Task-Based Simulations that Replicate the CPA Exam
+  - Licensed Practice Questions from the AICPA
+  - Real-Time Adaptive Learning Technology
 trial_checkout_code: AUD
 
 ---

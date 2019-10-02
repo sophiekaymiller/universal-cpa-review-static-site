@@ -59,8 +59,8 @@ sub_products:
   price: "$249"
   subfeature:
   - Unlimited Access Until You Pass
-  - 'Full BEC e-Book '
-  - Over 10 Hours of Animated Video Lectures
+  - 'Full Course eBook '
+  - Over 10 Hours of Highly Engaging Animated Video Lectures
   - Real-Time Adaptive Learning Technology
   - Optimized Study Approach that only Targets Key Concepts
   - Unlimited Free Updates
@@ -86,7 +86,7 @@ sub_products:
   - Over 1,100 Multiple-Choice Practice Questions
   - Over 50 Task-Based Simulations that Replicate the CPA exam
   - Licensed Practice Questions from the AICPA
-  - Real-time Adaptive Learning Technology
+  - Unlimited Progress Tests
 section_video:
   header: Not Your Traditional CPA Review Course!
   subheader: 'Our animated video lectures are specifically designed to help visual

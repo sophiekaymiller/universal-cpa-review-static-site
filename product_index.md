@@ -63,7 +63,7 @@ section_bundles:
     - Over 40 Hours of Highly Engaging Animated Video Lectures
     - Over 4,200 Multiple-Choice Practice Questions with Detailed Explanations
     - Over 200 Task-Based Simulations that Replicate the CPA Exam
-    - Hundreds of Video Explanations for Most Challenging Concepts
+    - Hundreds of Video Explanations for Most Challenging Practice Questions
     - Over 4,200 Multiple-Choice Practice Questions With Detailed Explanations
     - Unlimited Progress Tests
     checkout_code: ''

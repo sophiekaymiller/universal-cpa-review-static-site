@@ -140,6 +140,6 @@ fields:
   description: Checkout code for starting a trial
 pages:
 - _products/far.md
+- _products/reg.md
 - _products/bec.md
 - _products/aud.md
-- _products/reg.md
